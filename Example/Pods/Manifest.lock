@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LoginKit: 8ef9d9e7cad057766f7c1019273f5c6df497a8a1
+  LoginKit: 0ecdf1499de0f3040e4f02f76b458ed53bba7d86
   SkyFloatingLabelTextField: a81a0eaed2785d1599f11484c6ebc1c4eb5d1228
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 

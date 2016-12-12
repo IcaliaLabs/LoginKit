@@ -9,6 +9,7 @@
 import UIKit
 
 public enum ButtnBorder: Int {
+
     case all
     case top
     case bottom
@@ -16,6 +17,7 @@ public enum ButtnBorder: Int {
     case right
     case topBottom
     case leftRight
+
 }
 
 // TO-DO: - Rounded corners should be with a mask, to cover border AND background
@@ -23,8 +25,7 @@ public enum ButtnBorder: Int {
 @IBDesignable
 open class Buttn: UIButton {
 
-    open var border: ButtnBorder = .all { didSet { setNeedsDisplay() } }
-    @IBInspectable open var borderType: Int {
+    @IBInspectable public var borderType: Int {
         get {
             return self.border.rawValue
         }
@@ -32,10 +33,36 @@ open class Buttn: UIButton {
             self.border = ButtnBorder(rawValue: index) ?? .all
         }
     }
-    @IBInspectable open var borderWidth: Float = 1.0 { didSet { setNeedsDisplay() } }
-    @IBInspectable open var borderRadius: Float = 3.0 { didSet { setNeedsDisplay() } }
-    @IBInspectable open var borderColor: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5) { didSet { setNeedsDisplay() } }
-    @IBInspectable open var buttnColor: UIColor = UIColor.clear { didSet { setNeedsDisplay() } }
+
+    private var border: ButtnBorder = .all {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+
+    @IBInspectable public var borderWidth: Float = 1.0  {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+
+    @IBInspectable public var borderRadius: Float = 3.0  {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+
+    @IBInspectable public var borderColor: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5) {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+
+    @IBInspectable public var buttnColor: UIColor = UIColor.clear  {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
 
     // MARK: - Init
 

@@ -8,9 +8,19 @@
 
 import UIKit
 
+protocol InitialViewControllerDelegate: class {
+
+    func didSelectLogin()
+    func didSelectSignup()
+    func didSelectFacebook()
+    
+}
+
 class InitialViewController: UIViewController, BackgroundMovable {
 
     // MARK: - Properties
+
+    weak var delegate: InitialViewControllerDelegate?
 
     var movableBackground: UIView {
         get {
@@ -27,6 +37,7 @@ class InitialViewController: UIViewController, BackgroundMovable {
     override func viewDidLoad() {
         super.viewDidLoad()
         initBackgroundMover()
+        navigationController?.isNavigationBarHidden = true
         navigationController?.delegate = self
     }
 
@@ -38,61 +49,19 @@ class InitialViewController: UIViewController, BackgroundMovable {
         return .lightContent
     }
 
-    // MARK: - IBAction's
+    // MARK: - Action's
 
     @IBAction func didSelectSignup(_ sender: AnyObject) {
-        // let controller = ViewController.signupViewController.getController(inNavController: false)
-        // navigationController?.pushViewController(controller, animated: true)
+        delegate?.didSelectSignup()
     }
 
     @IBAction func didSelectLogin(_ sender: AnyObject) {
-        // let controller = ViewController.loginViewController.getController(inNavController: false)
-        // navigationController?.pushViewController(controller, animated: true)
+        delegate?.didSelectLogin()
     }
 
     @IBAction func didSelectFacebook(_ sender: AnyObject) {
-        // facebookLogin()
+        delegate?.didSelectFacebook()
     }
-
-    // MARK: - Network
-
-//    func facebookLogin() {
-//        loginManager.logIn(withReadPermissions: permissions, from: self) { (result, error) in
-//            if error != nil {
-//                print("FACEBOOK LOGIN: ERROR")
-//                print(error)
-//            } else if let result = result {
-//                if result.isCancelled {
-//                    print("FACEBOOK LOGIN: CANCELLED")
-//                } else {
-//                    print("FACEBOOK LOGIN: SUCCESS")
-//                    print("TOKEN: \(result.token)")
-//                    print("PERMISSIONS: \(result.grantedPermissions)")
-//
-//                    if result.grantedPermissions.contains("email") && result.grantedPermissions.contains("public_profile") {
-//                        print("FACEBOOK LOGIN: PERMISSIONS GRANTED")
-//                        self.enterWithFacebook(result)
-//                    } else {
-//                        print("FACEBOOK LOGIN: MISSING REQUIRED PERMISSIONS")
-//                    }
-//                }
-//            }
-//        }
-//    }
-//
-//    func enterWithFacebook(_ result: FBSDKLoginManagerLoginResult) {
-//        Session.sharedSession.enterWithFacebook(result, completion: { (result) in
-//            switch result {
-//            case .success(let user, _, _):
-//                print("SESSION : SIGNUP SUCCESS")
-//                print("USER = \(user)")
-//                LoginHelper.performLoginActions()
-//            default:
-//                print("TAP TO FUND API: LOGIN ERROR")
-//                ErrorHandler.handleErrorIn(result, onViewController: self)
-//            }
-//        })
-//    }
 
 }
 

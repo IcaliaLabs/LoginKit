@@ -7,63 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0519836C6E982ABAD33F70AE4EBD5BB2 /* ValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D458246D4FEC14888D4E83861688C9D /* ValidationPattern.swift */; };
-		060504022DD1B72E28C4B8801CF2721A /* ValidationRuleContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877B45ABAE34C6F69A1ACF07914F4998 /* ValidationRuleContains.swift */; };
-		0612D9E5EE5502A4CEB72CF56D307B5C /* ContainsNumberValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D6537877E968D76963AE88591883B /* ContainsNumberValidationPattern.swift */; };
-		06B0C6101DFF29F400D10033 /* CrossDissolveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B0C60F1DFF29F400D10033 /* CrossDissolveAnimation.swift */; };
-		0F526D4003F3047C0E87F0F8C8FC4144 /* ValidationRulePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A1C5A4F4E5C840362DB8BCC431B2B7 /* ValidationRulePattern.swift */; };
-		1BA75AA2AE0E321ED57955C73F0E8628 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
-		224D26F320016ADDE404EE3CFAC28E5D /* ValidationRuleCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855C48B169BA2CBD4A3DAE5738BEC8E4 /* ValidationRuleCondition.swift */; };
-		243590AEE93B727D65D165E6988E26E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
-		2BAAA98B3DB5D4431AFA659D45DE986B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514E8E4D8F394566A35BDB3ACB3BF54 /* InitialViewController.swift */; };
-		2D0662B029EB89D182EA69BB809ACA17 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4723CEDE22752645EBEE2D9B5E498D47 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36868BAEF2ED0CC9FF931A46CFC3CE46 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6D5CBA0729E48A02782473537B56C7 /* SkyFloatingLabelTextField-dummy.m */; };
-		3807209E73CEE1ED372097E18665010F /* Validator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9EBC2F981BD8F78E44A559B06276B1 /* Validator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3951248125F2509CA63600BA836EEA1E /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AF6AD4B0EC39EE02DC6BEA02C822A1 /* SkyFloatingLabelTextField.swift */; };
-		3E816079EEBEFF95B19A141103965C22 /* LoginKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 260008A361011DDC4BB43FDAA8F0C366 /* LoginKit.bundle */; };
-		4087F2467C8337068FAFC7EE9198E29C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032247F46B82069CED976EFDA76FA32 /* UIKit.framework */; };
-		40D8BFD785924CBAF60520D9B6981A06 /* Validator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA9BC5BC13B33DAE74E82593D4F02EE /* Validator.framework */; };
-		4255A989570EDDFFE56FE26A55526CA7 /* ValidationRuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDBFE63817714B37D799F118A6F4D6 /* ValidationRuleSet.swift */; };
-		42E53A22DFB27691D660BB1D181055FC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEEA16E096031FB8FE8B658D7A979E3 /* LoginViewController.xib */; };
-		45FF5E8DDCAE263CD2C18AAA01DB96A9 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A8D5B7E93C3A860836DC003B336521 /* Validator.swift */; };
-		4614F78E84EE307107598767B64C42B5 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0501DCF48E1247BB5D7C3E5C981A778 /* ValidationRule.swift */; };
-		482F4E5DF3B0B7BE0308338589228F50 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0895E28A4146B973C25579A2E4272A15 /* Validatable.swift */; };
-		4B4F2F4FD6C901C0980F0C45FC363A26 /* ValidationRuleComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656348955C156179507616D32F2463D /* ValidationRuleComparison.swift */; };
-		51909E98B784699A80D2FA57A42BEA24 /* ValidationRuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895F7509F79ECD073089D63D18B96983 /* ValidationRuleURL.swift */; };
-		6E092C60E8A25991F413263ACE1EC5CD /* KeyboardMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA40FA38E19D084478B9FAEE7EAB739 /* KeyboardMover.swift */; };
+		0379C3CE6F583998E751D699064A66FD /* UITextView+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A31392F578F8FF77A6EC3620D4F424 /* UITextView+Validator.swift */; };
+		06C44C441DFF61F00051EA6C /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C44C431DFF61F00051EA6C /* GradientImageView.swift */; };
+		083C40682FBF26FFC21CA9ED7FEF897F /* ValidationRuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F85C92D00C21F64CE71E4D46E02E95 /* ValidationRuleLength.swift */; };
+		0DF8A39E09E3EDFD01A970E81AA8B82F /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47820344D3E39D0074E2D1FE9EC143 /* LoginCoordinator.swift */; };
+		124768495725B84CB8146E38A8A019FE /* CrossDissolveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83479DD073846EA2826F55ED1FCF349 /* CrossDissolveAnimation.swift */; };
+		1F1DD7A0DFD236BF76E0241AF2E71CA2 /* Validator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A1DDEBAF1B6F3F4AE94231A92C8CF /* Validator-dummy.m */; };
+		25E34150344B7366F033C962F1FBEDDA /* EmailValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910F1D50A4F9B64C988BFCE084B6734 /* EmailValidationPattern.swift */; };
+		2FBA959DE99F846D4A5C0AFB2BA43847 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2B6D36B9CE6F4740F957BD41D4EFFE /* SignupViewController.xib */; };
+		2FE8421844378908B43A0C2C0912E3CD /* ValidationRuleCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855C48B169BA2CBD4A3DAE5738BEC8E4 /* ValidationRuleCondition.swift */; };
+		41DE5F5FFB46C14D0B5495C7623A67B4 /* ValidationRulePaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28596DCB0924A45B40A4FA9894E400 /* ValidationRulePaymentCard.swift */; };
+		42A192B6232D177EC169104E0754C64A /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98F9E1E5DBFC6EDFCEE0CE1B53D52FF /* InitialViewController.xib */; };
+		43B2979A6A430462B0504FB256FA377F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C9244B763CCE4356855A535CBC3FC2 /* LoginViewController.xib */; };
+		460DFE1C8BC25C029CA9950666A35194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
+		46BADE858E171DD51EDC200286705858 /* UITextField+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AF8FCF84F458EC0B6D79BE28E1EE14 /* UITextField+Validator.swift */; };
+		53F05F14CD59118EF5A9370A33BF16BC /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDE0F86DD39A0497F225841AB2D606 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		55732BF539D212CCEC3209A6BE991C7D /* CaseValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C554C7109DE1A6A57592E86DA53E7 /* CaseValidationPattern.swift */; };
+		5A04BADF767CDFC3130EF4EFAF4B87A2 /* ValidationRuleEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CDD9F2694A220D30771CF3CE8988D /* ValidationRuleEquality.swift */; };
+		5DAF2287CFDDEF81165FC00B0530032F /* LoginKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4583577E374E9D68C40711C560AC2CF8 /* LoginKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E936DC5CE497441239C6C022B2A5496 /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E221F12CBA562147DDCF7F0CCB2A30E /* PasswordViewController.xib */; };
+		5F533EBFD1ADA8D2FF6EF1CC1D0FE99D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981EF1FF3AF7DE7C135AED2CC54DB3F /* InitialViewController.swift */; };
+		68D20FF3FEDB50704702E0488694189B /* Buttn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F46C0AEDD05BB85E9F9C25C186A87 /* Buttn.swift */; };
+		6BF8847C502424DD9450A21EBBA451EA /* UISlider+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC7D7B44942A035363A3B1F685FBCE /* UISlider+Validator.swift */; };
+		6E0CDFF78B0DC826BAFF07E3C748939E /* ContainsNumberValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D6537877E968D76963AE88591883B /* ContainsNumberValidationPattern.swift */; };
 		6EE04D27B1BFA99857AB3BE86838B048 /* Pods-LoginKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B4F487E5B6E21CC4811081C5D73AFF2 /* Pods-LoginKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		720159B5A13DB5217FA2EBB417F569E1 /* UITextField+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AF8FCF84F458EC0B6D79BE28E1EE14 /* UITextField+Validator.swift */; };
-		7272418C146C16D0C36DE41A48B7062C /* CaseValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C554C7109DE1A6A57592E86DA53E7 /* CaseValidationPattern.swift */; };
 		76B56567D2A0ED9A27444D0A7B623F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
-		76FF1A95DEF8A90D0B90EFD865129420 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDEB118337E49AD35CB3E0DFC37F402 /* SignupViewController.swift */; };
-		7AB7824294C3DB9DB4022E976A13DB54 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDE0F86DD39A0497F225841AB2D606 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
-		80C0E9F9743F14365252863AA1199EB8 /* ValidatableInterfaceElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F338B13C1175567F1AB5864397EEB3D /* ValidatableInterfaceElement.swift */; };
-		83B7FD239BC03BF9057237DC66FFB1BF /* Buttn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE6BDCCE76CFC9F6D4D35DA59B2313 /* Buttn.swift */; };
-		8EDA302BD818BDAE80CC6EB69692B6D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
-		93A5CC35ADAE3E59565BEF5BC4E06C7F /* LoginKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11831E0CB70B5ABCEFA9A979D7D29C /* LoginKit-dummy.m */; };
+		76C080569772648DCCA2C83107978994 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AF6AD4B0EC39EE02DC6BEA02C822A1 /* SkyFloatingLabelTextField.swift */; };
+		79719ADE1DC222DAB8EC79F283909451 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEEB3AF7D9CAFF122A4F5057623E7C /* PasswordViewController.swift */; };
+		7EAF43A2B6D7FC1177F4AA3EBBE056E3 /* ValidationRuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78DB0D8AF898F644DBA6FA611ACAC17 /* ValidationRuleRequired.swift */; };
+		85CB7BCDB0C305128B40C5AD93F46F32 /* KeyboardMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E75071401FC95BC8014593E4A1503 /* KeyboardMover.swift */; };
+		89F734F6D5B2EF32ECC56557714705E0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575FCBD40CFECE2F54C82792416B2C6 /* SignupViewController.swift */; };
+		8D87153D76DDC72A06467BC88D3484FA /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A96E69C3BCF9E353A1954FD988C42C /* SkyFloatingLabelTextField.framework */; };
+		903F80762317159386A1EE750C59FEDE /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A8D5B7E93C3A860836DC003B336521 /* Validator.swift */; };
+		922A23312F5ACA098237BDBC4C1A492D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D4FD0C8DAB81142864F2BFC8B0534D /* Media.xcassets */; };
 		94720769ED5C1945107E7972F9E3682C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
-		95B71101C1F64D9AB4BDA2C95C2B697C /* ValidationRuleEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CDD9F2694A220D30771CF3CE8988D /* ValidationRuleEquality.swift */; };
+		955F3533B5FB81751CC85727E2F80618 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013996F4E159E5ACB695F505E6BDF75 /* UITextField+fixCaretPosition.swift */; };
+		9726648E6B1F332D13CE7D9C240A61EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
 		981F27DDA23B43797ADE87C2B7DD1A68 /* Pods-LoginKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D138542BF0822B59AAABDA5558A221 /* Pods-LoginKit_Example-dummy.m */; };
-		9AE40854654582F48D3A7EDFD3AC7381 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DCDA6A64E6A773F5489C0DDCF180F9 /* SignupViewController.xib */; };
-		9D9D52F9509ABCE553FD0FB322AC5EBD /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C409E562F385069C2CC4061C4BCF08A5 /* InitialViewController.xib */; };
-		9DD9A7A2CE10B5616A8857067C483075 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A96E69C3BCF9E353A1954FD988C42C /* SkyFloatingLabelTextField.framework */; };
-		A767AE5811E938D821A14070DE383B86 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013996F4E159E5ACB695F505E6BDF75 /* UITextField+fixCaretPosition.swift */; };
-		AB39BB64822432AFBD18FE0B31D798FE /* ValidationRuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78DB0D8AF898F644DBA6FA611ACAC17 /* ValidationRuleRequired.swift */; };
-		B246EB3A41A4FCECC189DFC6EAF3A5D9 /* EmailValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910F1D50A4F9B64C988BFCE084B6734 /* EmailValidationPattern.swift */; };
-		B35D088866FCB3ADFDFA7C0AB1B83E01 /* UITextView+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A31392F578F8FF77A6EC3620D4F424 /* UITextView+Validator.swift */; };
-		BB58590F31971BE1B467AE33044CEA7C /* Validator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A1DDEBAF1B6F3F4AE94231A92C8CF /* Validator-dummy.m */; };
-		C3357B40865A4859F69EEBD614CFEFC5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2CB70AFE312309B9FC713A156CFAE2 /* PasswordViewController.swift */; };
-		C87D3EA40DBCEB0D5C093B20296930DA /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB3290F09DF72580D9ED43DDC530C52 /* PasswordViewController.xib */; };
-		CA0E13CDA458F14A2E7DFF159320E0E6 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97C96BB5AF813FA025C6D2F6A80C429 /* Initial.storyboard */; };
-		D2117602FABE6CA02CABEA54D90106F3 /* UISlider+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC7D7B44942A035363A3B1F685FBCE /* UISlider+Validator.swift */; };
-		D3DD00C6371579DE53F556DE4A107D13 /* BackgroundMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30852B4EEC0A2DB100A088F1FF55BA0 /* BackgroundMover.swift */; };
-		DCFAA40A25500A3233AB8877318533BC /* ValidationRulePaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28596DCB0924A45B40A4FA9894E400 /* ValidationRulePaymentCard.swift */; };
-		DFDBE970B9DFE5B8D863CB4563A8C801 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C343AB6B4E689E3C878F091033265C5 /* LoginViewController.swift */; };
-		E006A40EFB4832A85B3BB3A7CFD2AAA3 /* LoginKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDAC2C460B76D0920A506ABB9EDE3C67 /* LoginKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4C1BF7F021EC0B36987E787CD1568A7 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE01126B18ECD33612611A3414759 /* ValidationResult.swift */; };
+		9A03E34831EF048EA666EB4E854F2240 /* ValidationRuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDBFE63817714B37D799F118A6F4D6 /* ValidationRuleSet.swift */; };
+		A0CD5787066B8C8B43C145481EB17DB5 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE01126B18ECD33612611A3414759 /* ValidationResult.swift */; };
+		A3473C0A4B65F7962835BBEDBC9F87CB /* Validator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA9BC5BC13B33DAE74E82593D4F02EE /* Validator.framework */; };
+		AEA699524F3ADBBC167AE6EEF335F8E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7005E054DEAE5416A680334CC66BDAE /* LoginViewController.swift */; };
+		AF879F881BF059B5A5E219C73E96B08F /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0501DCF48E1247BB5D7C3E5C981A778 /* ValidationRule.swift */; };
+		B67468B5620D518FB5144E532531AF40 /* Validator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9EBC2F981BD8F78E44A559B06276B1 /* Validator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73748A05B44161B1B5976C6C42BCCAB /* ValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D458246D4FEC14888D4E83861688C9D /* ValidationPattern.swift */; };
+		C0D243C864A5FF083A4E2DA617FEC725 /* BackgroundMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6067AB9FCA40ACA96D09003BE329E8FA /* BackgroundMover.swift */; };
+		C6C7DCD57898F7D5164C957A408E0157 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0895E28A4146B973C25579A2E4272A15 /* Validatable.swift */; };
+		C7E6CD9F22552D3C35763E9AAC903035 /* ValidationRulePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A1C5A4F4E5C840362DB8BCC431B2B7 /* ValidationRulePattern.swift */; };
+		CD276C08E74C6EEBD5E42344C1F557B2 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6D5CBA0729E48A02782473537B56C7 /* SkyFloatingLabelTextField-dummy.m */; };
+		DD3AEFF7FB2264C9B3BA33ABDEEA9CF8 /* ValidationRuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895F7509F79ECD073089D63D18B96983 /* ValidationRuleURL.swift */; };
+		DF6A0C1DF3E9534809429D70359A7861 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032247F46B82069CED976EFDA76FA32 /* UIKit.framework */; };
 		E65491964F239CA622A12A7C84DE701E /* Pods-LoginKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 603D65295DF11318833A4043A1793D77 /* Pods-LoginKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2063291D8C126D01A0D20A953390F9E /* ValidationRuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F85C92D00C21F64CE71E4D46E02E95 /* ValidationRuleLength.swift */; };
-		F6350A0B32623ABA2E3FF62553A17ECD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F0216CDBECFC57FE4D6746C4F2CEE5 /* Media.xcassets */; };
+		E672507012F93AFF9934222595C0272A /* ValidatableInterfaceElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F338B13C1175567F1AB5864397EEB3D /* ValidatableInterfaceElement.swift */; };
+		E6A32B6740367D6DD75F3F8D85ADA920 /* ValidationRuleComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656348955C156179507616D32F2463D /* ValidationRuleComparison.swift */; };
+		EC150BCD97C17FEB4311CC4784611241 /* ValidationRuleContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877B45ABAE34C6F69A1ACF07914F4998 /* ValidationRuleContains.swift */; };
+		F54E8734E1BED67BFB6B26A83F0769B8 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4723CEDE22752645EBEE2D9B5E498D47 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA5E485E849482713BD5FF43D86E5208 /* LoginKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A194D971F9E25F15FF53FFFCC8A31769 /* LoginKit-dummy.m */; };
+		FB8D7E891B9118ED2235AD216091CA2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
 		FD0995A0B51C1B909945324F1D66AC9A /* Pods-LoginKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7864F59ED41ADEC31DCF78306BF927 /* Pods-LoginKit_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -72,136 +72,128 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74D71AA449D83B8950846CBEA3A92055;
+			remoteGlobalIDString = 295CF4E7DFD26CB673234255C1C72667;
 			remoteInfo = SkyFloatingLabelTextField;
 		};
 		61D7CCF6880EF88E3B6DA9D5CD38B0DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7AE73C6C0201CE45889B57A93BCF0207;
+			remoteGlobalIDString = E22DC03434E39302E7E7E0D1F1839BAA;
 			remoteInfo = Validator;
 		};
 		6A7E8874F18903CF0A9A19B8A6E0D74A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9D5D0E8A6D20092EF3F58790E933C35D;
+			remoteGlobalIDString = 6E7D7E9DFC92AFC14E7C80464FEF2787;
 			remoteInfo = LoginKit;
 		};
-		7EE318E231753CA263255E8537C7B991 /* PBXContainerItemProxy */ = {
+		E78D749A4934E5937B3A5D8820BF3BFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7AE73C6C0201CE45889B57A93BCF0207;
+			remoteGlobalIDString = E22DC03434E39302E7E7E0D1F1839BAA;
 			remoteInfo = Validator;
 		};
-		D274B74A0B0C185A1193137B201CCEE3 /* PBXContainerItemProxy */ = {
+		FA495069969763B4E53EF2D638ED3B39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74D71AA449D83B8950846CBEA3A92055;
+			remoteGlobalIDString = 295CF4E7DFD26CB673234255C1C72667;
 			remoteInfo = SkyFloatingLabelTextField;
-		};
-		D2961328A8459D52CD1357579318515A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B75219B6A537371A0FD26EB9DAD6FAFC;
-			remoteInfo = "LoginKit-LoginKit";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoginKit.xcconfig; sourceTree = "<group>"; };
 		03773F28BD1CCE45D38BAAFEDD91AD0D /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
-		06B0C60F1DFF29F400D10033 /* CrossDissolveAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossDissolveAnimation.swift; sourceTree = "<group>"; };
+		06C44C431DFF61F00051EA6C /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
+		085105F280CECF1252B4AD173147C275 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086177A5FA54B13B5C2EB5C33A873D6F /* Pods-LoginKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LoginKit_Example.modulemap"; sourceTree = "<group>"; };
 		0895E28A4146B973C25579A2E4272A15 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Validator/Validator/Validatable.swift; sourceTree = "<group>"; };
 		0910F1D50A4F9B64C988BFCE084B6734 /* EmailValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailValidationPattern.swift; path = Validator/Validator/EmailValidationPattern.swift; sourceTree = "<group>"; };
-		0C343AB6B4E689E3C878F091033265C5 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		10012892EDF55CFE0C901DB7D705A8F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E39F3FBF42D0265A38EB57C20FD79C /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		113A01A003D2C1D0C29439F2F10384AB /* LoginKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoginKit.modulemap; sourceTree = "<group>"; };
 		1656348955C156179507616D32F2463D /* ValidationRuleComparison.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleComparison.swift; path = Validator/Validator/Rules/ValidationRuleComparison.swift; sourceTree = "<group>"; };
 		1B4F487E5B6E21CC4811081C5D73AFF2 /* Pods-LoginKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoginKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		1CDEB118337E49AD35CB3E0DFC37F402 /* SignupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		1D458246D4FEC14888D4E83861688C9D /* ValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationPattern.swift; path = Validator/Validator/ValidationPattern.swift; sourceTree = "<group>"; };
 		254C5A3628C4A88E5BA49DDC285D23FB /* Pods-LoginKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		260008A361011DDC4BB43FDAA8F0C366 /* LoginKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B41C8A368A3433A730E458165DCB1FE /* Pods-LoginKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginKit_Example-resources.sh"; sourceTree = "<group>"; };
 		30AF6AD4B0EC39EE02DC6BEA02C822A1 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
 		3132AE832FEF11DF083FF13DFE46D412 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E7CCD5415EC552A739D0826D0F27BB /* Pods_LoginKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D4FD0C8DAB81142864F2BFC8B0534D /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		38AF8FCF84F458EC0B6D79BE28E1EE14 /* UITextField+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UITextField+Validator.swift"; sourceTree = "<group>"; };
 		39A31392F578F8FF77A6EC3620D4F424 /* UITextView+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UITextView+Validator.swift"; sourceTree = "<group>"; };
 		3BFC7D7B44942A035363A3B1F685FBCE /* UISlider+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISlider+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UISlider+Validator.swift"; sourceTree = "<group>"; };
 		3E6CDD9F2694A220D30771CF3CE8988D /* ValidationRuleEquality.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleEquality.swift; path = Validator/Validator/Rules/ValidationRuleEquality.swift; sourceTree = "<group>"; };
 		4032247F46B82069CED976EFDA76FA32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		40F85C92D00C21F64CE71E4D46E02E95 /* ValidationRuleLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleLength.swift; path = Validator/Validator/Rules/ValidationRuleLength.swift; sourceTree = "<group>"; };
-		4514E8E4D8F394566A35BDB3ACB3BF54 /* InitialViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		4583577E374E9D68C40711C560AC2CF8 /* LoginKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginKit-umbrella.h"; sourceTree = "<group>"; };
 		4723CEDE22752645EBEE2D9B5E498D47 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
 		4BA9BC5BC13B33DAE74E82593D4F02EE /* Validator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0FFEBF2D8530DCA7EBB8C62D9B04C7 /* Pods-LoginKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		5004CDBB2B55F22EBF1A886865950840 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51DCDA6A64E6A773F5489C0DDCF180F9 /* SignupViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		58BEC412D9D0E57B55997B236A443FDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A06F04224121067CD9ADD804F05D9D6 /* Pods-LoginKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E98BC050840A782BF5D64053B26AF08 /* LoginKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginKit-prefix.pch"; sourceTree = "<group>"; };
 		5F27120A893267B3169A874812F8430B /* Validator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Validator.xcconfig; sourceTree = "<group>"; };
+		601A3D61E3E079934F44422478654117 /* Pods_LoginKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		603D65295DF11318833A4043A1793D77 /* Pods-LoginKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoginKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		6067AB9FCA40ACA96D09003BE329E8FA /* BackgroundMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundMover.swift; sourceTree = "<group>"; };
+		65BEEB3AF7D9CAFF122A4F5057623E7C /* PasswordViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		69D138542BF0822B59AAABDA5558A221 /* Pods-LoginKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginKit_Example-dummy.m"; sourceTree = "<group>"; };
 		6C28596DCB0924A45B40A4FA9894E400 /* ValidationRulePaymentCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRulePaymentCard.swift; path = Validator/Validator/Rules/ValidationRulePaymentCard.swift; sourceTree = "<group>"; };
 		6C87D930A4E099952733B4DA016AF63B /* Pods-LoginKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		720F46C0AEDD05BB85E9F9C25C186A87 /* Buttn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Buttn.swift; sourceTree = "<group>"; };
 		72A8D5B7E93C3A860836DC003B336521 /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Validator/Validator/Validator.swift; sourceTree = "<group>"; };
-		78D8242E116EF0BF7F94BC905E4A961B /* LoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8013996F4E159E5ACB695F505E6BDF75 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
 		855C48B169BA2CBD4A3DAE5738BEC8E4 /* ValidationRuleCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleCondition.swift; path = Validator/Validator/Rules/ValidationRuleCondition.swift; sourceTree = "<group>"; };
+		86C9244B763CCE4356855A535CBC3FC2 /* LoginViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		877B45ABAE34C6F69A1ACF07914F4998 /* ValidationRuleContains.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleContains.swift; path = Validator/Validator/Rules/ValidationRuleContains.swift; sourceTree = "<group>"; };
 		895F7509F79ECD073089D63D18B96983 /* ValidationRuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleURL.swift; path = Validator/Validator/Rules/ValidationRuleURL.swift; sourceTree = "<group>"; };
-		8A11831E0CB70B5ABCEFA9A979D7D29C /* LoginKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoginKit-dummy.m"; sourceTree = "<group>"; };
 		8F338B13C1175567F1AB5864397EEB3D /* ValidatableInterfaceElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatableInterfaceElement.swift; path = "Validator/Validator/UIKit+Validator/ValidatableInterfaceElement.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		989D6537877E968D76963AE88591883B /* ContainsNumberValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainsNumberValidationPattern.swift; path = Validator/Validator/ContainsNumberValidationPattern.swift; sourceTree = "<group>"; };
 		99A4282AD91E41F89D4E52EAD0C3CD67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E221F12CBA562147DDCF7F0CCB2A30E /* PasswordViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
+		9F47820344D3E39D0074E2D1FE9EC143 /* LoginCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		A0501DCF48E1247BB5D7C3E5C981A778 /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Validator/Validator/ValidationRule.swift; sourceTree = "<group>"; };
+		A194D971F9E25F15FF53FFFCC8A31769 /* LoginKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoginKit-dummy.m"; sourceTree = "<group>"; };
 		A1A96E69C3BCF9E353A1954FD988C42C /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24A1DDEBAF1B6F3F4AE94231A92C8CF /* Validator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Validator-dummy.m"; sourceTree = "<group>"; };
 		A39F0F93761FF6FC78382F7FD8694549 /* Pods-LoginKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		A77CE01126B18ECD33612611A3414759 /* ValidationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationResult.swift; path = Validator/Validator/ValidationResult.swift; sourceTree = "<group>"; };
 		A874042CC98C190D9EC63D0B75CBB630 /* Validator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Validator.modulemap; sourceTree = "<group>"; };
 		AA4CD3E57C52E3E17FA7925C011AA189 /* Pods-LoginKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AA82C5C73305B0391689D906395A40E7 /* Pods_LoginKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB3009D6FCD2439F52A4FE7D5FFE6B23 /* Validator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE41ED825215C3A2F3ADB253E9116425 /* LoginKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoginKit.modulemap; sourceTree = "<group>"; };
 		B3BA0F0EC9A71DBC35F1840812A03F00 /* Pods-LoginKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B6E0EB9F2A303A203AFC232C150ADBE6 /* Pods-LoginKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B7346155BA8FD002A30F3F08B46371E6 /* Pods_LoginKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBA40FA38E19D084478B9FAEE7EAB739 /* KeyboardMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardMover.swift; sourceTree = "<group>"; };
-		BFAE6BDCCE76CFC9F6D4D35DA59B2313 /* Buttn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Buttn.swift; sourceTree = "<group>"; };
-		C08DD05A3F480AAB9C96CF7FA2496D43 /* ResourceBundle-LoginKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LoginKit-Info.plist"; sourceTree = "<group>"; };
-		C409E562F385069C2CC4061C4BCF08A5 /* InitialViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		B83479DD073846EA2826F55ED1FCF349 /* CrossDissolveAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CrossDissolveAnimation.swift; sourceTree = "<group>"; };
 		C59DF2457CC4A9CAE83AE61968B9ADB9 /* Pods-LoginKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LoginKit_Tests.modulemap"; sourceTree = "<group>"; };
 		C78DB0D8AF898F644DBA6FA611ACAC17 /* ValidationRuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleRequired.swift; path = Validator/Validator/Rules/ValidationRuleRequired.swift; sourceTree = "<group>"; };
+		C981EF1FF3AF7DE7C135AED2CC54DB3F /* InitialViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		CA6D5CBA0729E48A02782473537B56C7 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
-		CCB3290F09DF72580D9ED43DDC530C52 /* PasswordViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
-		D30852B4EEC0A2DB100A088F1FF55BA0 /* BackgroundMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundMover.swift; sourceTree = "<group>"; };
+		CB2B6D36B9CE6F4740F957BD41D4EFFE /* SignupViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		CE8E301A076CAE2106B2CB4DA917D40F /* LoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36E75071401FC95BC8014593E4A1503 /* KeyboardMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardMover.swift; sourceTree = "<group>"; };
 		D3CDBFE63817714B37D799F118A6F4D6 /* ValidationRuleSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleSet.swift; path = Validator/Validator/ValidationRuleSet.swift; sourceTree = "<group>"; };
 		D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		D638F00B3CC3DA185636CD889FE67374 /* Validator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7005E054DEAE5416A680334CC66BDAE /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D7A1C5A4F4E5C840362DB8BCC431B2B7 /* ValidationRulePattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRulePattern.swift; path = Validator/Validator/Rules/ValidationRulePattern.swift; sourceTree = "<group>"; };
 		DB7864F59ED41ADEC31DCF78306BF927 /* Pods-LoginKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		DBEEA16E096031FB8FE8B658D7A979E3 /* LoginViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		DDAC2C460B76D0920A506ABB9EDE3C67 /* LoginKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginKit-umbrella.h"; sourceTree = "<group>"; };
 		E12DCE3FAB2CFCECE35BAA366FE3D99E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E985B78AA6B4EE5E1C6832DFB4E0B626 /* LoginKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginKit-prefix.pch"; sourceTree = "<group>"; };
+		E247A74BDBC0A2E9697F86A5163BE36F /* LoginKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoginKit.xcconfig; sourceTree = "<group>"; };
+		E575FCBD40CFECE2F54C82792416B2C6 /* SignupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E98F9E1E5DBFC6EDFCEE0CE1B53D52FF /* InitialViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		EC9EBC2F981BD8F78E44A559B06276B1 /* Validator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Validator-umbrella.h"; sourceTree = "<group>"; };
 		ED53A76F2069473857EB6D5A0AB01AAB /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
 		EF10F3DB0C625C8245859BDF3FF71FB2 /* Pods-LoginKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F011AA68A6D631AACBCFAA017ECAEA3E /* Pods-LoginKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F231027D34B6E543AD6C0AC83B833A52 /* Pods-LoginKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F2366C51D5122C21A8BD498229BA8716 /* Validator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Validator-prefix.pch"; sourceTree = "<group>"; };
-		F5F0216CDBECFC57FE4D6746C4F2CEE5 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		F64C554C7109DE1A6A57592E86DA53E7 /* CaseValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseValidationPattern.swift; path = Validator/Validator/CaseValidationPattern.swift; sourceTree = "<group>"; };
-		F97C96BB5AF813FA025C6D2F6A80C429 /* Initial.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		FBDDE0F86DD39A0497F225841AB2D606 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
-		FE2CB70AFE312309B9FC713A156CFAE2 /* PasswordViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,19 +205,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DCD571CFD80FBC9E167F2D49CF79AA2 /* Frameworks */ = {
+		13C290F73E69BE1F0E15D08679D6C81F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA75AA2AE0E321ED57955C73F0E8628 /* Foundation.framework in Frameworks */,
-				4087F2467C8337068FAFC7EE9198E29C /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7081E050AF7639A7B6973B38FCE3E50B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FB8D7E891B9118ED2235AD216091CA2F /* Foundation.framework in Frameworks */,
+				DF6A0C1DF3E9534809429D70359A7861 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,21 +222,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F00AA003B19E6227445106D78621B214 /* Frameworks */ = {
+		B3A9C60D2E0E37B7E77874EA28D2F641 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				243590AEE93B727D65D165E6988E26E2 /* Foundation.framework in Frameworks */,
-				9DD9A7A2CE10B5616A8857067C483075 /* SkyFloatingLabelTextField.framework in Frameworks */,
-				40D8BFD785924CBAF60520D9B6981A06 /* Validator.framework in Frameworks */,
+				460DFE1C8BC25C029CA9950666A35194 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9B20E929B2DDE974F9A6FBAFA898466 /* Frameworks */ = {
+		C4E4DEC60673D9AB9EF1AD9FF626897B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EDA302BD818BDAE80CC6EB69692B6D0 /* Foundation.framework in Frameworks */,
+				9726648E6B1F332D13CE7D9C240A61EC /* Foundation.framework in Frameworks */,
+				8D87153D76DDC72A06467BC88D3484FA /* SkyFloatingLabelTextField.framework in Frameworks */,
+				A3473C0A4B65F7962835BBEDBC9F87CB /* Validator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +268,26 @@
 			path = "../Target Support Files/Validator";
 			sourceTree = "<group>";
 		};
-		216404D5019675937BB1F66CFB84C988 /* Products */ = {
+		14F8711E37B3E4C300DFE86BFE03805B /* LoginKit */ = {
 			isa = PBXGroup;
 			children = (
-				260008A361011DDC4BB43FDAA8F0C366 /* LoginKit.bundle */,
-				78D8242E116EF0BF7F94BC905E4A961B /* LoginKit.framework */,
-				B7346155BA8FD002A30F3F08B46371E6 /* Pods_LoginKit_Example.framework */,
-				AA82C5C73305B0391689D906395A40E7 /* Pods_LoginKit_Tests.framework */,
-				5004CDBB2B55F22EBF1A886865950840 /* SkyFloatingLabelTextField.framework */,
-				AB3009D6FCD2439F52A4FE7D5FFE6B23 /* Validator.framework */,
+				8B963B98CA727151D8889E4C2EB28A54 /* Assets */,
 			);
-			name = Products;
+			path = LoginKit;
+			sourceTree = "<group>";
+		};
+		17ACA30E979E35487FF67FEDBBCD040B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				085105F280CECF1252B4AD173147C275 /* Info.plist */,
+				113A01A003D2C1D0C29439F2F10384AB /* LoginKit.modulemap */,
+				E247A74BDBC0A2E9697F86A5163BE36F /* LoginKit.xcconfig */,
+				A194D971F9E25F15FF53FFFCC8A31769 /* LoginKit-dummy.m */,
+				5E98BC050840A782BF5D64053B26AF08 /* LoginKit-prefix.pch */,
+				4583577E374E9D68C40711C560AC2CF8 /* LoginKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LoginKit";
 			sourceTree = "<group>";
 		};
 		227672A53986AE290B46B5A3E0C34CF5 /* Frameworks */ = {
@@ -306,35 +300,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2DF3D7A7335F97B9322AFDB1C08529F7 /* Support Files */ = {
+		409B48FFF60173C7D8EFC7666F8B6EEB /* LoginKit */ = {
 			isa = PBXGroup;
 			children = (
-				10012892EDF55CFE0C901DB7D705A8F5 /* Info.plist */,
-				AE41ED825215C3A2F3ADB253E9116425 /* LoginKit.modulemap */,
-				01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */,
-				8A11831E0CB70B5ABCEFA9A979D7D29C /* LoginKit-dummy.m */,
-				E985B78AA6B4EE5E1C6832DFB4E0B626 /* LoginKit-prefix.pch */,
-				DDAC2C460B76D0920A506ABB9EDE3C67 /* LoginKit-umbrella.h */,
-				C08DD05A3F480AAB9C96CF7FA2496D43 /* ResourceBundle-LoginKit-Info.plist */,
+				A01AE0A1CD19A663037EC16E3F47746E /* LoginKit */,
+				FA54D9F0242C0D7BBEA0ECBE6F11D206 /* Resources */,
+				17ACA30E979E35487FF67FEDBBCD040B /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LoginKit";
-			sourceTree = "<group>";
-		};
-		3BD331FDC65910D9EAB20B69B7936DA8 /* LoginKit */ = {
-			isa = PBXGroup;
-			children = (
-				B54746C4BDADEAB791D44FB729C661CC /* Classes */,
-			);
-			path = LoginKit;
-			sourceTree = "<group>";
-		};
-		44B8FFD042B2A79AC2E3144754EA0376 /* LoginKit */ = {
-			isa = PBXGroup;
-			children = (
-				B58B7C7C6F9D39F3496F5790FC8CE0B3 /* Assets */,
-			);
-			path = LoginKit;
+			name = LoginKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		57F5791FD86AF9A4A6811C7790DC8818 /* Pods */ = {
@@ -362,17 +336,54 @@
 				87899376B68CE3E91CEE71E10AE6FF4C /* Development Pods */,
 				227672A53986AE290B46B5A3E0C34CF5 /* Frameworks */,
 				57F5791FD86AF9A4A6811C7790DC8818 /* Pods */,
-				216404D5019675937BB1F66CFB84C988 /* Products */,
+				C38F43A5957F021383B831EEBF8341D8 /* Products */,
 				7824126400105F6F3B9F47B7C8E9EB13 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7EF2724874CC0C7212977AB784000EB0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6067AB9FCA40ACA96D09003BE329E8FA /* BackgroundMover.swift */,
+				720F46C0AEDD05BB85E9F9C25C186A87 /* Buttn.swift */,
+				B83479DD073846EA2826F55ED1FCF349 /* CrossDissolveAnimation.swift */,
+				C981EF1FF3AF7DE7C135AED2CC54DB3F /* InitialViewController.swift */,
+				D36E75071401FC95BC8014593E4A1503 /* KeyboardMover.swift */,
+				9F47820344D3E39D0074E2D1FE9EC143 /* LoginCoordinator.swift */,
+				D7005E054DEAE5416A680334CC66BDAE /* LoginViewController.swift */,
+				65BEEB3AF7D9CAFF122A4F5057623E7C /* PasswordViewController.swift */,
+				E575FCBD40CFECE2F54C82792416B2C6 /* SignupViewController.swift */,
+				06C44C431DFF61F00051EA6C /* GradientImageView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		87899376B68CE3E91CEE71E10AE6FF4C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F462C20B920B9B132A4C567ACBBFDAA0 /* LoginKit */,
+				409B48FFF60173C7D8EFC7666F8B6EEB /* LoginKit */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8B963B98CA727151D8889E4C2EB28A54 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E98F9E1E5DBFC6EDFCEE0CE1B53D52FF /* InitialViewController.xib */,
+				86C9244B763CCE4356855A535CBC3FC2 /* LoginViewController.xib */,
+				34D4FD0C8DAB81142864F2BFC8B0534D /* Media.xcassets */,
+				9E221F12CBA562147DDCF7F0CCB2A30E /* PasswordViewController.xib */,
+				CB2B6D36B9CE6F4740F957BD41D4EFFE /* SignupViewController.xib */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A01AE0A1CD19A663037EC16E3F47746E /* LoginKit */ = {
+			isa = PBXGroup;
+			children = (
+				7EF2724874CC0C7212977AB784000EB0 /* Classes */,
+			);
+			path = LoginKit;
 			sourceTree = "<group>";
 		};
 		AE6A92B7BF7DA84E62DA844F0FD3D098 /* Validator */ = {
@@ -405,34 +416,6 @@
 			path = Validator;
 			sourceTree = "<group>";
 		};
-		B54746C4BDADEAB791D44FB729C661CC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D30852B4EEC0A2DB100A088F1FF55BA0 /* BackgroundMover.swift */,
-				BFAE6BDCCE76CFC9F6D4D35DA59B2313 /* Buttn.swift */,
-				4514E8E4D8F394566A35BDB3ACB3BF54 /* InitialViewController.swift */,
-				BBA40FA38E19D084478B9FAEE7EAB739 /* KeyboardMover.swift */,
-				0C343AB6B4E689E3C878F091033265C5 /* LoginViewController.swift */,
-				FE2CB70AFE312309B9FC713A156CFAE2 /* PasswordViewController.swift */,
-				1CDEB118337E49AD35CB3E0DFC37F402 /* SignupViewController.swift */,
-				06B0C60F1DFF29F400D10033 /* CrossDissolveAnimation.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		B58B7C7C6F9D39F3496F5790FC8CE0B3 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				F97C96BB5AF813FA025C6D2F6A80C429 /* Initial.storyboard */,
-				C409E562F385069C2CC4061C4BCF08A5 /* InitialViewController.xib */,
-				DBEEA16E096031FB8FE8B658D7A979E3 /* LoginViewController.xib */,
-				F5F0216CDBECFC57FE4D6746C4F2CEE5 /* Media.xcassets */,
-				CCB3290F09DF72580D9ED43DDC530C52 /* PasswordViewController.xib */,
-				51DCDA6A64E6A773F5489C0DDCF180F9 /* SignupViewController.xib */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 		B85C756991909FFF4CCAF02C8BF71D00 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,12 +443,16 @@
 			path = "Target Support Files/Pods-LoginKit_Example";
 			sourceTree = "<group>";
 		};
-		D4AAB3E942A22B051E6EE0920FAB3196 /* Resources */ = {
+		C38F43A5957F021383B831EEBF8341D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44B8FFD042B2A79AC2E3144754EA0376 /* LoginKit */,
+				CE8E301A076CAE2106B2CB4DA917D40F /* LoginKit.framework */,
+				31E7CCD5415EC552A739D0826D0F27BB /* Pods_LoginKit_Example.framework */,
+				601A3D61E3E079934F44422478654117 /* Pods_LoginKit_Tests.framework */,
+				10E39F3FBF42D0265A38EB57C20FD79C /* SkyFloatingLabelTextField.framework */,
+				D638F00B3CC3DA185636CD889FE67374 /* Validator.framework */,
 			);
-			name = Resources;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E8C054B778E671C8A0D25B62E15A5604 /* Pods-LoginKit_Tests */ = {
@@ -486,15 +473,12 @@
 			path = "Target Support Files/Pods-LoginKit_Tests";
 			sourceTree = "<group>";
 		};
-		F462C20B920B9B132A4C567ACBBFDAA0 /* LoginKit */ = {
+		FA54D9F0242C0D7BBEA0ECBE6F11D206 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3BD331FDC65910D9EAB20B69B7936DA8 /* LoginKit */,
-				D4AAB3E942A22B051E6EE0920FAB3196 /* Resources */,
-				2DF3D7A7335F97B9322AFDB1C08529F7 /* Support Files */,
+				14F8711E37B3E4C300DFE86BFE03805B /* LoginKit */,
 			);
-			name = LoginKit;
-			path = ../..;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FE12BB2A50518DFD43E0E18049DDAFE3 /* Support Files */ = {
@@ -514,6 +498,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0F139A04A48961C222916B508B649F60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAF2287CFDDEF81165FC00B0530032F /* LoginKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2206A1F23254D2B47C0B976B3051D251 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67468B5620D518FB5144E532531AF40 /* Validator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24500355664B020A6A5006E79E9CD726 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,27 +522,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		551C805E54F533DF11437A733CD13CF5 /* Headers */ = {
+		6C8696F90C420B34F162F1E785854B8D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3807209E73CEE1ED372097E18665010F /* Validator-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEE76C304D187D1480DD881D67645BC9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D0662B029EB89D182EA69BB809ACA17 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BDC857046F03EDCB148E1DAA610CB95A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E006A40EFB4832A85B3BB3A7CFD2AAA3 /* LoginKit-umbrella.h in Headers */,
+				F54E8734E1BED67BFB6B26A83F0769B8 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +541,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		295CF4E7DFD26CB673234255C1C72667 /* SkyFloatingLabelTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE9CBA5ED6D596FCC4D14AD5B2439C5 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildPhases = (
+				22DA1F88431EC34B868F06176790FEF1 /* Sources */,
+				B3A9C60D2E0E37B7E77874EA28D2F641 /* Frameworks */,
+				6C8696F90C420B34F162F1E785854B8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyFloatingLabelTextField;
+			productName = SkyFloatingLabelTextField;
+			productReference = 10E39F3FBF42D0265A38EB57C20FD79C /* SkyFloatingLabelTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		57BE668B1099D4EFA10657148669BFB2 /* Pods-LoginKit_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAC23080655E36E2B64A894ACF43FD79 /* Build configuration list for PBXNativeTarget "Pods-LoginKit_Example" */;
@@ -574,80 +575,28 @@
 			);
 			name = "Pods-LoginKit_Example";
 			productName = "Pods-LoginKit_Example";
-			productReference = B7346155BA8FD002A30F3F08B46371E6 /* Pods_LoginKit_Example.framework */;
+			productReference = 31E7CCD5415EC552A739D0826D0F27BB /* Pods_LoginKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		74D71AA449D83B8950846CBEA3A92055 /* SkyFloatingLabelTextField */ = {
+		6E7D7E9DFC92AFC14E7C80464FEF2787 /* LoginKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18478D68CAA48737F9999ED65F11637D /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildConfigurationList = AC4BED669B7A97C17455BFA2CC863F8C /* Build configuration list for PBXNativeTarget "LoginKit" */;
 			buildPhases = (
-				3354909558B255B379A57FA74598FE38 /* Sources */,
-				F9B20E929B2DDE974F9A6FBAFA898466 /* Frameworks */,
-				AEE76C304D187D1480DD881D67645BC9 /* Headers */,
+				F9CACF71B083D14C20A5315F470AB614 /* Sources */,
+				C4E4DEC60673D9AB9EF1AD9FF626897B /* Frameworks */,
+				A0042A1947C79BD06E626A5014C26A78 /* Resources */,
+				0F139A04A48961C222916B508B649F60 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = SkyFloatingLabelTextField;
-			productName = SkyFloatingLabelTextField;
-			productReference = 5004CDBB2B55F22EBF1A886865950840 /* SkyFloatingLabelTextField.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7AE73C6C0201CE45889B57A93BCF0207 /* Validator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D7CF64BD15AE9779D149354D57C8B811 /* Build configuration list for PBXNativeTarget "Validator" */;
-			buildPhases = (
-				06BF74AA8B2099BABC8290664A768837 /* Sources */,
-				4DCD571CFD80FBC9E167F2D49CF79AA2 /* Frameworks */,
-				551C805E54F533DF11437A733CD13CF5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Validator;
-			productName = Validator;
-			productReference = AB3009D6FCD2439F52A4FE7D5FFE6B23 /* Validator.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9D5D0E8A6D20092EF3F58790E933C35D /* LoginKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB017425A95AFE04C7512C0AD48DE979 /* Build configuration list for PBXNativeTarget "LoginKit" */;
-			buildPhases = (
-				C46E44CA15C4F863171C9CD9197DA025 /* Sources */,
-				F00AA003B19E6227445106D78621B214 /* Frameworks */,
-				CF48385EC1A8B367E4EEFE12CF587A20 /* Resources */,
-				BDC857046F03EDCB148E1DAA610CB95A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C07501BA6FCF124ECB6794182A42F31C /* PBXTargetDependency */,
-				565454DA2BE7FA518C222B75006E61E4 /* PBXTargetDependency */,
-				B49D7FF6A6A719ABF4EBAA6FCD01154F /* PBXTargetDependency */,
+				172C3DBA0602A7AB2C8E31DE6C4979A9 /* PBXTargetDependency */,
+				E0F23AA4AFE02A2321B9E9E1AB973687 /* PBXTargetDependency */,
 			);
 			name = LoginKit;
 			productName = LoginKit;
-			productReference = 78D8242E116EF0BF7F94BC905E4A961B /* LoginKit.framework */;
+			productReference = CE8E301A076CAE2106B2CB4DA917D40F /* LoginKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		B75219B6A537371A0FD26EB9DAD6FAFC /* LoginKit-LoginKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F35BC4C6B45F7D8E72A999DF15012EAB /* Build configuration list for PBXNativeTarget "LoginKit-LoginKit" */;
-			buildPhases = (
-				20893B78ED2363B79D638A3CEF0A08B1 /* Sources */,
-				7081E050AF7639A7B6973B38FCE3E50B /* Frameworks */,
-				1160CBB0F7BA37A7EC63D3DC41C404DC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LoginKit-LoginKit";
-			productName = "LoginKit-LoginKit";
-			productReference = 260008A361011DDC4BB43FDAA8F0C366 /* LoginKit.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 		DC98C4398E5C0084C2E407ED82FB4AE9 /* Pods-LoginKit_Tests */ = {
 			isa = PBXNativeTarget;
@@ -663,7 +612,24 @@
 			);
 			name = "Pods-LoginKit_Tests";
 			productName = "Pods-LoginKit_Tests";
-			productReference = AA82C5C73305B0391689D906395A40E7 /* Pods_LoginKit_Tests.framework */;
+			productReference = 601A3D61E3E079934F44422478654117 /* Pods_LoginKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E22DC03434E39302E7E7E0D1F1839BAA /* Validator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08009EF2269A30393A36A43D45BAB2E6 /* Build configuration list for PBXNativeTarget "Validator" */;
+			buildPhases = (
+				AB8C2A1244E3C526624CF16E20912259 /* Sources */,
+				13C290F73E69BE1F0E15D08679D6C81F /* Frameworks */,
+				2206A1F23254D2B47C0B976B3051D251 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Validator;
+			productName = Validator;
+			productReference = D638F00B3CC3DA185636CD889FE67374 /* Validator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -683,90 +649,73 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 216404D5019675937BB1F66CFB84C988 /* Products */;
+			productRefGroup = C38F43A5957F021383B831EEBF8341D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D5D0E8A6D20092EF3F58790E933C35D /* LoginKit */,
-				B75219B6A537371A0FD26EB9DAD6FAFC /* LoginKit-LoginKit */,
+				6E7D7E9DFC92AFC14E7C80464FEF2787 /* LoginKit */,
 				57BE668B1099D4EFA10657148669BFB2 /* Pods-LoginKit_Example */,
 				DC98C4398E5C0084C2E407ED82FB4AE9 /* Pods-LoginKit_Tests */,
-				74D71AA449D83B8950846CBEA3A92055 /* SkyFloatingLabelTextField */,
-				7AE73C6C0201CE45889B57A93BCF0207 /* Validator */,
+				295CF4E7DFD26CB673234255C1C72667 /* SkyFloatingLabelTextField */,
+				E22DC03434E39302E7E7E0D1F1839BAA /* Validator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1160CBB0F7BA37A7EC63D3DC41C404DC /* Resources */ = {
+		A0042A1947C79BD06E626A5014C26A78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0E13CDA458F14A2E7DFF159320E0E6 /* Initial.storyboard in Resources */,
-				9D9D52F9509ABCE553FD0FB322AC5EBD /* InitialViewController.xib in Resources */,
-				42E53A22DFB27691D660BB1D181055FC /* LoginViewController.xib in Resources */,
-				F6350A0B32623ABA2E3FF62553A17ECD /* Media.xcassets in Resources */,
-				C87D3EA40DBCEB0D5C093B20296930DA /* PasswordViewController.xib in Resources */,
-				9AE40854654582F48D3A7EDFD3AC7381 /* SignupViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF48385EC1A8B367E4EEFE12CF587A20 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E816079EEBEFF95B19A141103965C22 /* LoginKit.bundle in Resources */,
+				42A192B6232D177EC169104E0754C64A /* InitialViewController.xib in Resources */,
+				43B2979A6A430462B0504FB256FA377F /* LoginViewController.xib in Resources */,
+				922A23312F5ACA098237BDBC4C1A492D /* Media.xcassets in Resources */,
+				5E936DC5CE497441239C6C022B2A5496 /* PasswordViewController.xib in Resources */,
+				2FBA959DE99F846D4A5C0AFB2BA43847 /* SignupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06BF74AA8B2099BABC8290664A768837 /* Sources */ = {
+		22DA1F88431EC34B868F06176790FEF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7272418C146C16D0C36DE41A48B7062C /* CaseValidationPattern.swift in Sources */,
-				0612D9E5EE5502A4CEB72CF56D307B5C /* ContainsNumberValidationPattern.swift in Sources */,
-				B246EB3A41A4FCECC189DFC6EAF3A5D9 /* EmailValidationPattern.swift in Sources */,
-				D2117602FABE6CA02CABEA54D90106F3 /* UISlider+Validator.swift in Sources */,
-				720159B5A13DB5217FA2EBB417F569E1 /* UITextField+Validator.swift in Sources */,
-				B35D088866FCB3ADFDFA7C0AB1B83E01 /* UITextView+Validator.swift in Sources */,
-				482F4E5DF3B0B7BE0308338589228F50 /* Validatable.swift in Sources */,
-				80C0E9F9743F14365252863AA1199EB8 /* ValidatableInterfaceElement.swift in Sources */,
-				0519836C6E982ABAD33F70AE4EBD5BB2 /* ValidationPattern.swift in Sources */,
-				E4C1BF7F021EC0B36987E787CD1568A7 /* ValidationResult.swift in Sources */,
-				4614F78E84EE307107598767B64C42B5 /* ValidationRule.swift in Sources */,
-				4B4F2F4FD6C901C0980F0C45FC363A26 /* ValidationRuleComparison.swift in Sources */,
-				224D26F320016ADDE404EE3CFAC28E5D /* ValidationRuleCondition.swift in Sources */,
-				060504022DD1B72E28C4B8801CF2721A /* ValidationRuleContains.swift in Sources */,
-				95B71101C1F64D9AB4BDA2C95C2B697C /* ValidationRuleEquality.swift in Sources */,
-				F2063291D8C126D01A0D20A953390F9E /* ValidationRuleLength.swift in Sources */,
-				0F526D4003F3047C0E87F0F8C8FC4144 /* ValidationRulePattern.swift in Sources */,
-				DCFAA40A25500A3233AB8877318533BC /* ValidationRulePaymentCard.swift in Sources */,
-				AB39BB64822432AFBD18FE0B31D798FE /* ValidationRuleRequired.swift in Sources */,
-				4255A989570EDDFFE56FE26A55526CA7 /* ValidationRuleSet.swift in Sources */,
-				51909E98B784699A80D2FA57A42BEA24 /* ValidationRuleURL.swift in Sources */,
-				BB58590F31971BE1B467AE33044CEA7C /* Validator-dummy.m in Sources */,
-				45FF5E8DDCAE263CD2C18AAA01DB96A9 /* Validator.swift in Sources */,
+				CD276C08E74C6EEBD5E42344C1F557B2 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				76C080569772648DCCA2C83107978994 /* SkyFloatingLabelTextField.swift in Sources */,
+				53F05F14CD59118EF5A9370A33BF16BC /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				955F3533B5FB81751CC85727E2F80618 /* UITextField+fixCaretPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20893B78ED2363B79D638A3CEF0A08B1 /* Sources */ = {
+		AB8C2A1244E3C526624CF16E20912259 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3354909558B255B379A57FA74598FE38 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36868BAEF2ED0CC9FF931A46CFC3CE46 /* SkyFloatingLabelTextField-dummy.m in Sources */,
-				3951248125F2509CA63600BA836EEA1E /* SkyFloatingLabelTextField.swift in Sources */,
-				7AB7824294C3DB9DB4022E976A13DB54 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
-				A767AE5811E938D821A14070DE383B86 /* UITextField+fixCaretPosition.swift in Sources */,
+				55732BF539D212CCEC3209A6BE991C7D /* CaseValidationPattern.swift in Sources */,
+				6E0CDFF78B0DC826BAFF07E3C748939E /* ContainsNumberValidationPattern.swift in Sources */,
+				25E34150344B7366F033C962F1FBEDDA /* EmailValidationPattern.swift in Sources */,
+				6BF8847C502424DD9450A21EBBA451EA /* UISlider+Validator.swift in Sources */,
+				46BADE858E171DD51EDC200286705858 /* UITextField+Validator.swift in Sources */,
+				0379C3CE6F583998E751D699064A66FD /* UITextView+Validator.swift in Sources */,
+				C6C7DCD57898F7D5164C957A408E0157 /* Validatable.swift in Sources */,
+				E672507012F93AFF9934222595C0272A /* ValidatableInterfaceElement.swift in Sources */,
+				B73748A05B44161B1B5976C6C42BCCAB /* ValidationPattern.swift in Sources */,
+				A0CD5787066B8C8B43C145481EB17DB5 /* ValidationResult.swift in Sources */,
+				AF879F881BF059B5A5E219C73E96B08F /* ValidationRule.swift in Sources */,
+				E6A32B6740367D6DD75F3F8D85ADA920 /* ValidationRuleComparison.swift in Sources */,
+				2FE8421844378908B43A0C2C0912E3CD /* ValidationRuleCondition.swift in Sources */,
+				EC150BCD97C17FEB4311CC4784611241 /* ValidationRuleContains.swift in Sources */,
+				5A04BADF767CDFC3130EF4EFAF4B87A2 /* ValidationRuleEquality.swift in Sources */,
+				083C40682FBF26FFC21CA9ED7FEF897F /* ValidationRuleLength.swift in Sources */,
+				C7E6CD9F22552D3C35763E9AAC903035 /* ValidationRulePattern.swift in Sources */,
+				41DE5F5FFB46C14D0B5495C7623A67B4 /* ValidationRulePaymentCard.swift in Sources */,
+				7EAF43A2B6D7FC1177F4AA3EBBE056E3 /* ValidationRuleRequired.swift in Sources */,
+				9A03E34831EF048EA666EB4E854F2240 /* ValidationRuleSet.swift in Sources */,
+				DD3AEFF7FB2264C9B3BA33ABDEEA9CF8 /* ValidationRuleURL.swift in Sources */,
+				1F1DD7A0DFD236BF76E0241AF2E71CA2 /* Validator-dummy.m in Sources */,
+				903F80762317159386A1EE750C59FEDE /* Validator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,22 +727,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C46E44CA15C4F863171C9CD9197DA025 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3DD00C6371579DE53F556DE4A107D13 /* BackgroundMover.swift in Sources */,
-				83B7FD239BC03BF9057237DC66FFB1BF /* Buttn.swift in Sources */,
-				2BAAA98B3DB5D4431AFA659D45DE986B /* InitialViewController.swift in Sources */,
-				6E092C60E8A25991F413263ACE1EC5CD /* KeyboardMover.swift in Sources */,
-				93A5CC35ADAE3E59565BEF5BC4E06C7F /* LoginKit-dummy.m in Sources */,
-				DFDBE970B9DFE5B8D863CB4563A8C801 /* LoginViewController.swift in Sources */,
-				C3357B40865A4859F69EEBD614CFEFC5 /* PasswordViewController.swift in Sources */,
-				06B0C6101DFF29F400D10033 /* CrossDissolveAnimation.swift in Sources */,
-				76FF1A95DEF8A90D0B90EFD865129420 /* SignupViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C5D639DF47D642A14BACC0A19A3F18D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -802,44 +735,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9CACF71B083D14C20A5315F470AB614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0D243C864A5FF083A4E2DA617FEC725 /* BackgroundMover.swift in Sources */,
+				68D20FF3FEDB50704702E0488694189B /* Buttn.swift in Sources */,
+				124768495725B84CB8146E38A8A019FE /* CrossDissolveAnimation.swift in Sources */,
+				5F533EBFD1ADA8D2FF6EF1CC1D0FE99D /* InitialViewController.swift in Sources */,
+				06C44C441DFF61F00051EA6C /* GradientImageView.swift in Sources */,
+				85CB7BCDB0C305128B40C5AD93F46F32 /* KeyboardMover.swift in Sources */,
+				0DF8A39E09E3EDFD01A970E81AA8B82F /* LoginCoordinator.swift in Sources */,
+				FA5E485E849482713BD5FF43D86E5208 /* LoginKit-dummy.m in Sources */,
+				AEA699524F3ADBBC167AE6EEF335F8E0 /* LoginViewController.swift in Sources */,
+				79719ADE1DC222DAB8EC79F283909451 /* PasswordViewController.swift in Sources */,
+				89F734F6D5B2EF32ECC56557714705E0 /* SignupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		565454DA2BE7FA518C222B75006E61E4 /* PBXTargetDependency */ = {
+		172C3DBA0602A7AB2C8E31DE6C4979A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SkyFloatingLabelTextField;
-			target = 74D71AA449D83B8950846CBEA3A92055 /* SkyFloatingLabelTextField */;
-			targetProxy = D274B74A0B0C185A1193137B201CCEE3 /* PBXContainerItemProxy */;
+			target = 295CF4E7DFD26CB673234255C1C72667 /* SkyFloatingLabelTextField */;
+			targetProxy = FA495069969763B4E53EF2D638ED3B39 /* PBXContainerItemProxy */;
 		};
 		60749D1670FA870DF24DC2DE371C5DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LoginKit;
-			target = 9D5D0E8A6D20092EF3F58790E933C35D /* LoginKit */;
+			target = 6E7D7E9DFC92AFC14E7C80464FEF2787 /* LoginKit */;
 			targetProxy = 6A7E8874F18903CF0A9A19B8A6E0D74A /* PBXContainerItemProxy */;
 		};
 		6E5107B96DBF0AE426F7CEEDF48566CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SkyFloatingLabelTextField;
-			target = 74D71AA449D83B8950846CBEA3A92055 /* SkyFloatingLabelTextField */;
+			target = 295CF4E7DFD26CB673234255C1C72667 /* SkyFloatingLabelTextField */;
 			targetProxy = 048D6C109B077047A4BB44C4A121B671 /* PBXContainerItemProxy */;
 		};
 		7D8AA6360544D07B3FBFABE540C7E6B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Validator;
-			target = 7AE73C6C0201CE45889B57A93BCF0207 /* Validator */;
+			target = E22DC03434E39302E7E7E0D1F1839BAA /* Validator */;
 			targetProxy = 61D7CCF6880EF88E3B6DA9D5CD38B0DF /* PBXContainerItemProxy */;
 		};
-		B49D7FF6A6A719ABF4EBAA6FCD01154F /* PBXTargetDependency */ = {
+		E0F23AA4AFE02A2321B9E9E1AB973687 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Validator;
-			target = 7AE73C6C0201CE45889B57A93BCF0207 /* Validator */;
-			targetProxy = 7EE318E231753CA263255E8537C7B991 /* PBXContainerItemProxy */;
-		};
-		C07501BA6FCF124ECB6794182A42F31C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LoginKit-LoginKit";
-			target = B75219B6A537371A0FD26EB9DAD6FAFC /* LoginKit-LoginKit */;
-			targetProxy = D2961328A8459D52CD1357579318515A /* PBXContainerItemProxy */;
+			target = E22DC03434E39302E7E7E0D1F1839BAA /* Validator */;
+			targetProxy = E78D749A4934E5937B3A5D8820BF3BFC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -879,9 +824,9 @@
 			};
 			name = Release;
 		};
-		27EF5C8AC08528CD77C72A37A38B919C /* Debug */ = {
+		2747C5EF57771912C539984ECB6F408E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = 5F27120A893267B3169A874812F8430B /* Validator.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -894,14 +839,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Validator/Validator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Validator/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Validator/Validator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = Validator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -982,9 +927,41 @@
 			};
 			name = Debug;
 		};
-		3C21F02E1B48878E61B915E3969D2B67 /* Debug */ = {
+		54677CFDCB44B3FC7693163D9278E1F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F27120A893267B3169A874812F8430B /* Validator.xcconfig */;
+			baseConfigurationReference = D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56D441BDD35C085330B2D26B36FA8464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E247A74BDBC0A2E9697F86A5163BE36F /* LoginKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -997,14 +974,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Validator/Validator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Validator/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LoginKit/LoginKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoginKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Validator/Validator.modulemap";
+				MODULEMAP_FILE = "Target Support Files/LoginKit/LoginKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Validator;
+				PRODUCT_NAME = LoginKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1012,23 +989,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		450D1827566EBF584435D12838E317CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LoginKit";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/LoginKit/ResourceBundle-LoginKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = LoginKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -1075,70 +1035,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		7B6039A474431325CAF5C636135EBADA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LoginKit/LoginKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LoginKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LoginKit/LoginKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LoginKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8B8C0FA82E885A6E37C96467A900A053 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		A51B690861AC93669ED1E7C84100617D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1216,57 +1112,7 @@
 			};
 			name = Release;
 		};
-		BCF24F3C349DBE56AC6DF452C0072621 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LoginKit/LoginKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LoginKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LoginKit/LoginKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LoginKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DF3C850DAA0F361B687B26BC167C08BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LoginKit";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/LoginKit/ResourceBundle-LoginKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = LoginKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		F7BF046937C680C085B0921858846E70 /* Release */ = {
+		BBEC249D52AC31A8AF425BE7157A6023 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F27120A893267B3169A874812F8430B /* Validator.xcconfig */;
 			buildSettings = {
@@ -1298,14 +1144,79 @@
 			};
 			name = Release;
 		};
+		C162C6B2D1204ADF531CD729994AA9B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E247A74BDBC0A2E9697F86A5163BE36F /* LoginKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LoginKit/LoginKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoginKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LoginKit/LoginKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LoginKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D39008DCCB37F7D076F0AE5BF2AB13B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18478D68CAA48737F9999ED65F11637D /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+		08009EF2269A30393A36A43D45BAB2E6 /* Build configuration list for PBXNativeTarget "Validator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27EF5C8AC08528CD77C72A37A38B919C /* Debug */,
-				8B8C0FA82E885A6E37C96467A900A053 /* Release */,
+				2747C5EF57771912C539984ECB6F408E /* Debug */,
+				BBEC249D52AC31A8AF425BE7157A6023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1337,29 +1248,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7CF64BD15AE9779D149354D57C8B811 /* Build configuration list for PBXNativeTarget "Validator" */ = {
+		AC4BED669B7A97C17455BFA2CC863F8C /* Build configuration list for PBXNativeTarget "LoginKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C21F02E1B48878E61B915E3969D2B67 /* Debug */,
-				F7BF046937C680C085B0921858846E70 /* Release */,
+				56D441BDD35C085330B2D26B36FA8464 /* Debug */,
+				C162C6B2D1204ADF531CD729994AA9B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F35BC4C6B45F7D8E72A999DF15012EAB /* Build configuration list for PBXNativeTarget "LoginKit-LoginKit" */ = {
+		AFE9CBA5ED6D596FCC4D14AD5B2439C5 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				450D1827566EBF584435D12838E317CE /* Debug */,
-				DF3C850DAA0F361B687B26BC167C08BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB017425A95AFE04C7512C0AD48DE979 /* Build configuration list for PBXNativeTarget "LoginKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BCF24F3C349DBE56AC6DF452C0072621 /* Debug */,
-				7B6039A474431325CAF5C636135EBADA /* Release */,
+				D39008DCCB37F7D076F0AE5BF2AB13B7 /* Debug */,
+				54677CFDCB44B3FC7693163D9278E1F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

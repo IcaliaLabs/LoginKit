@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
 import SkyFloatingLabelTextField
+
+protocol SignupViewControllerDelegate: class {
+
+    func signupDidSelectBack()
+    func didSelectSignup(email: String, name: String, password: String)
+
+}
 
 class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable {
 
     // MARK: - Properties
+
+    weak var delegate: SignupViewControllerDelegate?
 
     var signupInProgress = false
 
@@ -40,7 +48,6 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // setupValidation()
         initKeyboardMover()
         initBackgroundMover()
     }
@@ -58,27 +65,15 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
         return .lightContent
     }
 
-    // MARK: - Network
-
-    func signup() {
-        guard signupInProgress == false else {
-            print("SIGNUP IN PROGRESS... ABORTING")
-            return
-        }
-
-        signupInProgress = true
-        // startActivityLoading()
-        // session shared session signup
-    }
-
     // MARK: - Action's
 
     @IBAction func didSelectBack(_ sender: AnyObject) {
-        _ = navigationController?.popViewController(animated: true)
+        delegate?.signupDidSelectBack()
     }
 
     @IBAction func didSelectSignup(_ sender: AnyObject) {
         // validator.validate(self)
+        delegate?.didSelectSignup(email: "", name: "", password: "")
     }
 
 }

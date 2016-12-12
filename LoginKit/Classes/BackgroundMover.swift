@@ -29,7 +29,6 @@ extension BackgroundMovable {
 
         let group = UIMotionEffectGroup()
         group.motionEffects = [verticalMotionEffect, horizontalMotionEffect]
-
         movableBackground.addMotionEffect(group)
     }
     

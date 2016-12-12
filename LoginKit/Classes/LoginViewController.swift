@@ -11,11 +11,19 @@ import UIKit
 import Validator
 import SkyFloatingLabelTextField
 
-// TODO: REPLACE: ActivityIndicatorViewable
+protocol LoginViewControllerDelegate: class {
+
+    func loginDidSelectBack()
+    func didSelectForgotPassword()
+    func didSelectLogin(email: String, password: String)
+
+}
 
 class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable {
 
     // MARK: - Properties
+
+    weak var delegate: LoginViewControllerDelegate?
 
     var loginInProgress = false {
         didSet {
@@ -34,7 +42,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
         }
     }
 
-    // MARK: Outlet's
+    // MARK: - Outlet's
 
     @IBOutlet var fields: Array<SkyFloatingLabelTextField> = []
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
@@ -68,29 +76,16 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     // MARK: - Action's
 
     @IBAction func didSelectBack(_ sender: AnyObject) {
-        _ = navigationController?.popViewController(animated: true)
+        delegate?.loginDidSelectBack()
     }
 
     @IBAction func didSelectLogin(_ sender: AnyObject) {
         // validator.validate(self)
+        delegate?.didSelectLogin(email: "", password: "")
     }
 
     @IBAction func didSelectForgotPassword(_ sender: AnyObject) {
-        // let controller = ViewController.passwordViewController.getController(inNavController: false)
-        // navigationController?.pushViewController(controller, animated: true)
-    }
-
-    // MARK: - Network
-
-    func login(_ username: String, password: String) {
-        guard loginInProgress == false else {
-            print("LOGIN IN PROGRESS... ABORTING")
-            return
-        }
-
-        loginInProgress = true
-        // startActivityLoading()
-        // Session.sharedSession.login
+        delegate?.didSelectForgotPassword()
     }
 
 }
@@ -118,7 +113,7 @@ extension LoginViewController {
         }
 
         resetFields()
-        login(username, password: password)
+        // login(username, password: password)
     }
 
 //    func validationFailed(_ errors: [(Validatable, ValidationError)]) {
