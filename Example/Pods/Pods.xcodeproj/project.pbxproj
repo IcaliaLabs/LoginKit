@@ -1,0 +1,1370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0519836C6E982ABAD33F70AE4EBD5BB2 /* ValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D458246D4FEC14888D4E83861688C9D /* ValidationPattern.swift */; };
+		060504022DD1B72E28C4B8801CF2721A /* ValidationRuleContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877B45ABAE34C6F69A1ACF07914F4998 /* ValidationRuleContains.swift */; };
+		0612D9E5EE5502A4CEB72CF56D307B5C /* ContainsNumberValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D6537877E968D76963AE88591883B /* ContainsNumberValidationPattern.swift */; };
+		06B0C6101DFF29F400D10033 /* CrossDissolveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B0C60F1DFF29F400D10033 /* CrossDissolveAnimation.swift */; };
+		0F526D4003F3047C0E87F0F8C8FC4144 /* ValidationRulePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A1C5A4F4E5C840362DB8BCC431B2B7 /* ValidationRulePattern.swift */; };
+		1BA75AA2AE0E321ED57955C73F0E8628 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
+		224D26F320016ADDE404EE3CFAC28E5D /* ValidationRuleCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855C48B169BA2CBD4A3DAE5738BEC8E4 /* ValidationRuleCondition.swift */; };
+		243590AEE93B727D65D165E6988E26E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
+		2BAAA98B3DB5D4431AFA659D45DE986B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514E8E4D8F394566A35BDB3ACB3BF54 /* InitialViewController.swift */; };
+		2D0662B029EB89D182EA69BB809ACA17 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4723CEDE22752645EBEE2D9B5E498D47 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36868BAEF2ED0CC9FF931A46CFC3CE46 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6D5CBA0729E48A02782473537B56C7 /* SkyFloatingLabelTextField-dummy.m */; };
+		3807209E73CEE1ED372097E18665010F /* Validator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9EBC2F981BD8F78E44A559B06276B1 /* Validator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3951248125F2509CA63600BA836EEA1E /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AF6AD4B0EC39EE02DC6BEA02C822A1 /* SkyFloatingLabelTextField.swift */; };
+		3E816079EEBEFF95B19A141103965C22 /* LoginKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 260008A361011DDC4BB43FDAA8F0C366 /* LoginKit.bundle */; };
+		4087F2467C8337068FAFC7EE9198E29C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032247F46B82069CED976EFDA76FA32 /* UIKit.framework */; };
+		40D8BFD785924CBAF60520D9B6981A06 /* Validator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA9BC5BC13B33DAE74E82593D4F02EE /* Validator.framework */; };
+		4255A989570EDDFFE56FE26A55526CA7 /* ValidationRuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDBFE63817714B37D799F118A6F4D6 /* ValidationRuleSet.swift */; };
+		42E53A22DFB27691D660BB1D181055FC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEEA16E096031FB8FE8B658D7A979E3 /* LoginViewController.xib */; };
+		45FF5E8DDCAE263CD2C18AAA01DB96A9 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A8D5B7E93C3A860836DC003B336521 /* Validator.swift */; };
+		4614F78E84EE307107598767B64C42B5 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0501DCF48E1247BB5D7C3E5C981A778 /* ValidationRule.swift */; };
+		482F4E5DF3B0B7BE0308338589228F50 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0895E28A4146B973C25579A2E4272A15 /* Validatable.swift */; };
+		4B4F2F4FD6C901C0980F0C45FC363A26 /* ValidationRuleComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656348955C156179507616D32F2463D /* ValidationRuleComparison.swift */; };
+		51909E98B784699A80D2FA57A42BEA24 /* ValidationRuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895F7509F79ECD073089D63D18B96983 /* ValidationRuleURL.swift */; };
+		6E092C60E8A25991F413263ACE1EC5CD /* KeyboardMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA40FA38E19D084478B9FAEE7EAB739 /* KeyboardMover.swift */; };
+		6EE04D27B1BFA99857AB3BE86838B048 /* Pods-LoginKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B4F487E5B6E21CC4811081C5D73AFF2 /* Pods-LoginKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		720159B5A13DB5217FA2EBB417F569E1 /* UITextField+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AF8FCF84F458EC0B6D79BE28E1EE14 /* UITextField+Validator.swift */; };
+		7272418C146C16D0C36DE41A48B7062C /* CaseValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C554C7109DE1A6A57592E86DA53E7 /* CaseValidationPattern.swift */; };
+		76B56567D2A0ED9A27444D0A7B623F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
+		76FF1A95DEF8A90D0B90EFD865129420 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDEB118337E49AD35CB3E0DFC37F402 /* SignupViewController.swift */; };
+		7AB7824294C3DB9DB4022E976A13DB54 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDE0F86DD39A0497F225841AB2D606 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		80C0E9F9743F14365252863AA1199EB8 /* ValidatableInterfaceElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F338B13C1175567F1AB5864397EEB3D /* ValidatableInterfaceElement.swift */; };
+		83B7FD239BC03BF9057237DC66FFB1BF /* Buttn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE6BDCCE76CFC9F6D4D35DA59B2313 /* Buttn.swift */; };
+		8EDA302BD818BDAE80CC6EB69692B6D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
+		93A5CC35ADAE3E59565BEF5BC4E06C7F /* LoginKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11831E0CB70B5ABCEFA9A979D7D29C /* LoginKit-dummy.m */; };
+		94720769ED5C1945107E7972F9E3682C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */; };
+		95B71101C1F64D9AB4BDA2C95C2B697C /* ValidationRuleEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CDD9F2694A220D30771CF3CE8988D /* ValidationRuleEquality.swift */; };
+		981F27DDA23B43797ADE87C2B7DD1A68 /* Pods-LoginKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D138542BF0822B59AAABDA5558A221 /* Pods-LoginKit_Example-dummy.m */; };
+		9AE40854654582F48D3A7EDFD3AC7381 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DCDA6A64E6A773F5489C0DDCF180F9 /* SignupViewController.xib */; };
+		9D9D52F9509ABCE553FD0FB322AC5EBD /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C409E562F385069C2CC4061C4BCF08A5 /* InitialViewController.xib */; };
+		9DD9A7A2CE10B5616A8857067C483075 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A96E69C3BCF9E353A1954FD988C42C /* SkyFloatingLabelTextField.framework */; };
+		A767AE5811E938D821A14070DE383B86 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013996F4E159E5ACB695F505E6BDF75 /* UITextField+fixCaretPosition.swift */; };
+		AB39BB64822432AFBD18FE0B31D798FE /* ValidationRuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78DB0D8AF898F644DBA6FA611ACAC17 /* ValidationRuleRequired.swift */; };
+		B246EB3A41A4FCECC189DFC6EAF3A5D9 /* EmailValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910F1D50A4F9B64C988BFCE084B6734 /* EmailValidationPattern.swift */; };
+		B35D088866FCB3ADFDFA7C0AB1B83E01 /* UITextView+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A31392F578F8FF77A6EC3620D4F424 /* UITextView+Validator.swift */; };
+		BB58590F31971BE1B467AE33044CEA7C /* Validator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A1DDEBAF1B6F3F4AE94231A92C8CF /* Validator-dummy.m */; };
+		C3357B40865A4859F69EEBD614CFEFC5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2CB70AFE312309B9FC713A156CFAE2 /* PasswordViewController.swift */; };
+		C87D3EA40DBCEB0D5C093B20296930DA /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB3290F09DF72580D9ED43DDC530C52 /* PasswordViewController.xib */; };
+		CA0E13CDA458F14A2E7DFF159320E0E6 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97C96BB5AF813FA025C6D2F6A80C429 /* Initial.storyboard */; };
+		D2117602FABE6CA02CABEA54D90106F3 /* UISlider+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC7D7B44942A035363A3B1F685FBCE /* UISlider+Validator.swift */; };
+		D3DD00C6371579DE53F556DE4A107D13 /* BackgroundMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30852B4EEC0A2DB100A088F1FF55BA0 /* BackgroundMover.swift */; };
+		DCFAA40A25500A3233AB8877318533BC /* ValidationRulePaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28596DCB0924A45B40A4FA9894E400 /* ValidationRulePaymentCard.swift */; };
+		DFDBE970B9DFE5B8D863CB4563A8C801 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C343AB6B4E689E3C878F091033265C5 /* LoginViewController.swift */; };
+		E006A40EFB4832A85B3BB3A7CFD2AAA3 /* LoginKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDAC2C460B76D0920A506ABB9EDE3C67 /* LoginKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4C1BF7F021EC0B36987E787CD1568A7 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE01126B18ECD33612611A3414759 /* ValidationResult.swift */; };
+		E65491964F239CA622A12A7C84DE701E /* Pods-LoginKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 603D65295DF11318833A4043A1793D77 /* Pods-LoginKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2063291D8C126D01A0D20A953390F9E /* ValidationRuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F85C92D00C21F64CE71E4D46E02E95 /* ValidationRuleLength.swift */; };
+		F6350A0B32623ABA2E3FF62553A17ECD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F0216CDBECFC57FE4D6746C4F2CEE5 /* Media.xcassets */; };
+		FD0995A0B51C1B909945324F1D66AC9A /* Pods-LoginKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7864F59ED41ADEC31DCF78306BF927 /* Pods-LoginKit_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		048D6C109B077047A4BB44C4A121B671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D71AA449D83B8950846CBEA3A92055;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+		61D7CCF6880EF88E3B6DA9D5CD38B0DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE73C6C0201CE45889B57A93BCF0207;
+			remoteInfo = Validator;
+		};
+		6A7E8874F18903CF0A9A19B8A6E0D74A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D5D0E8A6D20092EF3F58790E933C35D;
+			remoteInfo = LoginKit;
+		};
+		7EE318E231753CA263255E8537C7B991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE73C6C0201CE45889B57A93BCF0207;
+			remoteInfo = Validator;
+		};
+		D274B74A0B0C185A1193137B201CCEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D71AA449D83B8950846CBEA3A92055;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+		D2961328A8459D52CD1357579318515A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B75219B6A537371A0FD26EB9DAD6FAFC;
+			remoteInfo = "LoginKit-LoginKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoginKit.xcconfig; sourceTree = "<group>"; };
+		03773F28BD1CCE45D38BAAFEDD91AD0D /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		06B0C60F1DFF29F400D10033 /* CrossDissolveAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossDissolveAnimation.swift; sourceTree = "<group>"; };
+		086177A5FA54B13B5C2EB5C33A873D6F /* Pods-LoginKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LoginKit_Example.modulemap"; sourceTree = "<group>"; };
+		0895E28A4146B973C25579A2E4272A15 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Validator/Validator/Validatable.swift; sourceTree = "<group>"; };
+		0910F1D50A4F9B64C988BFCE084B6734 /* EmailValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailValidationPattern.swift; path = Validator/Validator/EmailValidationPattern.swift; sourceTree = "<group>"; };
+		0C343AB6B4E689E3C878F091033265C5 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		10012892EDF55CFE0C901DB7D705A8F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1656348955C156179507616D32F2463D /* ValidationRuleComparison.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleComparison.swift; path = Validator/Validator/Rules/ValidationRuleComparison.swift; sourceTree = "<group>"; };
+		1B4F487E5B6E21CC4811081C5D73AFF2 /* Pods-LoginKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoginKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1CDEB118337E49AD35CB3E0DFC37F402 /* SignupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		1D458246D4FEC14888D4E83861688C9D /* ValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationPattern.swift; path = Validator/Validator/ValidationPattern.swift; sourceTree = "<group>"; };
+		254C5A3628C4A88E5BA49DDC285D23FB /* Pods-LoginKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		260008A361011DDC4BB43FDAA8F0C366 /* LoginKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B41C8A368A3433A730E458165DCB1FE /* Pods-LoginKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginKit_Example-resources.sh"; sourceTree = "<group>"; };
+		30AF6AD4B0EC39EE02DC6BEA02C822A1 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		3132AE832FEF11DF083FF13DFE46D412 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38AF8FCF84F458EC0B6D79BE28E1EE14 /* UITextField+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UITextField+Validator.swift"; sourceTree = "<group>"; };
+		39A31392F578F8FF77A6EC3620D4F424 /* UITextView+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UITextView+Validator.swift"; sourceTree = "<group>"; };
+		3BFC7D7B44942A035363A3B1F685FBCE /* UISlider+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISlider+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UISlider+Validator.swift"; sourceTree = "<group>"; };
+		3E6CDD9F2694A220D30771CF3CE8988D /* ValidationRuleEquality.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleEquality.swift; path = Validator/Validator/Rules/ValidationRuleEquality.swift; sourceTree = "<group>"; };
+		4032247F46B82069CED976EFDA76FA32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		40F85C92D00C21F64CE71E4D46E02E95 /* ValidationRuleLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleLength.swift; path = Validator/Validator/Rules/ValidationRuleLength.swift; sourceTree = "<group>"; };
+		4514E8E4D8F394566A35BDB3ACB3BF54 /* InitialViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		4723CEDE22752645EBEE2D9B5E498D47 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		4BA9BC5BC13B33DAE74E82593D4F02EE /* Validator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0FFEBF2D8530DCA7EBB8C62D9B04C7 /* Pods-LoginKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5004CDBB2B55F22EBF1A886865950840 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DCDA6A64E6A773F5489C0DDCF180F9 /* SignupViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		58BEC412D9D0E57B55997B236A443FDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A06F04224121067CD9ADD804F05D9D6 /* Pods-LoginKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5F27120A893267B3169A874812F8430B /* Validator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Validator.xcconfig; sourceTree = "<group>"; };
+		603D65295DF11318833A4043A1793D77 /* Pods-LoginKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoginKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		69D138542BF0822B59AAABDA5558A221 /* Pods-LoginKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginKit_Example-dummy.m"; sourceTree = "<group>"; };
+		6C28596DCB0924A45B40A4FA9894E400 /* ValidationRulePaymentCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRulePaymentCard.swift; path = Validator/Validator/Rules/ValidationRulePaymentCard.swift; sourceTree = "<group>"; };
+		6C87D930A4E099952733B4DA016AF63B /* Pods-LoginKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		72A8D5B7E93C3A860836DC003B336521 /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Validator/Validator/Validator.swift; sourceTree = "<group>"; };
+		78D8242E116EF0BF7F94BC905E4A961B /* LoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8013996F4E159E5ACB695F505E6BDF75 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		855C48B169BA2CBD4A3DAE5738BEC8E4 /* ValidationRuleCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleCondition.swift; path = Validator/Validator/Rules/ValidationRuleCondition.swift; sourceTree = "<group>"; };
+		877B45ABAE34C6F69A1ACF07914F4998 /* ValidationRuleContains.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleContains.swift; path = Validator/Validator/Rules/ValidationRuleContains.swift; sourceTree = "<group>"; };
+		895F7509F79ECD073089D63D18B96983 /* ValidationRuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleURL.swift; path = Validator/Validator/Rules/ValidationRuleURL.swift; sourceTree = "<group>"; };
+		8A11831E0CB70B5ABCEFA9A979D7D29C /* LoginKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoginKit-dummy.m"; sourceTree = "<group>"; };
+		8F338B13C1175567F1AB5864397EEB3D /* ValidatableInterfaceElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatableInterfaceElement.swift; path = "Validator/Validator/UIKit+Validator/ValidatableInterfaceElement.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		989D6537877E968D76963AE88591883B /* ContainsNumberValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainsNumberValidationPattern.swift; path = Validator/Validator/ContainsNumberValidationPattern.swift; sourceTree = "<group>"; };
+		99A4282AD91E41F89D4E52EAD0C3CD67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0501DCF48E1247BB5D7C3E5C981A778 /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Validator/Validator/ValidationRule.swift; sourceTree = "<group>"; };
+		A1A96E69C3BCF9E353A1954FD988C42C /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24A1DDEBAF1B6F3F4AE94231A92C8CF /* Validator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Validator-dummy.m"; sourceTree = "<group>"; };
+		A39F0F93761FF6FC78382F7FD8694549 /* Pods-LoginKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		A77CE01126B18ECD33612611A3414759 /* ValidationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationResult.swift; path = Validator/Validator/ValidationResult.swift; sourceTree = "<group>"; };
+		A874042CC98C190D9EC63D0B75CBB630 /* Validator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Validator.modulemap; sourceTree = "<group>"; };
+		AA4CD3E57C52E3E17FA7925C011AA189 /* Pods-LoginKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoginKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AA82C5C73305B0391689D906395A40E7 /* Pods_LoginKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3009D6FCD2439F52A4FE7D5FFE6B23 /* Validator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE41ED825215C3A2F3ADB253E9116425 /* LoginKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoginKit.modulemap; sourceTree = "<group>"; };
+		B3BA0F0EC9A71DBC35F1840812A03F00 /* Pods-LoginKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6E0EB9F2A303A203AFC232C150ADBE6 /* Pods-LoginKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B7346155BA8FD002A30F3F08B46371E6 /* Pods_LoginKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA40FA38E19D084478B9FAEE7EAB739 /* KeyboardMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardMover.swift; sourceTree = "<group>"; };
+		BFAE6BDCCE76CFC9F6D4D35DA59B2313 /* Buttn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Buttn.swift; sourceTree = "<group>"; };
+		C08DD05A3F480AAB9C96CF7FA2496D43 /* ResourceBundle-LoginKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LoginKit-Info.plist"; sourceTree = "<group>"; };
+		C409E562F385069C2CC4061C4BCF08A5 /* InitialViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		C59DF2457CC4A9CAE83AE61968B9ADB9 /* Pods-LoginKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LoginKit_Tests.modulemap"; sourceTree = "<group>"; };
+		C78DB0D8AF898F644DBA6FA611ACAC17 /* ValidationRuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleRequired.swift; path = Validator/Validator/Rules/ValidationRuleRequired.swift; sourceTree = "<group>"; };
+		CA6D5CBA0729E48A02782473537B56C7 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		CCB3290F09DF72580D9ED43DDC530C52 /* PasswordViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
+		D30852B4EEC0A2DB100A088F1FF55BA0 /* BackgroundMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundMover.swift; sourceTree = "<group>"; };
+		D3CDBFE63817714B37D799F118A6F4D6 /* ValidationRuleSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleSet.swift; path = Validator/Validator/ValidationRuleSet.swift; sourceTree = "<group>"; };
+		D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		D7A1C5A4F4E5C840362DB8BCC431B2B7 /* ValidationRulePattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRulePattern.swift; path = Validator/Validator/Rules/ValidationRulePattern.swift; sourceTree = "<group>"; };
+		DB7864F59ED41ADEC31DCF78306BF927 /* Pods-LoginKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		DBEEA16E096031FB8FE8B658D7A979E3 /* LoginViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DDAC2C460B76D0920A506ABB9EDE3C67 /* LoginKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginKit-umbrella.h"; sourceTree = "<group>"; };
+		E12DCE3FAB2CFCECE35BAA366FE3D99E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E985B78AA6B4EE5E1C6832DFB4E0B626 /* LoginKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginKit-prefix.pch"; sourceTree = "<group>"; };
+		EC9EBC2F981BD8F78E44A559B06276B1 /* Validator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Validator-umbrella.h"; sourceTree = "<group>"; };
+		ED53A76F2069473857EB6D5A0AB01AAB /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		EF10F3DB0C625C8245859BDF3FF71FB2 /* Pods-LoginKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F011AA68A6D631AACBCFAA017ECAEA3E /* Pods-LoginKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F231027D34B6E543AD6C0AC83B833A52 /* Pods-LoginKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2366C51D5122C21A8BD498229BA8716 /* Validator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Validator-prefix.pch"; sourceTree = "<group>"; };
+		F5F0216CDBECFC57FE4D6746C4F2CEE5 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F64C554C7109DE1A6A57592E86DA53E7 /* CaseValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseValidationPattern.swift; path = Validator/Validator/CaseValidationPattern.swift; sourceTree = "<group>"; };
+		F97C96BB5AF813FA025C6D2F6A80C429 /* Initial.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
+		FBDDE0F86DD39A0497F225841AB2D606 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		FE2CB70AFE312309B9FC713A156CFAE2 /* PasswordViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		119ED7FD117CFB8BCD94A4B43CAB784A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94720769ED5C1945107E7972F9E3682C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCD571CFD80FBC9E167F2D49CF79AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA75AA2AE0E321ED57955C73F0E8628 /* Foundation.framework in Frameworks */,
+				4087F2467C8337068FAFC7EE9198E29C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081E050AF7639A7B6973B38FCE3E50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83181035197B1083A93C5A384A1B0E1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B56567D2A0ED9A27444D0A7B623F12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00AA003B19E6227445106D78621B214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243590AEE93B727D65D165E6988E26E2 /* Foundation.framework in Frameworks */,
+				9DD9A7A2CE10B5616A8857067C483075 /* SkyFloatingLabelTextField.framework in Frameworks */,
+				40D8BFD785924CBAF60520D9B6981A06 /* Validator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B20E929B2DDE974F9A6FBAFA898466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDA302BD818BDAE80CC6EB69692B6D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FCD8FA7D9AF9D0F171EAD19690ED992 /* SkyFloatingLabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				30AF6AD4B0EC39EE02DC6BEA02C822A1 /* SkyFloatingLabelTextField.swift */,
+				FBDDE0F86DD39A0497F225841AB2D606 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				8013996F4E159E5ACB695F505E6BDF75 /* UITextField+fixCaretPosition.swift */,
+				FE12BB2A50518DFD43E0E18049DDAFE3 /* Support Files */,
+			);
+			path = SkyFloatingLabelTextField;
+			sourceTree = "<group>";
+		};
+		1445FDD2428DF4F6D7688744A28EA178 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58BEC412D9D0E57B55997B236A443FDA /* Info.plist */,
+				A874042CC98C190D9EC63D0B75CBB630 /* Validator.modulemap */,
+				5F27120A893267B3169A874812F8430B /* Validator.xcconfig */,
+				A24A1DDEBAF1B6F3F4AE94231A92C8CF /* Validator-dummy.m */,
+				F2366C51D5122C21A8BD498229BA8716 /* Validator-prefix.pch */,
+				EC9EBC2F981BD8F78E44A559B06276B1 /* Validator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Validator";
+			sourceTree = "<group>";
+		};
+		216404D5019675937BB1F66CFB84C988 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				260008A361011DDC4BB43FDAA8F0C366 /* LoginKit.bundle */,
+				78D8242E116EF0BF7F94BC905E4A961B /* LoginKit.framework */,
+				B7346155BA8FD002A30F3F08B46371E6 /* Pods_LoginKit_Example.framework */,
+				AA82C5C73305B0391689D906395A40E7 /* Pods_LoginKit_Tests.framework */,
+				5004CDBB2B55F22EBF1A886865950840 /* SkyFloatingLabelTextField.framework */,
+				AB3009D6FCD2439F52A4FE7D5FFE6B23 /* Validator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		227672A53986AE290B46B5A3E0C34CF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1A96E69C3BCF9E353A1954FD988C42C /* SkyFloatingLabelTextField.framework */,
+				4BA9BC5BC13B33DAE74E82593D4F02EE /* Validator.framework */,
+				B85C756991909FFF4CCAF02C8BF71D00 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DF3D7A7335F97B9322AFDB1C08529F7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10012892EDF55CFE0C901DB7D705A8F5 /* Info.plist */,
+				AE41ED825215C3A2F3ADB253E9116425 /* LoginKit.modulemap */,
+				01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */,
+				8A11831E0CB70B5ABCEFA9A979D7D29C /* LoginKit-dummy.m */,
+				E985B78AA6B4EE5E1C6832DFB4E0B626 /* LoginKit-prefix.pch */,
+				DDAC2C460B76D0920A506ABB9EDE3C67 /* LoginKit-umbrella.h */,
+				C08DD05A3F480AAB9C96CF7FA2496D43 /* ResourceBundle-LoginKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LoginKit";
+			sourceTree = "<group>";
+		};
+		3BD331FDC65910D9EAB20B69B7936DA8 /* LoginKit */ = {
+			isa = PBXGroup;
+			children = (
+				B54746C4BDADEAB791D44FB729C661CC /* Classes */,
+			);
+			path = LoginKit;
+			sourceTree = "<group>";
+		};
+		44B8FFD042B2A79AC2E3144754EA0376 /* LoginKit */ = {
+			isa = PBXGroup;
+			children = (
+				B58B7C7C6F9D39F3496F5790FC8CE0B3 /* Assets */,
+			);
+			path = LoginKit;
+			sourceTree = "<group>";
+		};
+		57F5791FD86AF9A4A6811C7790DC8818 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FCD8FA7D9AF9D0F171EAD19690ED992 /* SkyFloatingLabelTextField */,
+				AE6A92B7BF7DA84E62DA844F0FD3D098 /* Validator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7824126400105F6F3B9F47B7C8E9EB13 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9706C7CE48A43388978BDF820DE4305 /* Pods-LoginKit_Example */,
+				E8C054B778E671C8A0D25B62E15A5604 /* Pods-LoginKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				87899376B68CE3E91CEE71E10AE6FF4C /* Development Pods */,
+				227672A53986AE290B46B5A3E0C34CF5 /* Frameworks */,
+				57F5791FD86AF9A4A6811C7790DC8818 /* Pods */,
+				216404D5019675937BB1F66CFB84C988 /* Products */,
+				7824126400105F6F3B9F47B7C8E9EB13 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		87899376B68CE3E91CEE71E10AE6FF4C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F462C20B920B9B132A4C567ACBBFDAA0 /* LoginKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AE6A92B7BF7DA84E62DA844F0FD3D098 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				F64C554C7109DE1A6A57592E86DA53E7 /* CaseValidationPattern.swift */,
+				989D6537877E968D76963AE88591883B /* ContainsNumberValidationPattern.swift */,
+				0910F1D50A4F9B64C988BFCE084B6734 /* EmailValidationPattern.swift */,
+				3BFC7D7B44942A035363A3B1F685FBCE /* UISlider+Validator.swift */,
+				38AF8FCF84F458EC0B6D79BE28E1EE14 /* UITextField+Validator.swift */,
+				39A31392F578F8FF77A6EC3620D4F424 /* UITextView+Validator.swift */,
+				0895E28A4146B973C25579A2E4272A15 /* Validatable.swift */,
+				8F338B13C1175567F1AB5864397EEB3D /* ValidatableInterfaceElement.swift */,
+				1D458246D4FEC14888D4E83861688C9D /* ValidationPattern.swift */,
+				A77CE01126B18ECD33612611A3414759 /* ValidationResult.swift */,
+				A0501DCF48E1247BB5D7C3E5C981A778 /* ValidationRule.swift */,
+				1656348955C156179507616D32F2463D /* ValidationRuleComparison.swift */,
+				855C48B169BA2CBD4A3DAE5738BEC8E4 /* ValidationRuleCondition.swift */,
+				877B45ABAE34C6F69A1ACF07914F4998 /* ValidationRuleContains.swift */,
+				3E6CDD9F2694A220D30771CF3CE8988D /* ValidationRuleEquality.swift */,
+				40F85C92D00C21F64CE71E4D46E02E95 /* ValidationRuleLength.swift */,
+				D7A1C5A4F4E5C840362DB8BCC431B2B7 /* ValidationRulePattern.swift */,
+				6C28596DCB0924A45B40A4FA9894E400 /* ValidationRulePaymentCard.swift */,
+				C78DB0D8AF898F644DBA6FA611ACAC17 /* ValidationRuleRequired.swift */,
+				D3CDBFE63817714B37D799F118A6F4D6 /* ValidationRuleSet.swift */,
+				895F7509F79ECD073089D63D18B96983 /* ValidationRuleURL.swift */,
+				72A8D5B7E93C3A860836DC003B336521 /* Validator.swift */,
+				1445FDD2428DF4F6D7688744A28EA178 /* Support Files */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		B54746C4BDADEAB791D44FB729C661CC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D30852B4EEC0A2DB100A088F1FF55BA0 /* BackgroundMover.swift */,
+				BFAE6BDCCE76CFC9F6D4D35DA59B2313 /* Buttn.swift */,
+				4514E8E4D8F394566A35BDB3ACB3BF54 /* InitialViewController.swift */,
+				BBA40FA38E19D084478B9FAEE7EAB739 /* KeyboardMover.swift */,
+				0C343AB6B4E689E3C878F091033265C5 /* LoginViewController.swift */,
+				FE2CB70AFE312309B9FC713A156CFAE2 /* PasswordViewController.swift */,
+				1CDEB118337E49AD35CB3E0DFC37F402 /* SignupViewController.swift */,
+				06B0C60F1DFF29F400D10033 /* CrossDissolveAnimation.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B58B7C7C6F9D39F3496F5790FC8CE0B3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F97C96BB5AF813FA025C6D2F6A80C429 /* Initial.storyboard */,
+				C409E562F385069C2CC4061C4BCF08A5 /* InitialViewController.xib */,
+				DBEEA16E096031FB8FE8B658D7A979E3 /* LoginViewController.xib */,
+				F5F0216CDBECFC57FE4D6746C4F2CEE5 /* Media.xcassets */,
+				CCB3290F09DF72580D9ED43DDC530C52 /* PasswordViewController.xib */,
+				51DCDA6A64E6A773F5489C0DDCF180F9 /* SignupViewController.xib */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B85C756991909FFF4CCAF02C8BF71D00 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				56B511CCD71823AE459BB7F986B12363 /* Foundation.framework */,
+				4032247F46B82069CED976EFDA76FA32 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B9706C7CE48A43388978BDF820DE4305 /* Pods-LoginKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				99A4282AD91E41F89D4E52EAD0C3CD67 /* Info.plist */,
+				086177A5FA54B13B5C2EB5C33A873D6F /* Pods-LoginKit_Example.modulemap */,
+				B3BA0F0EC9A71DBC35F1840812A03F00 /* Pods-LoginKit_Example-acknowledgements.markdown */,
+				5A06F04224121067CD9ADD804F05D9D6 /* Pods-LoginKit_Example-acknowledgements.plist */,
+				69D138542BF0822B59AAABDA5558A221 /* Pods-LoginKit_Example-dummy.m */,
+				AA4CD3E57C52E3E17FA7925C011AA189 /* Pods-LoginKit_Example-frameworks.sh */,
+				2B41C8A368A3433A730E458165DCB1FE /* Pods-LoginKit_Example-resources.sh */,
+				603D65295DF11318833A4043A1793D77 /* Pods-LoginKit_Example-umbrella.h */,
+				6C87D930A4E099952733B4DA016AF63B /* Pods-LoginKit_Example.debug.xcconfig */,
+				F011AA68A6D631AACBCFAA017ECAEA3E /* Pods-LoginKit_Example.release.xcconfig */,
+			);
+			name = "Pods-LoginKit_Example";
+			path = "Target Support Files/Pods-LoginKit_Example";
+			sourceTree = "<group>";
+		};
+		D4AAB3E942A22B051E6EE0920FAB3196 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44B8FFD042B2A79AC2E3144754EA0376 /* LoginKit */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E8C054B778E671C8A0D25B62E15A5604 /* Pods-LoginKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3132AE832FEF11DF083FF13DFE46D412 /* Info.plist */,
+				C59DF2457CC4A9CAE83AE61968B9ADB9 /* Pods-LoginKit_Tests.modulemap */,
+				F231027D34B6E543AD6C0AC83B833A52 /* Pods-LoginKit_Tests-acknowledgements.markdown */,
+				B6E0EB9F2A303A203AFC232C150ADBE6 /* Pods-LoginKit_Tests-acknowledgements.plist */,
+				DB7864F59ED41ADEC31DCF78306BF927 /* Pods-LoginKit_Tests-dummy.m */,
+				4E0FFEBF2D8530DCA7EBB8C62D9B04C7 /* Pods-LoginKit_Tests-frameworks.sh */,
+				A39F0F93761FF6FC78382F7FD8694549 /* Pods-LoginKit_Tests-resources.sh */,
+				1B4F487E5B6E21CC4811081C5D73AFF2 /* Pods-LoginKit_Tests-umbrella.h */,
+				254C5A3628C4A88E5BA49DDC285D23FB /* Pods-LoginKit_Tests.debug.xcconfig */,
+				EF10F3DB0C625C8245859BDF3FF71FB2 /* Pods-LoginKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-LoginKit_Tests";
+			path = "Target Support Files/Pods-LoginKit_Tests";
+			sourceTree = "<group>";
+		};
+		F462C20B920B9B132A4C567ACBBFDAA0 /* LoginKit */ = {
+			isa = PBXGroup;
+			children = (
+				3BD331FDC65910D9EAB20B69B7936DA8 /* LoginKit */,
+				D4AAB3E942A22B051E6EE0920FAB3196 /* Resources */,
+				2DF3D7A7335F97B9322AFDB1C08529F7 /* Support Files */,
+			);
+			name = LoginKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FE12BB2A50518DFD43E0E18049DDAFE3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E12DCE3FAB2CFCECE35BAA366FE3D99E /* Info.plist */,
+				03773F28BD1CCE45D38BAAFEDD91AD0D /* SkyFloatingLabelTextField.modulemap */,
+				D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */,
+				CA6D5CBA0729E48A02782473537B56C7 /* SkyFloatingLabelTextField-dummy.m */,
+				ED53A76F2069473857EB6D5A0AB01AAB /* SkyFloatingLabelTextField-prefix.pch */,
+				4723CEDE22752645EBEE2D9B5E498D47 /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24500355664B020A6A5006E79E9CD726 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65491964F239CA622A12A7C84DE701E /* Pods-LoginKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551C805E54F533DF11437A733CD13CF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3807209E73CEE1ED372097E18665010F /* Validator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE76C304D187D1480DD881D67645BC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0662B029EB89D182EA69BB809ACA17 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC857046F03EDCB148E1DAA610CB95A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E006A40EFB4832A85B3BB3A7CFD2AAA3 /* LoginKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F494FE235B46B0C1388B00F6563D30E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE04D27B1BFA99857AB3BE86838B048 /* Pods-LoginKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57BE668B1099D4EFA10657148669BFB2 /* Pods-LoginKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC23080655E36E2B64A894ACF43FD79 /* Build configuration list for PBXNativeTarget "Pods-LoginKit_Example" */;
+			buildPhases = (
+				C5D639DF47D642A14BACC0A19A3F18D2 /* Sources */,
+				83181035197B1083A93C5A384A1B0E1B /* Frameworks */,
+				24500355664B020A6A5006E79E9CD726 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60749D1670FA870DF24DC2DE371C5DEF /* PBXTargetDependency */,
+				6E5107B96DBF0AE426F7CEEDF48566CD /* PBXTargetDependency */,
+				7D8AA6360544D07B3FBFABE540C7E6B5 /* PBXTargetDependency */,
+			);
+			name = "Pods-LoginKit_Example";
+			productName = "Pods-LoginKit_Example";
+			productReference = B7346155BA8FD002A30F3F08B46371E6 /* Pods_LoginKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		74D71AA449D83B8950846CBEA3A92055 /* SkyFloatingLabelTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18478D68CAA48737F9999ED65F11637D /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildPhases = (
+				3354909558B255B379A57FA74598FE38 /* Sources */,
+				F9B20E929B2DDE974F9A6FBAFA898466 /* Frameworks */,
+				AEE76C304D187D1480DD881D67645BC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyFloatingLabelTextField;
+			productName = SkyFloatingLabelTextField;
+			productReference = 5004CDBB2B55F22EBF1A886865950840 /* SkyFloatingLabelTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7AE73C6C0201CE45889B57A93BCF0207 /* Validator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7CF64BD15AE9779D149354D57C8B811 /* Build configuration list for PBXNativeTarget "Validator" */;
+			buildPhases = (
+				06BF74AA8B2099BABC8290664A768837 /* Sources */,
+				4DCD571CFD80FBC9E167F2D49CF79AA2 /* Frameworks */,
+				551C805E54F533DF11437A733CD13CF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Validator;
+			productName = Validator;
+			productReference = AB3009D6FCD2439F52A4FE7D5FFE6B23 /* Validator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D5D0E8A6D20092EF3F58790E933C35D /* LoginKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB017425A95AFE04C7512C0AD48DE979 /* Build configuration list for PBXNativeTarget "LoginKit" */;
+			buildPhases = (
+				C46E44CA15C4F863171C9CD9197DA025 /* Sources */,
+				F00AA003B19E6227445106D78621B214 /* Frameworks */,
+				CF48385EC1A8B367E4EEFE12CF587A20 /* Resources */,
+				BDC857046F03EDCB148E1DAA610CB95A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C07501BA6FCF124ECB6794182A42F31C /* PBXTargetDependency */,
+				565454DA2BE7FA518C222B75006E61E4 /* PBXTargetDependency */,
+				B49D7FF6A6A719ABF4EBAA6FCD01154F /* PBXTargetDependency */,
+			);
+			name = LoginKit;
+			productName = LoginKit;
+			productReference = 78D8242E116EF0BF7F94BC905E4A961B /* LoginKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B75219B6A537371A0FD26EB9DAD6FAFC /* LoginKit-LoginKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35BC4C6B45F7D8E72A999DF15012EAB /* Build configuration list for PBXNativeTarget "LoginKit-LoginKit" */;
+			buildPhases = (
+				20893B78ED2363B79D638A3CEF0A08B1 /* Sources */,
+				7081E050AF7639A7B6973B38FCE3E50B /* Frameworks */,
+				1160CBB0F7BA37A7EC63D3DC41C404DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LoginKit-LoginKit";
+			productName = "LoginKit-LoginKit";
+			productReference = 260008A361011DDC4BB43FDAA8F0C366 /* LoginKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DC98C4398E5C0084C2E407ED82FB4AE9 /* Pods-LoginKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81E4EBB6A478071FE5CF0E45A43E84E9 /* Build configuration list for PBXNativeTarget "Pods-LoginKit_Tests" */;
+			buildPhases = (
+				BBF1605B0C4F7E5220B42113E97D6DA5 /* Sources */,
+				119ED7FD117CFB8BCD94A4B43CAB784A /* Frameworks */,
+				F494FE235B46B0C1388B00F6563D30E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LoginKit_Tests";
+			productName = "Pods-LoginKit_Tests";
+			productReference = AA82C5C73305B0391689D906395A40E7 /* Pods_LoginKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 216404D5019675937BB1F66CFB84C988 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D5D0E8A6D20092EF3F58790E933C35D /* LoginKit */,
+				B75219B6A537371A0FD26EB9DAD6FAFC /* LoginKit-LoginKit */,
+				57BE668B1099D4EFA10657148669BFB2 /* Pods-LoginKit_Example */,
+				DC98C4398E5C0084C2E407ED82FB4AE9 /* Pods-LoginKit_Tests */,
+				74D71AA449D83B8950846CBEA3A92055 /* SkyFloatingLabelTextField */,
+				7AE73C6C0201CE45889B57A93BCF0207 /* Validator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1160CBB0F7BA37A7EC63D3DC41C404DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0E13CDA458F14A2E7DFF159320E0E6 /* Initial.storyboard in Resources */,
+				9D9D52F9509ABCE553FD0FB322AC5EBD /* InitialViewController.xib in Resources */,
+				42E53A22DFB27691D660BB1D181055FC /* LoginViewController.xib in Resources */,
+				F6350A0B32623ABA2E3FF62553A17ECD /* Media.xcassets in Resources */,
+				C87D3EA40DBCEB0D5C093B20296930DA /* PasswordViewController.xib in Resources */,
+				9AE40854654582F48D3A7EDFD3AC7381 /* SignupViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF48385EC1A8B367E4EEFE12CF587A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E816079EEBEFF95B19A141103965C22 /* LoginKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06BF74AA8B2099BABC8290664A768837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7272418C146C16D0C36DE41A48B7062C /* CaseValidationPattern.swift in Sources */,
+				0612D9E5EE5502A4CEB72CF56D307B5C /* ContainsNumberValidationPattern.swift in Sources */,
+				B246EB3A41A4FCECC189DFC6EAF3A5D9 /* EmailValidationPattern.swift in Sources */,
+				D2117602FABE6CA02CABEA54D90106F3 /* UISlider+Validator.swift in Sources */,
+				720159B5A13DB5217FA2EBB417F569E1 /* UITextField+Validator.swift in Sources */,
+				B35D088866FCB3ADFDFA7C0AB1B83E01 /* UITextView+Validator.swift in Sources */,
+				482F4E5DF3B0B7BE0308338589228F50 /* Validatable.swift in Sources */,
+				80C0E9F9743F14365252863AA1199EB8 /* ValidatableInterfaceElement.swift in Sources */,
+				0519836C6E982ABAD33F70AE4EBD5BB2 /* ValidationPattern.swift in Sources */,
+				E4C1BF7F021EC0B36987E787CD1568A7 /* ValidationResult.swift in Sources */,
+				4614F78E84EE307107598767B64C42B5 /* ValidationRule.swift in Sources */,
+				4B4F2F4FD6C901C0980F0C45FC363A26 /* ValidationRuleComparison.swift in Sources */,
+				224D26F320016ADDE404EE3CFAC28E5D /* ValidationRuleCondition.swift in Sources */,
+				060504022DD1B72E28C4B8801CF2721A /* ValidationRuleContains.swift in Sources */,
+				95B71101C1F64D9AB4BDA2C95C2B697C /* ValidationRuleEquality.swift in Sources */,
+				F2063291D8C126D01A0D20A953390F9E /* ValidationRuleLength.swift in Sources */,
+				0F526D4003F3047C0E87F0F8C8FC4144 /* ValidationRulePattern.swift in Sources */,
+				DCFAA40A25500A3233AB8877318533BC /* ValidationRulePaymentCard.swift in Sources */,
+				AB39BB64822432AFBD18FE0B31D798FE /* ValidationRuleRequired.swift in Sources */,
+				4255A989570EDDFFE56FE26A55526CA7 /* ValidationRuleSet.swift in Sources */,
+				51909E98B784699A80D2FA57A42BEA24 /* ValidationRuleURL.swift in Sources */,
+				BB58590F31971BE1B467AE33044CEA7C /* Validator-dummy.m in Sources */,
+				45FF5E8DDCAE263CD2C18AAA01DB96A9 /* Validator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20893B78ED2363B79D638A3CEF0A08B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3354909558B255B379A57FA74598FE38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36868BAEF2ED0CC9FF931A46CFC3CE46 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				3951248125F2509CA63600BA836EEA1E /* SkyFloatingLabelTextField.swift in Sources */,
+				7AB7824294C3DB9DB4022E976A13DB54 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				A767AE5811E938D821A14070DE383B86 /* UITextField+fixCaretPosition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF1605B0C4F7E5220B42113E97D6DA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0995A0B51C1B909945324F1D66AC9A /* Pods-LoginKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46E44CA15C4F863171C9CD9197DA025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DD00C6371579DE53F556DE4A107D13 /* BackgroundMover.swift in Sources */,
+				83B7FD239BC03BF9057237DC66FFB1BF /* Buttn.swift in Sources */,
+				2BAAA98B3DB5D4431AFA659D45DE986B /* InitialViewController.swift in Sources */,
+				6E092C60E8A25991F413263ACE1EC5CD /* KeyboardMover.swift in Sources */,
+				93A5CC35ADAE3E59565BEF5BC4E06C7F /* LoginKit-dummy.m in Sources */,
+				DFDBE970B9DFE5B8D863CB4563A8C801 /* LoginViewController.swift in Sources */,
+				C3357B40865A4859F69EEBD614CFEFC5 /* PasswordViewController.swift in Sources */,
+				06B0C6101DFF29F400D10033 /* CrossDissolveAnimation.swift in Sources */,
+				76FF1A95DEF8A90D0B90EFD865129420 /* SignupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D639DF47D642A14BACC0A19A3F18D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981F27DDA23B43797ADE87C2B7DD1A68 /* Pods-LoginKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		565454DA2BE7FA518C222B75006E61E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = 74D71AA449D83B8950846CBEA3A92055 /* SkyFloatingLabelTextField */;
+			targetProxy = D274B74A0B0C185A1193137B201CCEE3 /* PBXContainerItemProxy */;
+		};
+		60749D1670FA870DF24DC2DE371C5DEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoginKit;
+			target = 9D5D0E8A6D20092EF3F58790E933C35D /* LoginKit */;
+			targetProxy = 6A7E8874F18903CF0A9A19B8A6E0D74A /* PBXContainerItemProxy */;
+		};
+		6E5107B96DBF0AE426F7CEEDF48566CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = 74D71AA449D83B8950846CBEA3A92055 /* SkyFloatingLabelTextField */;
+			targetProxy = 048D6C109B077047A4BB44C4A121B671 /* PBXContainerItemProxy */;
+		};
+		7D8AA6360544D07B3FBFABE540C7E6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Validator;
+			target = 7AE73C6C0201CE45889B57A93BCF0207 /* Validator */;
+			targetProxy = 61D7CCF6880EF88E3B6DA9D5CD38B0DF /* PBXContainerItemProxy */;
+		};
+		B49D7FF6A6A719ABF4EBAA6FCD01154F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Validator;
+			target = 7AE73C6C0201CE45889B57A93BCF0207 /* Validator */;
+			targetProxy = 7EE318E231753CA263255E8537C7B991 /* PBXContainerItemProxy */;
+		};
+		C07501BA6FCF124ECB6794182A42F31C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LoginKit-LoginKit";
+			target = B75219B6A537371A0FD26EB9DAD6FAFC /* LoginKit-LoginKit */;
+			targetProxy = D2961328A8459D52CD1357579318515A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20E2DC0E756E91FD5B0E8DA7CB487BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF10F3DB0C625C8245859BDF3FF71FB2 /* Pods-LoginKit_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LoginKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LoginKit_Tests/Pods-LoginKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LoginKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27EF5C8AC08528CD77C72A37A38B919C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		369E8721A5EE51C116A94D2784CA1616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F011AA68A6D631AACBCFAA017ECAEA3E /* Pods-LoginKit_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LoginKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LoginKit_Example/Pods-LoginKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LoginKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A5EA139C43B93C5E457DB8AF31F9351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254C5A3628C4A88E5BA49DDC285D23FB /* Pods-LoginKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LoginKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LoginKit_Tests/Pods-LoginKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LoginKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C21F02E1B48878E61B915E3969D2B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F27120A893267B3169A874812F8430B /* Validator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Validator/Validator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Validator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Validator/Validator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Validator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		450D1827566EBF584435D12838E317CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LoginKit";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LoginKit/ResourceBundle-LoginKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = LoginKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7B6039A474431325CAF5C636135EBADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LoginKit/LoginKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoginKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LoginKit/LoginKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LoginKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B8C0FA82E885A6E37C96467A900A053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E33209F93A0B789355C8B2D749BD3B /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A51B690861AC93669ED1E7C84100617D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C87D930A4E099952733B4DA016AF63B /* Pods-LoginKit_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LoginKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LoginKit_Example/Pods-LoginKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LoginKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF24F3C349DBE56AC6DF452C0072621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LoginKit/LoginKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoginKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LoginKit/LoginKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LoginKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF3C850DAA0F361B687B26BC167C08BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FC0BE6FCACAA319D409CD5D75C6254 /* LoginKit.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LoginKit";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LoginKit/ResourceBundle-LoginKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = LoginKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F7BF046937C680C085B0921858846E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F27120A893267B3169A874812F8430B /* Validator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Validator/Validator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Validator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Validator/Validator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Validator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18478D68CAA48737F9999ED65F11637D /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27EF5C8AC08528CD77C72A37A38B919C /* Debug */,
+				8B8C0FA82E885A6E37C96467A900A053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81E4EBB6A478071FE5CF0E45A43E84E9 /* Build configuration list for PBXNativeTarget "Pods-LoginKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5EA139C43B93C5E457DB8AF31F9351 /* Debug */,
+				20E2DC0E756E91FD5B0E8DA7CB487BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC23080655E36E2B64A894ACF43FD79 /* Build configuration list for PBXNativeTarget "Pods-LoginKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B690861AC93669ED1E7C84100617D /* Debug */,
+				369E8721A5EE51C116A94D2784CA1616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7CF64BD15AE9779D149354D57C8B811 /* Build configuration list for PBXNativeTarget "Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C21F02E1B48878E61B915E3969D2B67 /* Debug */,
+				F7BF046937C680C085B0921858846E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35BC4C6B45F7D8E72A999DF15012EAB /* Build configuration list for PBXNativeTarget "LoginKit-LoginKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450D1827566EBF584435D12838E317CE /* Debug */,
+				DF3C850DAA0F361B687B26BC167C08BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB017425A95AFE04C7512C0AD48DE979 /* Build configuration list for PBXNativeTarget "LoginKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF24F3C349DBE56AC6DF452C0072621 /* Debug */,
+				7B6039A474431325CAF5C636135EBADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

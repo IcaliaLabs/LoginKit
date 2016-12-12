@@ -21,22 +21,22 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/LoginKit'
+  s.homepage         = 'https://github.com/danlozano/LoginKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Daniel Lozano' => 'danlozano@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/LoginKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Daniel Lozano' => 'dan@danielozano.com' }
+  s.source           = { :git => 'https://github.com/danlozano/LoginKit.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/danlozanov'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'LoginKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'LoginKit' => ['LoginKit/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'LoginKit' => ['LoginKit/Assets/*.{xib,storyboard,xcassets}']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Validator', '~> 2.1.1'
+  s.dependency 'SkyFloatingLabelTextField', '~> 2.0.0'
 end

@@ -1,0 +1,36 @@
+{
+  "name": "LoginKit",
+  "version": "0.1.0",
+  "summary": "A short description of LoginKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/danlozano/LoginKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Daniel Lozano": "dan@danielozano.com"
+  },
+  "source": {
+    "git": "https://github.com/danlozano/LoginKit.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/danlozanov",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LoginKit/Classes/**/*",
+  "resource_bundles": {
+    "LoginKit": [
+      "LoginKit/Assets/*.{xib,storyboard,xcassets}"
+    ]
+  },
+  "dependencies": {
+    "Validator": [
+      "~> 2.1.1"
+    ],
+    "SkyFloatingLabelTextField": [
+      "~> 2.0.0"
+    ]
+  }
+}

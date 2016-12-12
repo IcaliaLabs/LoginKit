@@ -1,0 +1,6 @@
+framework module Validator {
+  umbrella header "Validator-umbrella.h"
+
+  export *
+  module * { export * }
+}
