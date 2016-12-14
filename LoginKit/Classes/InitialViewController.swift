@@ -10,9 +10,9 @@ import UIKit
 
 protocol InitialViewControllerDelegate: class {
 
-    func didSelectSignup()
-    func didSelectLogin()
-    func didSelectFacebook()
+    func didSelectSignup(_ viewController: UIViewController)
+    func didSelectLogin(_ viewController: UIViewController)
+    func didSelectFacebook(_ viewController: UIViewController)
 
 }
 
@@ -52,15 +52,15 @@ class InitialViewController: UIViewController, BackgroundMovable {
     // MARK: - Action's
 
     @IBAction func didSelectSignup(_ sender: AnyObject) {
-        delegate?.didSelectSignup()
+        delegate?.didSelectSignup(self)
     }
 
     @IBAction func didSelectLogin(_ sender: AnyObject) {
-        delegate?.didSelectLogin()
+        delegate?.didSelectLogin(self)
     }
 
     @IBAction func didSelectFacebook(_ sender: AnyObject) {
-        delegate?.didSelectFacebook()
+        delegate?.didSelectFacebook(self)
     }
 
 }

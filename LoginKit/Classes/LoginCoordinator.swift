@@ -8,40 +8,40 @@
 
 import Foundation
 
-public class LoginCoordinator {
+open class LoginCoordinator {
 
     // MARK: - Properties
 
-    let rootViewController: UIViewController
+    public let rootViewController: UIViewController
 
-    lazy var bundle: Bundle = {
+    fileprivate lazy var bundle: Bundle = {
         return Bundle(for: type(of: self))
     }()
 
-    lazy var navigationController: UINavigationController = {
+    fileprivate lazy var navigationController: UINavigationController = {
         let navController = UINavigationController(rootViewController: self.initialViewController)
         return navController
     }()
 
-    lazy var initialViewController: InitialViewController = {
+    fileprivate lazy var initialViewController: InitialViewController = {
         let viewController = InitialViewController(nibName: "InitialViewController", bundle: self.bundle)
         viewController.delegate = self
         return viewController
     }()
 
-    lazy var loginViewController: LoginViewController = {
+    fileprivate lazy var loginViewController: LoginViewController = {
         let viewController = LoginViewController(nibName: "LoginViewController", bundle: self.bundle)
         viewController.delegate = self
         return viewController
     }()
 
-    lazy var signupViewController: SignupViewController = {
+    fileprivate lazy var signupViewController: SignupViewController = {
         let viewController = SignupViewController(nibName: "SignupViewController", bundle: self.bundle)
         viewController.delegate = self
         return viewController
     }()
 
-    lazy var passwordViewController: PasswordViewController = {
+    fileprivate lazy var passwordViewController: PasswordViewController = {
         let viewController = PasswordViewController(nibName: "PasswordViewController", bundle: self.bundle)
         viewController.delegate = self
         return viewController
@@ -55,6 +55,28 @@ public class LoginCoordinator {
 
     public func start() {
         rootViewController.present(navigationController, animated: true, completion: nil)
+    }
+
+}
+
+// MARK: - Public/Subclassable methods
+
+public extension LoginCoordinator {
+
+    open func login(email: String, password: String) {
+        print("Implement this method in your subclass to handle login.")
+    }
+
+    open func signup(name: String, email: String, password: String) {
+        print("Implement this method in your subclass to handle signup.")
+    }
+
+    open func enterWithFacebook(facebookId: String) {
+        print("Implement this method in your subclass to handle facebook.")
+    }
+
+    open func recoverPassword(email: String) {
+        print("Implement this method in your subclass to handle password recovery.")
     }
 
 }
@@ -85,27 +107,27 @@ extension LoginCoordinator {
 
 extension LoginCoordinator: InitialViewControllerDelegate {
 
-    func didSelectLogin() {
+    func didSelectLogin(_ viewController: UIViewController) {
         goToLogin()
     }
 
-    func didSelectSignup() {
+    func didSelectSignup(_ viewController: UIViewController) {
         goToSignup()
     }
 
-    func didSelectFacebook() {
-        // TODO: FACEBOOK
+    func didSelectFacebook(_ viewController: UIViewController) {
+        enterWithFacebook(facebookId: "123")
     }
 
 }
 
 extension LoginCoordinator: LoginViewControllerDelegate {
 
-    func didSelectLogin(email: String, password: String) {
-        // TODO: LOGIN
+    func didSelectLogin(_ viewController: UIViewController, email: String, password: String) {
+        login(email: email, password: password)
     }
 
-    func didSelectForgotPassword() {
+    func didSelectForgotPassword(_ viewController: UIViewController) {
         goToPassword()
     }
 
@@ -117,16 +139,16 @@ extension LoginCoordinator: LoginViewControllerDelegate {
 
 extension LoginCoordinator: SignupViewControllerDelegate {
 
-    func didSelectSignup(email: String, name: String, password: String) {
-        // TODO: SIGNUP
+    func didSelectSignup(_ viewController: UIViewController, email: String, name: String, password: String) {
+        signup(name: name, email: email, password: password)
     }
 
 }
 
 extension LoginCoordinator: PasswordViewControllerDelegate {
 
-    func didSelectRecover(email: String) {
-        // TODO: RECOVER
+    func didSelectRecover(_ viewController: UIViewController, email: String) {
+        recoverPassword(email: email)
     }
 
 }

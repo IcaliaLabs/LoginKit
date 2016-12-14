@@ -11,7 +11,7 @@ import SkyFloatingLabelTextField
 
 protocol SignupViewControllerDelegate: class {
 
-    func didSelectSignup(email: String, name: String, password: String)
+    func didSelectSignup(_ viewController: UIViewController, email: String, name: String, password: String)
     func didSelectBack(_ viewController: UIViewController)
 
 }
@@ -73,7 +73,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     @IBAction func didSelectSignup(_ sender: AnyObject) {
         // validator.validate(self)
-        delegate?.didSelectSignup(email: "", name: "", password: "")
+        delegate?.didSelectSignup(self, email: "", name: "", password: "")
     }
 
 }
