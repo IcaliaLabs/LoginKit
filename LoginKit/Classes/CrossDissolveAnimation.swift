@@ -20,7 +20,8 @@ class CrossDissolveAnimation: NSObject, UIViewControllerAnimatedTransitioning {
         let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
         let toView = toVC?.view
 
-        if let toView = toView {
+        if let toVC = toVC, let toView = toView {
+            toView.frame = transitionContext.finalFrame(for: toVC)
             containerView.addSubview(toView)
         }
 

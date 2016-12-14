@@ -109,7 +109,7 @@ extension LoginCoordinator: LoginViewControllerDelegate {
         goToPassword()
     }
 
-    func loginDidSelectBack() {
+    func didSelectBack(_ viewController: UIViewController) {
         pop()
     }
 
@@ -121,20 +121,12 @@ extension LoginCoordinator: SignupViewControllerDelegate {
         // TODO: SIGNUP
     }
 
-    func signupDidSelectBack() {
-        pop()
-    }
-
 }
 
 extension LoginCoordinator: PasswordViewControllerDelegate {
 
     func didSelectRecover(email: String) {
         // TODO: RECOVER
-    }
-
-    func passwordDidSelectBack() {
-        pop()
     }
 
 }

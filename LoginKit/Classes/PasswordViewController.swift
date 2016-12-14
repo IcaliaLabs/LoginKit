@@ -11,8 +11,8 @@ import SkyFloatingLabelTextField
 
 protocol PasswordViewControllerDelegate: class {
 
-    func passwordDidSelectBack()
     func didSelectRecover(email: String)
+    func didSelectBack(_ viewController: UIViewController)
 
 }
 
@@ -61,7 +61,7 @@ class PasswordViewController: UIViewController, BackgroundMovable {
     // MARK: - Action's
 
     @IBAction func didSelectBack(_ sender: AnyObject) {
-        delegate?.passwordDidSelectBack()
+        delegate?.didSelectBack(self)
     }
 
     @IBAction func didSelectRecover(_ sender: AnyObject) {
