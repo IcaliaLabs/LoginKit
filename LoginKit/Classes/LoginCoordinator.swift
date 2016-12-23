@@ -12,10 +12,10 @@ open class LoginCoordinator {
 
     // MARK: - Properties
 
-    public let rootViewController: UIViewController
+    fileprivate let rootViewController: UIViewController
 
     fileprivate lazy var bundle: Bundle = {
-        return Bundle(for: type(of: self))
+        return Bundle(for: InitialViewController.self)
     }()
 
     fileprivate lazy var navigationController: UINavigationController = {
@@ -62,11 +62,11 @@ open class LoginCoordinator {
         rootViewController.present(navigationController, animated: true, completion: nil)
     }
 
-}
+    public func finish() {
+        rootViewController.dismiss(animated: true, completion: nil)
+    }
 
-// MARK: - Public/Subclassable methods
-
-public extension LoginCoordinator {
+    // MARK: - Public/Subclassable methods
 
     open func login(email: String, password: String) {
         print("Implement this method in your subclass to handle login.")
@@ -88,7 +88,7 @@ public extension LoginCoordinator {
 
 // MARK: - Navigation
 
-extension LoginCoordinator {
+private extension LoginCoordinator {
 
     func goToLogin() {
         navigationController.pushViewController(loginViewController, animated: true)
@@ -124,7 +124,7 @@ extension LoginCoordinator: InitialViewControllerDelegate {
         facebookService.login(from: viewController) { (result) in
             switch result {
             case .success(let profile):
-                print("SUCCESS : FB PROFILE = \(profile)")
+                print("SUCCESS: FB PROFILE = \(profile)")
                 self.enterWithFacebook(profile: profile)
             default:
                 break
@@ -163,13 +163,5 @@ extension LoginCoordinator: PasswordViewControllerDelegate {
     func didSelectRecover(_ viewController: UIViewController, email: String) {
         recoverPassword(email: email)
     }
-
-}
-
-// MARK: - Network
-
-extension LoginCoordinator {
-
-    
 
 }

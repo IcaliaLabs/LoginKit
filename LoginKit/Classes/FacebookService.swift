@@ -64,7 +64,7 @@ class FacebookService {
                 print("PERMISSIONS: \(result.grantedPermissions)")
                 if result.grantedPermissions.contains("email") && result.grantedPermissions.contains("public_profile") {
                     print("FACEBOOK LOGIN: PERMISSIONS GRANTED")
-                    self.getUserInfo(loginResult: result, completion: completion)
+                    self.getUserInfo(completion: completion)
                 } else {
                     print("FACEBOOK LOGIN: MISSING REQUIRED PERMISSIONS")
                     completion(.missingPermissions)
@@ -77,7 +77,7 @@ class FacebookService {
 
 private extension FacebookService {
 
-    func getUserInfo(loginResult: FBSDKLoginManagerLoginResult, completion: @escaping FacebookCompletion) {
+    func getUserInfo(completion: @escaping FacebookCompletion) {
         guard FBSDKAccessToken.current() != nil else {
             print("FACEBOOK: NOT LOGGED IN: ABORTING")
             completion(.unknownError)
