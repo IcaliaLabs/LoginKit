@@ -47,6 +47,11 @@ open class LoginCoordinator {
         return viewController
     }()
 
+    fileprivate lazy var facebookService: FacebookService = {
+        let service = FacebookService()
+        return service
+    }()
+
     // MARK: - LoginCoordinator
 
     public init(rootViewController: UIViewController) {
@@ -71,7 +76,7 @@ public extension LoginCoordinator {
         print("Implement this method in your subclass to handle signup.")
     }
 
-    open func enterWithFacebook(facebookId: String) {
+    open func enterWithFacebook(profile: FacebookProfile) {
         print("Implement this method in your subclass to handle facebook.")
     }
 
@@ -116,7 +121,15 @@ extension LoginCoordinator: InitialViewControllerDelegate {
     }
 
     func didSelectFacebook(_ viewController: UIViewController) {
-        enterWithFacebook(facebookId: "123")
+        facebookService.login(from: viewController) { (result) in
+            switch result {
+            case .success(let profile):
+                print("SUCCESS : FB PROFILE = \(profile)")
+                self.enterWithFacebook(profile: profile)
+            default:
+                break
+            }
+        }
     }
 
 }
@@ -157,42 +170,6 @@ extension LoginCoordinator: PasswordViewControllerDelegate {
 
 extension LoginCoordinator {
 
-    //    func facebookLogin() {
-    //        loginManager.logIn(withReadPermissions: permissions, from: self) { (result, error) in
-    //            if error != nil {
-    //                print("FACEBOOK LOGIN: ERROR")
-    //                print(error)
-    //            } else if let result = result {
-    //                if result.isCancelled {
-    //                    print("FACEBOOK LOGIN: CANCELLED")
-    //                } else {
-    //                    print("FACEBOOK LOGIN: SUCCESS")
-    //                    print("TOKEN: \(result.token)")
-    //                    print("PERMISSIONS: \(result.grantedPermissions)")
-    //
-    //                    if result.grantedPermissions.contains("email") && result.grantedPermissions.contains("public_profile") {
-    //                        print("FACEBOOK LOGIN: PERMISSIONS GRANTED")
-    //                        self.enterWithFacebook(result)
-    //                    } else {
-    //                        print("FACEBOOK LOGIN: MISSING REQUIRED PERMISSIONS")
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    }
-    //
-    //    func enterWithFacebook(_ result: FBSDKLoginManagerLoginResult) {
-    //        Session.sharedSession.enterWithFacebook(result, completion: { (result) in
-    //            switch result {
-    //            case .success(let user, _, _):
-    //                print("SESSION : SIGNUP SUCCESS")
-    //                print("USER = \(user)")
-    //                LoginHelper.performLoginActions()
-    //            default:
-    //                print("TAP TO FUND API: LOGIN ERROR")
-    //                ErrorHandler.handleErrorIn(result, onViewController: self)
-    //            }
-    //        })
-    //    }
+    
 
 }
