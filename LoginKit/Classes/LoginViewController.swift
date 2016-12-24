@@ -19,6 +19,17 @@ protocol LoginViewControllerDelegate: class {
 
 }
 
+enum ValidationError: String, Error {
+
+    case invalidEmail = "Email address is invalid"
+    case passwordLength = "Password must be at least 8 characters"
+
+    var message: String {
+        return self.rawValue
+    }
+
+}
+
 class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable {
 
     // MARK: - Properties
@@ -80,8 +91,9 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     }
 
     @IBAction func didSelectLogin(_ sender: AnyObject) {
-        // validator.validate(self)
-        delegate?.didSelectLogin(self, email: "", password: "")
+        validateFields {
+            delegate?.didSelectLogin(self, email: "", password: "")
+        }
     }
 
     @IBAction func didSelectForgotPassword(_ sender: AnyObject) {
@@ -94,9 +106,43 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
 extension LoginViewController {
 
+    var emailRule: ValidationRulePattern {
+        return ValidationRulePattern(pattern: EmailValidationPattern.standard, error: ValidationError.invalidEmail)
+    }
+
+    var lengthRule: ValidationRuleLength {
+        return ValidationRuleLength(min: 8, error: ValidationError.passwordLength)
+    }
+
     func setupValidation() {
-        // validator.registerField(emailTextField, rules: [RequiredRule(), EmailRule()])
-        // validator.registerField(passwordTextField, rules: [RequiredRule(), LengthPasswordRule()])
+        var emailRules = ValidationRuleSet<String>()
+        emailRules.add(rule: emailRule)
+        emailTextField.validationRules = emailRules
+
+        var passwordRules = ValidationRuleSet<String>()
+        passwordRules.add(rule: lengthRule)
+        passwordTextField.validationRules = passwordRules
+    }
+
+    func validateFields(success: () -> Void) {
+        var errorFound = false
+        for field in fields {
+            let result = field.validate()
+            switch result {
+            case .valid:
+                print("VALID")
+                field.errorMessage = nil
+            case .invalid(let errors):
+                errorFound = true
+                print("INVALID: ERRORS = \(errors)")
+                if let errors = errors as? [ValidationError] {
+                    field.errorMessage = errors.first?.message
+                }
+            }
+        }
+        if !errorFound {
+            success()
+        }
     }
 
     func resetFields() {
