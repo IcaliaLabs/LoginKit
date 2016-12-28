@@ -22,6 +22,8 @@ class PasswordViewController: UIViewController, BackgroundMovable {
 
     weak var delegate: PasswordViewControllerDelegate?
 
+    var backgroundImage: UIImage?
+
 //    lazy var presenter = Presentr(presentationType: .alert)
 //    lazy var alertController: UIViewController = {
 //        let title = "Done!"
@@ -48,6 +50,7 @@ class PasswordViewController: UIViewController, BackgroundMovable {
     override func viewDidLoad() {
         super.viewDidLoad()
         initBackgroundMover()
+        customizeAppearance()
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +59,14 @@ class PasswordViewController: UIViewController, BackgroundMovable {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+
+    // MARK: - Setup
+
+    func customizeAppearance() {
+        if let backgroundImage = backgroundImage {
+            backgroundImageView.image = backgroundImage
+        }
     }
 
     // MARK: - Action's

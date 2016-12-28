@@ -32,7 +32,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DefaultBG" translatesAutoresizingMaskIntoConstraints="NO" id="Rzw-Ub-rrB">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rzw-Ub-rrB">
                     <rect key="frame" x="-20" y="-20" width="415" height="707"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -188,7 +188,6 @@
         </view>
     </objects>
     <resources>
-        <image name="DefaultBG" width="3000" height="2000"/>
         <image name="arrowIcon" width="19" height="17"/>
     </resources>
 </document>

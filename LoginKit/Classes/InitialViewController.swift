@@ -22,6 +22,8 @@ class InitialViewController: UIViewController, BackgroundMovable {
 
     weak var delegate: InitialViewControllerDelegate?
 
+    var backgroundImage: UIImage?
+
     var movableBackground: UIView {
         get {
             return backgroundImageView
@@ -37,6 +39,7 @@ class InitialViewController: UIViewController, BackgroundMovable {
     override func viewDidLoad() {
         super.viewDidLoad()
         initBackgroundMover()
+        customizeAppearance()
         navigationController?.isNavigationBarHidden = true
         navigationController?.delegate = self
     }
@@ -47,6 +50,14 @@ class InitialViewController: UIViewController, BackgroundMovable {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+
+    // MARK: - Setup
+
+    func customizeAppearance() {
+        if let backgroundImage = backgroundImage {
+            backgroundImageView.image = backgroundImage
+        }
     }
 
     // MARK: - Action's

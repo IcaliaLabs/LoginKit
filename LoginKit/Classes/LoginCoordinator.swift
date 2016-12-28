@@ -25,6 +25,7 @@ open class LoginCoordinator {
 
     fileprivate lazy var initialViewController: InitialViewController = {
         let viewController = InitialViewController(nibName: "InitialViewController", bundle: self.bundle)
+        viewController.backgroundImage = self.backgroundImage
         viewController.delegate = self
         return viewController
     }()
@@ -67,6 +68,10 @@ open class LoginCoordinator {
     }
 
     // MARK: - Public/Subclassable methods
+
+    open var backgroundImage: UIImage {
+        return UIImage(named: "DefaultBG", in: bundle, compatibleWith: nil) ?? UIImage()
+    }
 
     open func login(email: String, password: String) {
         print("Implement this method in your subclass to handle login.")

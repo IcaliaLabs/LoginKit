@@ -25,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBG" translatesAutoresizingMaskIntoConstraints="NO" id="Vw0-kY-ntJ">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vw0-kY-ntJ">
                     <rect key="frame" x="-20" y="-20" width="415" height="707"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Cb-f1M" customClass="Buttn" customModule="LoginKit" customModuleProvider="target">
@@ -111,7 +111,4 @@
             <point key="canvasLocation" x="-7" y="-539"/>
         </view>
     </objects>
-    <resources>
-        <image name="DefaultBG" width="3000" height="2000"/>
-    </resources>
 </document>

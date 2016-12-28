@@ -36,6 +36,8 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
     weak var delegate: LoginViewControllerDelegate?
 
+    var backgroundImage: UIImage?
+
     var loginInProgress = false {
         didSet {
             loginButton.isEnabled = !loginInProgress
@@ -67,6 +69,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupValidation()
+        customizeAppearance()
         initKeyboardMover()
         initBackgroundMover()
     }
@@ -82,6 +85,14 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+
+    // MARK: - Setup
+
+    func customizeAppearance() {
+        if let backgroundImage = backgroundImage {
+            backgroundImageView.image = backgroundImage
+        }
     }
 
     // MARK: - Action's

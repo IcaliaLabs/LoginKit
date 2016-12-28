@@ -22,6 +22,8 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     weak var delegate: SignupViewControllerDelegate?
 
+    var backgroundImage: UIImage?
+
     var signupInProgress = false
 
     // MARK: Keyboard Movable
@@ -49,6 +51,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     override func viewDidLoad() {
         super.viewDidLoad()
         initKeyboardMover()
+        customizeAppearance()
         initBackgroundMover()
     }
 
@@ -63,6 +66,14 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+
+    // MARK: - Setup
+
+    func customizeAppearance() {
+        if let backgroundImage = backgroundImage {
+            backgroundImageView.image = backgroundImage
+        }
     }
 
     // MARK: - Action's
