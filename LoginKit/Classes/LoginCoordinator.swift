@@ -73,6 +73,10 @@ open class LoginCoordinator {
         return UIImage(named: "DefaultBG", in: bundle, compatibleWith: nil) ?? UIImage()
     }
 
+    open var logoImage: UIImage? {
+        return nil
+    }
+
     open func login(email: String, password: String) {
         print("Implement this method in your subclass to handle login.")
     }

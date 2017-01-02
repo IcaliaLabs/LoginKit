@@ -1,5 +1,16 @@
 PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.18.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.18.0):
+    - FBSDKCoreKit
   - LoginKit (0.1.0):
+    - FBSDKLoginKit (= 4.18.0)
     - SkyFloatingLabelTextField (~> 2.0.0)
     - Validator (~> 2.1.1)
   - SkyFloatingLabelTextField (2.0.0)
@@ -13,7 +24,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LoginKit: 0ecdf1499de0f3040e4f02f76b458ed53bba7d86
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
+  FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
+  LoginKit: 9e8b3343530ab6e36a438336d32d8b8688d6bfe0
   SkyFloatingLabelTextField: a81a0eaed2785d1599f11484c6ebc1c4eb5d1228
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 
