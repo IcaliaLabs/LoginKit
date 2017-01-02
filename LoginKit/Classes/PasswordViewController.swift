@@ -53,6 +53,10 @@ class PasswordViewController: UIViewController, BackgroundMovable {
         customizeAppearance()
     }
 
+    override func loadView() {
+        self.view = viewFor(controller: self)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

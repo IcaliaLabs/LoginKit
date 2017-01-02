@@ -44,6 +44,10 @@ class InitialViewController: UIViewController, BackgroundMovable {
         navigationController?.delegate = self
     }
 
+    override func loadView() {
+        self.view = viewFor(controller: self)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

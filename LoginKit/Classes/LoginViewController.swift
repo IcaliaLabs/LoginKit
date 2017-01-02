@@ -38,6 +38,8 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
     var backgroundImage: UIImage?
 
+    var loginAttempted = false
+
     var loginInProgress = false {
         didSet {
             loginButton.isEnabled = !loginInProgress
@@ -74,6 +76,10 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
         initBackgroundMover()
     }
 
+    override func loadView() {
+        self.view = viewFor(controller: self)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -102,6 +108,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     }
 
     @IBAction func didSelectLogin(_ sender: AnyObject) {
+        loginAttempted = true
         validateFields {
             delegate?.didSelectLogin(self, email: "", password: "")
         }
@@ -128,11 +135,36 @@ extension LoginViewController {
     func setupValidation() {
         var emailRules = ValidationRuleSet<String>()
         emailRules.add(rule: emailRule)
-        emailTextField.validationRules = emailRules
+        setupValidationOn(field: emailTextField, rules: emailRules)
 
         var passwordRules = ValidationRuleSet<String>()
         passwordRules.add(rule: lengthRule)
-        passwordTextField.validationRules = passwordRules
+        setupValidationOn(field: passwordTextField, rules: passwordRules)
+    }
+
+    func setupValidationOn(field: SkyFloatingLabelTextField, rules: ValidationRuleSet<String>) {
+        field.validationRules = rules
+        field.validateOnInputChange(enabled: true)
+        field.validationHandler = validationHandlerFor(field: field)
+    }
+
+    func validationHandlerFor(field: SkyFloatingLabelTextField) -> ((ValidationResult) -> Void) {
+        return { result in
+            switch result {
+            case .valid:
+                guard self.loginAttempted == true else {
+                    break
+                }
+                field.errorMessage = nil
+            case .invalid(let errors):
+                guard self.loginAttempted == true else {
+                    break
+                }
+                if let errors = errors as? [ValidationError] {
+                    field.errorMessage = errors.first?.message
+                }
+            }
+        }
     }
 
     func validateFields(success: () -> Void) {
@@ -141,11 +173,9 @@ extension LoginViewController {
             let result = field.validate()
             switch result {
             case .valid:
-                print("VALID")
                 field.errorMessage = nil
             case .invalid(let errors):
                 errorFound = true
-                print("INVALID: ERRORS = \(errors)")
                 if let errors = errors as? [ValidationError] {
                     field.errorMessage = errors.first?.message
                 }
@@ -155,34 +185,6 @@ extension LoginViewController {
             success()
         }
     }
-
-    func resetFields() {
-        for field in fields {
-            field.errorMessage = nil
-        }
-    }
-
-    // MARK: Validation Delegate
-
-    func validationSuccessful() {
-        guard let username = emailTextField.text, let password = passwordTextField.text else {
-            return
-        }
-
-        resetFields()
-        // login(username, password: password)
-    }
-
-//    func validationFailed(_ errors: [(Validatable, ValidationError)]) {
-//        print("VALIDATION FAILED")
-//        resetFields()
-//
-//        for (field, error) in errors {
-//            let textField = field as! SkyFloatingLabelTextField
-//            textField.errorMessage = error.errorMessage
-//            print("ERROR = \(error.errorMessage)")
-//        }
-//    }
 
 }
 

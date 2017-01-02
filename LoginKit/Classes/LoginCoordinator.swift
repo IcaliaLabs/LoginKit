@@ -8,6 +8,19 @@
 
 import Foundation
 
+public extension UIViewController {
+
+    func viewFor(controller: UIViewController) -> UIView {
+        let name = String(describing: type(of: controller))
+        let bundle = Bundle(for: type(of: controller))
+        guard let view = bundle.loadNibNamed(name, owner: controller, options: nil)?.first as? UIView else {
+            fatalError("Nib not found.")
+        }
+        return view
+    }
+
+}
+
 open class LoginCoordinator {
 
     // MARK: - Properties
@@ -24,27 +37,30 @@ open class LoginCoordinator {
     }()
 
     fileprivate lazy var initialViewController: InitialViewController = {
-        let viewController = InitialViewController(nibName: "InitialViewController", bundle: self.bundle)
-        viewController.backgroundImage = self.backgroundImage
+        let viewController = InitialViewController()
         viewController.delegate = self
+        viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
     fileprivate lazy var loginViewController: LoginViewController = {
-        let viewController = LoginViewController(nibName: "LoginViewController", bundle: self.bundle)
+        let viewController = LoginViewController()
         viewController.delegate = self
+        viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
     fileprivate lazy var signupViewController: SignupViewController = {
-        let viewController = SignupViewController(nibName: "SignupViewController", bundle: self.bundle)
+        let viewController = SignupViewController()
         viewController.delegate = self
+        viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
     fileprivate lazy var passwordViewController: PasswordViewController = {
-        let viewController = PasswordViewController(nibName: "PasswordViewController", bundle: self.bundle)
+        let viewController = PasswordViewController()
         viewController.delegate = self
+        viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
