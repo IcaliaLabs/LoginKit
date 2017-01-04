@@ -17,7 +17,7 @@ protocol SignupViewControllerDelegate: class {
 
 }
 
-class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable {
+class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable, LoginConfigurable {
 
     // MARK: - Properties
 

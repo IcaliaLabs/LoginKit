@@ -16,7 +16,7 @@ protocol InitialViewControllerDelegate: class {
 
 }
 
-class InitialViewController: UIViewController, BackgroundMovable {
+class InitialViewController: UIViewController, BackgroundMovable, LoginConfigurable {
 
     // MARK: - Properties
 

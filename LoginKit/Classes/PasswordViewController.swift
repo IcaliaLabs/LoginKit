@@ -17,7 +17,7 @@ protocol PasswordViewControllerDelegate: class {
 
 }
 
-class PasswordViewController: UIViewController, BackgroundMovable {
+class PasswordViewController: UIViewController, BackgroundMovable, LoginConfigurable {
 
     // MARK: - Properties
 

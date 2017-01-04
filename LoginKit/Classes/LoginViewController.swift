@@ -19,7 +19,7 @@ protocol LoginViewControllerDelegate: class {
 
 }
 
-class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable {
+class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable, LoginConfigurable {
 
     // MARK: - Properties
 

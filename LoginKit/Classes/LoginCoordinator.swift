@@ -8,6 +8,12 @@
 
 import Foundation
 
+protocol LoginConfigurable: class {
+
+    var backgroundImage: UIImage? { get set }
+
+}
+
 open class LoginCoordinator {
 
     // MARK: - Properties
@@ -25,29 +31,29 @@ open class LoginCoordinator {
 
     fileprivate lazy var initialViewController: InitialViewController! = {
         let viewController = InitialViewController()
+        self.configure(controller: viewController)
         viewController.delegate = self
-        viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
     fileprivate lazy var loginViewController: LoginViewController! = {
         let viewController = LoginViewController()
+        self.configure(controller: viewController)
         viewController.delegate = self
-        viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
     fileprivate lazy var signupViewController: SignupViewController! = {
         let viewController = SignupViewController()
+        self.configure(controller: viewController)
         viewController.delegate = self
-        viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
     fileprivate lazy var passwordViewController: PasswordViewController! = {
         let viewController = PasswordViewController()
+        self.configure(controller: viewController)
         viewController.delegate = self
-        viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
@@ -55,6 +61,12 @@ open class LoginCoordinator {
         let service = FacebookService()
         return service
     }()
+
+    // MARK: - Setup
+
+    func configure(controller: LoginConfigurable) {
+        controller.backgroundImage = backgroundImage
+    }
 
     // MARK: - LoginCoordinator
 
