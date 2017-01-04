@@ -56,7 +56,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     }
 
     override func loadView() {
-        self.view = viewFor(controller: self)
+        self.view = viewFromNib()
     }
 
     override func didReceiveMemoryWarning() {

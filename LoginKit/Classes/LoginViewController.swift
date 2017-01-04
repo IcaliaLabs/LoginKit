@@ -77,7 +77,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     }
 
     override func loadView() {
-        self.view = viewFor(controller: self)
+        self.view = viewFromNib()
     }
 
     override func didReceiveMemoryWarning() {

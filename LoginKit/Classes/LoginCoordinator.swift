@@ -8,19 +8,6 @@
 
 import Foundation
 
-public extension UIViewController {
-
-    func viewFor(controller: UIViewController) -> UIView {
-        let name = String(describing: type(of: controller))
-        let bundle = Bundle(for: type(of: controller))
-        guard let view = bundle.loadNibNamed(name, owner: controller, options: nil)?.first as? UIView else {
-            fatalError("Nib not found.")
-        }
-        return view
-    }
-
-}
-
 open class LoginCoordinator {
 
     // MARK: - Properties
