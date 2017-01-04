@@ -11,6 +11,7 @@ import Foundation
 protocol LoginConfigurable: class {
 
     var backgroundImage: UIImage? { get set }
+    var logoImage: UIImage? { get set }
 
 }
 
@@ -74,11 +75,11 @@ open class LoginCoordinator {
         self.rootViewController = rootViewController
     }
 
-    public func start() {
+    open func start() {
         rootViewController.present(navigationController, animated: true, completion: nil)
     }
 
-    public func finish() {
+    open func finish() {
         rootViewController.dismiss(animated: true, completion: nil)
     }
 

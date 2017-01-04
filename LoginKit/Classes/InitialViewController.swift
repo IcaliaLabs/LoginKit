@@ -23,6 +23,7 @@ class InitialViewController: UIViewController, BackgroundMovable, LoginConfigura
     weak var delegate: InitialViewControllerDelegate?
 
     var backgroundImage: UIImage?
+    var logoImage: UIImage?
 
     var movableBackground: UIView {
         get {

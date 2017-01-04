@@ -26,6 +26,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     weak var delegate: LoginViewControllerDelegate?
 
     var backgroundImage: UIImage?
+    var logoImage: UIImage?
 
     var loginAttempted = false
     var loginInProgress = false {

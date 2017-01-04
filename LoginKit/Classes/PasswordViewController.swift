@@ -24,6 +24,7 @@ class PasswordViewController: UIViewController, BackgroundMovable, LoginConfigur
     weak var delegate: PasswordViewControllerDelegate?
 
     var backgroundImage: UIImage?
+    var logoImage: UIImage?
 
     var recoverAttempted = false
 

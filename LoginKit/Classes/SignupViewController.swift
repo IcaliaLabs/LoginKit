@@ -24,6 +24,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     weak var delegate: SignupViewControllerDelegate?
 
     var backgroundImage: UIImage?
+    var logoImage: UIImage?
 
     var signupAttempted = false
     var signupInProgress = false {
