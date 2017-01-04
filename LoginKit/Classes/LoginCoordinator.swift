@@ -23,28 +23,28 @@ open class LoginCoordinator {
         return navController
     }()
 
-    fileprivate lazy var initialViewController: InitialViewController = {
+    fileprivate lazy var initialViewController: InitialViewController! = {
         let viewController = InitialViewController()
         viewController.delegate = self
         viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
-    fileprivate lazy var loginViewController: LoginViewController = {
+    fileprivate lazy var loginViewController: LoginViewController! = {
         let viewController = LoginViewController()
         viewController.delegate = self
         viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
-    fileprivate lazy var signupViewController: SignupViewController = {
+    fileprivate lazy var signupViewController: SignupViewController! = {
         let viewController = SignupViewController()
         viewController.delegate = self
         viewController.backgroundImage = self.backgroundImage
         return viewController
     }()
 
-    fileprivate lazy var passwordViewController: PasswordViewController = {
+    fileprivate lazy var passwordViewController: PasswordViewController! = {
         let viewController = PasswordViewController()
         viewController.delegate = self
         viewController.backgroundImage = self.backgroundImage
@@ -156,10 +156,10 @@ extension LoginCoordinator: LoginViewControllerDelegate {
         goToPassword()
     }
 
-    func didSelectBack(_ viewController: UIViewController) {
+    func loginDidSelectBack(_ viewController: UIViewController) {
         pop()
+        loginViewController = nil
     }
-
 }
 
 extension LoginCoordinator: SignupViewControllerDelegate {
@@ -168,12 +168,22 @@ extension LoginCoordinator: SignupViewControllerDelegate {
         signup(name: name, email: email, password: password)
     }
 
+    func signupDidSelectBack(_ viewController: UIViewController) {
+        pop()
+        signupViewController = nil
+    }
+
 }
 
 extension LoginCoordinator: PasswordViewControllerDelegate {
 
     func didSelectRecover(_ viewController: UIViewController, email: String) {
         recoverPassword(email: email)
+    }
+
+    func passwordDidSelectBack(_ viewController: UIViewController) {
+        pop()
+        passwordViewController = nil
     }
 
 }

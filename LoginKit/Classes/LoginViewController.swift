@@ -15,7 +15,7 @@ protocol LoginViewControllerDelegate: class {
 
     func didSelectLogin(_ viewController: UIViewController, email: String, password: String)
     func didSelectForgotPassword(_ viewController: UIViewController)
-    func didSelectBack(_ viewController: UIViewController)
+    func loginDidSelectBack(_ viewController: UIViewController)
 
 }
 
@@ -90,7 +90,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     // MARK: - Action's
 
     @IBAction func didSelectBack(_ sender: AnyObject) {
-        delegate?.didSelectBack(self)
+        delegate?.loginDidSelectBack(self)
     }
 
     @IBAction func didSelectLogin(_ sender: AnyObject) {
