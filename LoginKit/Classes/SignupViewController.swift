@@ -83,9 +83,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     // MARK: - Setup
 
     func customizeAppearance() {
-        if let backgroundImage = backgroundImage {
-            backgroundImageView.image = backgroundImage
-        }
+        backgroundImageView.image = backgroundImage
     }
 
     // MARK: - Action's

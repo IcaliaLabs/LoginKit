@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Validator
 import SkyFloatingLabelTextField
 
 protocol PasswordViewControllerDelegate: class {
@@ -24,13 +25,7 @@ class PasswordViewController: UIViewController, BackgroundMovable {
 
     var backgroundImage: UIImage?
 
-//    lazy var presenter = Presentr(presentationType: .alert)
-//    lazy var alertController: UIViewController = {
-//        let title = "Done!"
-//        let body = "Check your email for instructions on resetting your password."
-//        let controller = Presentr.alertViewController(title: title, body: body)
-//        return controller
-//    }()
+    var recoverAttempted = false
 
     // MARK: Background Movable
     var movableBackground: UIView {
@@ -51,6 +46,7 @@ class PasswordViewController: UIViewController, BackgroundMovable {
         super.viewDidLoad()
         initBackgroundMover()
         customizeAppearance()
+        setupValidation()
     }
 
     override func loadView() {
@@ -68,9 +64,7 @@ class PasswordViewController: UIViewController, BackgroundMovable {
     // MARK: - Setup
 
     func customizeAppearance() {
-        if let backgroundImage = backgroundImage {
-            backgroundImageView.image = backgroundImage
-        }
+        backgroundImageView.image = backgroundImage
     }
 
     // MARK: - Action's
@@ -80,12 +74,63 @@ class PasswordViewController: UIViewController, BackgroundMovable {
     }
 
     @IBAction func didSelectRecover(_ sender: AnyObject) {
+        recoverAttempted = true
+        
         guard let email = emailTextField.text else {
             return
         }
 
-        // TODO: VALIDATE
-        delegate?.didSelectRecover(self, email: email)
+        validateFields {
+            delegate?.didSelectRecover(self, email: email)
+        }
     }
     
+}
+
+// MARK: - Validation
+
+extension PasswordViewController {
+
+    func setupValidation() {
+        setupValidationOn(field: emailTextField, rules: ValidationService.emailRules)
+    }
+
+    func setupValidationOn(field: SkyFloatingLabelTextField, rules: ValidationRuleSet<String>) {
+        field.validationRules = rules
+        field.validateOnInputChange(enabled: true)
+        field.validationHandler = validationHandlerFor(field: field)
+    }
+
+    func validationHandlerFor(field: SkyFloatingLabelTextField) -> ((ValidationResult) -> Void) {
+        return { result in
+            switch result {
+            case .valid:
+                guard self.recoverAttempted == true else {
+                    break
+                }
+                field.errorMessage = nil
+            case .invalid(let errors):
+                guard self.recoverAttempted == true else {
+                    break
+                }
+                if let errors = errors as? [ValidationError] {
+                    field.errorMessage = errors.first?.message
+                }
+            }
+        }
+    }
+
+    func validateFields(success: () -> Void) {
+        let result = emailTextField.validate()
+        switch result {
+        case .valid:
+            emailTextField.errorMessage = nil
+            success()
+        case .invalid(let errors):
+            if let errors = errors as? [ValidationError] {
+                emailTextField.errorMessage = errors.first?.message
+            }
+        }
+    }
+
 }
