@@ -19,6 +19,7 @@
 		056A88B801658B31B0F50449E0C26D6A /* FBSDKURLSessionTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A52C809D1EDA5DAB8716CF6656EE135 /* FBSDKURLSessionTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		05E3437C51FFC76A7E985D0F47155B5A /* FBSDKAppEventsDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4B8B880C7F0D25DFDE61AF93645B76 /* FBSDKAppEventsDeviceInfo.m */; };
 		0600890A1E1D68F500BC152B /* UIViewController+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060089091E1D68F500BC152B /* UIViewController+Nib.swift */; };
+		0600890C1E1D6B7E00BC152B /* ValidatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0600890B1E1D6B7E00BC152B /* ValidatorService.swift */; };
 		06577217F4423C33142FBFF301CC52ED /* FBSDKLoginButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A53E43127A5AE6E35267F937512A130B /* FBSDKLoginButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06E737D411AADB63703960017A5FF7B1 /* UITextField+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E4ED928ECF1C15E45F6EFE8A6DEAB6 /* UITextField+Validator.swift */; };
 		076BFF5AE8F990F1118BD3B83E5C5978 /* FBSDKKeychainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3D471B6E3902ECA18715170F3EBB6 /* FBSDKKeychainStore.m */; };
@@ -420,6 +421,7 @@
 		03D22E793CE47CF40D976FC2C3C53D72 /* Bolts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Bolts.modulemap; sourceTree = "<group>"; };
 		05F31181F76867BE623967C4F113AAB2 /* BFAppLinkNavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkNavigation.m; path = Bolts/iOS/BFAppLinkNavigation.m; sourceTree = "<group>"; };
 		060089091E1D68F500BC152B /* UIViewController+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Nib.swift"; sourceTree = "<group>"; };
+		0600890B1E1D6B7E00BC152B /* ValidatorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorService.swift; sourceTree = "<group>"; };
 		065155A9C1FD55FF1F2B8C58EF6B29F6 /* FBSDKGraphRequestMetadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphRequestMetadata.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestMetadata.m; sourceTree = "<group>"; };
 		067EF98CD93C21FBD11DD22DEB99C5A5 /* FBSDKImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKImageDownloader.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKImageDownloader.m; sourceTree = "<group>"; };
 		06915C30EC83C9DCB9CECEA74CE6E60D /* FBSDKDynamicFrameworkLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDynamicFrameworkLoader.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDynamicFrameworkLoader.h; sourceTree = "<group>"; };
@@ -1102,6 +1104,7 @@
 				92462B4D390B1F892A3393ACEB24811F /* PasswordViewController.swift */,
 				1419E33831079BAD4D71D8ACDBBDB7AC /* SignupViewController.swift */,
 				060089091E1D68F500BC152B /* UIViewController+Nib.swift */,
+				0600890B1E1D6B7E00BC152B /* ValidatorService.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1882,6 +1885,7 @@
 				9840397A7979512EEC2FF0B4B28FDC18 /* BackgroundMover.swift in Sources */,
 				860E335B544C602E53FB9E03A6C1D9B8 /* Buttn.swift in Sources */,
 				32958371C4CDCBB4A427EAC7DD957748 /* CrossDissolveAnimation.swift in Sources */,
+				0600890C1E1D6B7E00BC152B /* ValidatorService.swift in Sources */,
 				290C370A3B85BD84C589E27359C719B8 /* FacebookService.swift in Sources */,
 				80AEC7655DEC4A0497F98BBCA2F52A3F /* GradientImageView.swift in Sources */,
 				65C567DAE1490BC01400999ADC183588 /* InitialViewController.swift in Sources */,

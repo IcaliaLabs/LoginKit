@@ -19,10 +19,13 @@
                 <outlet property="emailTextField" destination="XRx-9N-yQb" id="HRe-h9-7MH"/>
                 <outlet property="nameTextField" destination="gbE-TG-9bX" id="uRL-XM-6Bl"/>
                 <outlet property="passwordTextField" destination="8TC-HX-laI" id="iPU-WI-C95"/>
+                <outlet property="repeatPasswordTextField" destination="irT-Y1-JZM" id="ilC-dQ-PQZ"/>
+                <outlet property="signupButton" destination="H7F-Wo-w8c" id="haX-II-5I7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="fields" destination="XRx-9N-yQb" collectionClass="NSMutableArray" id="y1J-ff-yFA"/>
                 <outletCollection property="fields" destination="gbE-TG-9bX" collectionClass="NSMutableArray" id="DHi-9c-Sb2"/>
                 <outletCollection property="fields" destination="8TC-HX-laI" collectionClass="NSMutableArray" id="3Wi-vx-ASy"/>
+                <outletCollection property="fields" destination="irT-Y1-JZM" collectionClass="NSMutableArray" id="f0H-jK-fhC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

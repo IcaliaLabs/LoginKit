@@ -19,17 +19,6 @@ protocol LoginViewControllerDelegate: class {
 
 }
 
-enum ValidationError: String, Error {
-
-    case invalidEmail = "Email address is invalid"
-    case passwordLength = "Password must be at least 8 characters"
-
-    var message: String {
-        return self.rawValue
-    }
-
-}
-
 class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable {
 
     // MARK: - Properties
@@ -39,7 +28,6 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     var backgroundImage: UIImage?
 
     var loginAttempted = false
-
     var loginInProgress = false {
         didSet {
             loginButton.isEnabled = !loginInProgress
@@ -124,22 +112,9 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
 extension LoginViewController {
 
-    var emailRule: ValidationRulePattern {
-        return ValidationRulePattern(pattern: EmailValidationPattern.standard, error: ValidationError.invalidEmail)
-    }
-
-    var lengthRule: ValidationRuleLength {
-        return ValidationRuleLength(min: 8, error: ValidationError.passwordLength)
-    }
-
     func setupValidation() {
-        var emailRules = ValidationRuleSet<String>()
-        emailRules.add(rule: emailRule)
-        setupValidationOn(field: emailTextField, rules: emailRules)
-
-        var passwordRules = ValidationRuleSet<String>()
-        passwordRules.add(rule: lengthRule)
-        setupValidationOn(field: passwordTextField, rules: passwordRules)
+        setupValidationOn(field: emailTextField, rules: ValidationService.emailRules)
+        setupValidationOn(field: passwordTextField, rules: ValidationService.passwordRules)
     }
 
     func setupValidationOn(field: SkyFloatingLabelTextField, rules: ValidationRuleSet<String>) {
