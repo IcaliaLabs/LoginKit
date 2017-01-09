@@ -52,6 +52,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var repeatPasswordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var signupButton: UIButton!
 
     // MARK: - UIViewController

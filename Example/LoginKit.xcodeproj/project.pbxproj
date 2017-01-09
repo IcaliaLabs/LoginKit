@@ -13,7 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		6D3F18DB1E02EDE4A93295D5 /* Pods_LoginKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C66546AAC89101A534A80A /* Pods_LoginKit_Example.framework */; };
+		6D3F18DB1E02EDE4A93295D5 /* Pods_LoginKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C66546AAC89101A534A80A /* Pods_LoginKit_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7D755F516D15D9C4F8987B85 /* Pods_LoginKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A0E8AC979E41D702302CEB /* Pods_LoginKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -502,9 +502,9 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LoginKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(CONFIGURATION_BUILD_DIR)";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icalialabs.LoginKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -519,9 +519,9 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LoginKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(CONFIGURATION_BUILD_DIR)";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icalialabs.LoginKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

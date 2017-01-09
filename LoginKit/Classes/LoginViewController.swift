@@ -53,6 +53,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
 
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var backgroundImageView: UIImageView!
 
     // MARK: - UIViewController

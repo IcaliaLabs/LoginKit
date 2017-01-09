@@ -39,6 +39,7 @@ class PasswordViewController: UIViewController, BackgroundMovable, LoginConfigur
 
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var recoverButton: UIButton!
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var backgroundImageView: UIImageView!
 
     // MARK: - UIViewController

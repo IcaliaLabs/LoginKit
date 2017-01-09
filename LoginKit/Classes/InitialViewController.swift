@@ -33,6 +33,7 @@ class InitialViewController: UIViewController, BackgroundMovable, LoginConfigura
 
     // MARK: Outlet's
 
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var backgroundImageView: UIImageView!
 
     // MARK: - UIViewController

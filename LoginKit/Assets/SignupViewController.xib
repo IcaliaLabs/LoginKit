@@ -17,6 +17,7 @@
             <connections>
                 <outlet property="backgroundImageView" destination="ViE-3o-Ioh" id="11j-lK-Li2"/>
                 <outlet property="emailTextField" destination="XRx-9N-yQb" id="HRe-h9-7MH"/>
+                <outlet property="logoImageView" destination="B4D-0V-Nui" id="0Bn-m9-StD"/>
                 <outlet property="nameTextField" destination="gbE-TG-9bX" id="uRL-XM-6Bl"/>
                 <outlet property="passwordTextField" destination="8TC-HX-laI" id="iPU-WI-C95"/>
                 <outlet property="repeatPasswordTextField" destination="irT-Y1-JZM" id="ilC-dQ-PQZ"/>
@@ -254,16 +255,25 @@
                         <action selector="didSelectBack:" destination="-1" eventType="touchUpInside" id="HVh-uo-L1A"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B4D-0V-Nui">
+                    <rect key="frame" x="40" y="80" width="295" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="lNQ-zj-qK6"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ViE-3o-Ioh" secondAttribute="trailing" constant="-20" id="3Ds-Fd-6ce"/>
+                <constraint firstItem="B4D-0V-Nui" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="BE9-AN-FLb"/>
                 <constraint firstItem="39F-P3-KSq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Hhx-wp-XAF"/>
+                <constraint firstAttribute="trailing" secondItem="B4D-0V-Nui" secondAttribute="trailing" constant="40" id="Mii-nf-vuf"/>
                 <constraint firstItem="ViE-3o-Ioh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="PHp-ue-KyN"/>
                 <constraint firstItem="3Av-ui-X58" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Uxy-mT-5w2"/>
                 <constraint firstAttribute="trailing" secondItem="39F-P3-KSq" secondAttribute="trailing" constant="40" id="XKS-BG-5wa"/>
                 <constraint firstItem="ViE-3o-Ioh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="YRY-r7-TPJ"/>
                 <constraint firstItem="39F-P3-KSq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hIq-Vl-eVu"/>
+                <constraint firstItem="B4D-0V-Nui" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="qM2-9O-zK8"/>
                 <constraint firstItem="3Av-ui-X58" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="rzM-E2-9ew"/>
                 <constraint firstAttribute="bottom" secondItem="ViE-3o-Ioh" secondAttribute="bottom" constant="-20" id="y0V-wz-p24"/>
             </constraints>

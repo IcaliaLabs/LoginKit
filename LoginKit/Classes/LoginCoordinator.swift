@@ -58,15 +58,13 @@ open class LoginCoordinator {
         return viewController
     }()
 
-    fileprivate lazy var facebookService: FacebookService = {
-        let service = FacebookService()
-        return service
-    }()
+    fileprivate lazy var facebookService = FacebookService()
 
     // MARK: - Setup
 
     func configure(controller: LoginConfigurable) {
         controller.backgroundImage = backgroundImage
+        controller.logoImage = logoImage
     }
 
     // MARK: - LoginCoordinator
