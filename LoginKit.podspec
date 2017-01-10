@@ -23,6 +23,5 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Validator', '~> 2.1.1'
   s.dependency 'FBSDKLoginKit', '4.18.0'
-  #s.dependency 'SkyFloatingLabelTextField', '~> 2.0.0'
 
 end

@@ -45,7 +45,8 @@ struct ValidationService {
     // MARK: - Private
 
     private static var emailRule: ValidationRulePattern {
-        return ValidationRulePattern(pattern: EmailValidationPattern.standard, error: ValidationError.invalidEmail)
+        return ValidationRulePattern(pattern: EmailValidationPattern.standard,
+                                     error: ValidationError.invalidEmail)
     }
 
 }

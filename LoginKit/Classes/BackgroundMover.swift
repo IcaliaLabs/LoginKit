@@ -17,15 +17,21 @@ protocol BackgroundMovable: class {
 
 extension BackgroundMovable {
 
+    var verticalMotionEffect: UIInterpolatingMotionEffect {
+        let effect = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
+        effect.minimumRelativeValue = -20
+        effect.maximumRelativeValue = 20
+        return effect
+    }
+
+    var horizontalMotionEffect: UIInterpolatingMotionEffect {
+        let effect = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
+        effect.minimumRelativeValue = -20
+        effect.maximumRelativeValue = 20
+        return effect
+    }
+
     func initBackgroundMover() {
-        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
-        verticalMotionEffect.minimumRelativeValue = -20
-        verticalMotionEffect.maximumRelativeValue = 20
-
-        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
-        horizontalMotionEffect.minimumRelativeValue = -20
-        horizontalMotionEffect.maximumRelativeValue = 20
-
         let group = UIMotionEffectGroup()
         group.motionEffects = [verticalMotionEffect, horizontalMotionEffect]
         movableBackground.addMotionEffect(group)

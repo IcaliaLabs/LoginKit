@@ -24,7 +24,7 @@ public enum ButtnBorder: Int {
 
 public class Buttn: UIButton {
 
-    public var borderType: Int {
+    @IBInspectable public var borderType: Int {
         get {
             return self.border.rawValue
         }
@@ -39,25 +39,25 @@ public class Buttn: UIButton {
         }
     }
 
-    public var borderWidth: Float = 1.0  {
+    @IBInspectable public var borderWidth: Float = 1.0  {
         didSet {
             setNeedsDisplay()
         }
     }
 
-    public var borderRadius: Float = 3.0  {
+    @IBInspectable public var borderRadius: Float = 3.0  {
         didSet {
             setNeedsDisplay()
         }
     }
 
-    public var borderColor: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5) {
+    @IBInspectable public var borderColor: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5) {
         didSet {
             setNeedsDisplay()
         }
     }
 
-    public var buttnColor: UIColor = UIColor.clear  {
+    @IBInspectable public var buttnColor: UIColor = UIColor.clear  {
         didSet {
             setNeedsDisplay()
         }

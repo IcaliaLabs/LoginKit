@@ -11,38 +11,48 @@ import ObjectiveC
 import UIKit
 
 struct KeyboardMovableKeys {
+
     static var keyboardShowObserver = "km_keyboardShowObserver"
     static var keyboardHideObserver = "km_keyboardHideObserver"
+
 }
 
 protocol KeyboardMovable: class {
 
-    var selectedField: UITextField? { get set }
+    var selectedField: UITextField? { get }
     var offset: CGFloat { get set }
-
-    func initKeyboardMover()
-    func destroyKeyboardMover()
 
 }
 
 extension KeyboardMovable where Self: UIViewController {
 
+    var notificationCenter: NotificationCenter { return .default }
+
     var keyboardShowObserver: NSObjectProtocol? {
-        get { return objc_getAssociatedObject(self, &KeyboardMovableKeys.keyboardShowObserver) as? NSObjectProtocol }
+        get {
+            return objc_getAssociatedObject(self, &KeyboardMovableKeys.keyboardShowObserver) as? NSObjectProtocol
+        }
         set(newValue) {
-            objc_setAssociatedObject(self, &KeyboardMovableKeys.keyboardShowObserver, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            objc_setAssociatedObject(self,
+                                     &KeyboardMovableKeys.keyboardShowObserver,
+                                     newValue,
+                                     objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
         }
     }
 
     var keyboardHideObserver: NSObjectProtocol? {
-        get { return objc_getAssociatedObject(self, &KeyboardMovableKeys.keyboardHideObserver) as? NSObjectProtocol }
+        get {
+            return objc_getAssociatedObject(self, &KeyboardMovableKeys.keyboardHideObserver) as? NSObjectProtocol
+        }
         set(newValue) {
-            objc_setAssociatedObject(self, &KeyboardMovableKeys.keyboardHideObserver, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            objc_setAssociatedObject(self,
+                                     &KeyboardMovableKeys.keyboardHideObserver,
+                                     newValue,
+                                     objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
         }
     }
 
     func initKeyboardMover() {
-        let notificationCenter = NotificationCenter.default
         keyboardShowObserver = notificationCenter.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: nil) { notification in
             self.keyboardWillShow(notification)
         }
@@ -52,7 +62,6 @@ extension KeyboardMovable where Self: UIViewController {
     }
 
     func destroyKeyboardMover() {
-        let notificationCenter = NotificationCenter.default
         if let showObserver = keyboardShowObserver {
             notificationCenter.removeObserver(showObserver)
         }

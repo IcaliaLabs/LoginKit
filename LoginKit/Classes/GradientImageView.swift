@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class GradientImageView: UIImageView {
 
     @IBInspectable public var gradientColor: UIColor = UIColor.black {

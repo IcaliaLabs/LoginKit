@@ -25,6 +25,7 @@ class InitialViewController: UIViewController, BackgroundMovable, LoginConfigura
     var backgroundImage: UIImage?
     var logoImage: UIImage?
 
+    // MARK: Background Movable
     var movableBackground: UIView {
         get {
             return backgroundImageView
@@ -42,8 +43,6 @@ class InitialViewController: UIViewController, BackgroundMovable, LoginConfigura
         super.viewDidLoad()
         initBackgroundMover()
         customizeAppearance()
-        navigationController?.isNavigationBarHidden = true
-        navigationController?.delegate = self
     }
 
     override func loadView() {
@@ -62,6 +61,9 @@ class InitialViewController: UIViewController, BackgroundMovable, LoginConfigura
 
     func customizeAppearance() {
         backgroundImageView.image = backgroundImage
+        
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.delegate = self
     }
 
     // MARK: - Action's

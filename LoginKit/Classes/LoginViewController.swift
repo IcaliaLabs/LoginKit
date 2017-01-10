@@ -39,11 +39,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     var offset: CGFloat = 0.0
 
     // MARK: Background Movable
-    var movableBackground: UIView {
-        get {
-            return backgroundImageView
-        }
-    }
+    var movableBackground: UIView { return backgroundImageView }
 
     // MARK: - Outlet's
 
@@ -60,9 +56,9 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     override func viewDidLoad() {
         super.viewDidLoad()
         setupValidation()
-        customizeAppearance()
         initKeyboardMover()
         initBackgroundMover()
+        customizeAppearance()
     }
 
     override func loadView() {
