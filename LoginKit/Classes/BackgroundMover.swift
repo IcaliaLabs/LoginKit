@@ -12,7 +12,6 @@ import UIKit
 protocol BackgroundMovable: class {
 
     var movableBackground: UIView { get }
-    func initBackgroundMover()
 
 }
 

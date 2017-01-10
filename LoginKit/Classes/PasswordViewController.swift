@@ -8,7 +8,6 @@
 
 import UIKit
 import Validator
-import SkyFloatingLabelTextField
 
 protocol PasswordViewControllerDelegate: class {
 

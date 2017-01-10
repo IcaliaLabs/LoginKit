@@ -22,10 +22,9 @@ public enum ButtnBorder: Int {
 
 // TO-DO: - Rounded corners should be with a mask, to cover border AND background
 
-@IBDesignable
-open class Buttn: UIButton {
+public class Buttn: UIButton {
 
-    @IBInspectable public var borderType: Int {
+    public var borderType: Int {
         get {
             return self.border.rawValue
         }
@@ -40,25 +39,25 @@ open class Buttn: UIButton {
         }
     }
 
-    @IBInspectable public var borderWidth: Float = 1.0  {
+    public var borderWidth: Float = 1.0  {
         didSet {
             setNeedsDisplay()
         }
     }
 
-    @IBInspectable public var borderRadius: Float = 3.0  {
+    public var borderRadius: Float = 3.0  {
         didSet {
             setNeedsDisplay()
         }
     }
 
-    @IBInspectable public var borderColor: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5) {
+    public var borderColor: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5) {
         didSet {
             setNeedsDisplay()
         }
     }
 
-    @IBInspectable public var buttnColor: UIColor = UIColor.clear  {
+    public var buttnColor: UIColor = UIColor.clear  {
         didSet {
             setNeedsDisplay()
         }
@@ -82,7 +81,7 @@ open class Buttn: UIButton {
 
     // MARK: UIView
 
-    open override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         super.draw(rect)
 
         guard border != .all else {

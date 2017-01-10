@@ -25,9 +25,6 @@
     "Validator": [
       "~> 2.1.1"
     ],
-    "SkyFloatingLabelTextField": [
-      "~> 2.0.0"
-    ],
     "FBSDKLoginKit": [
       "4.18.0"
     ]
