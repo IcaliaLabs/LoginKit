@@ -22,8 +22,6 @@ class GradientImageView: UIImageView {
         didSet { self.drawBackground() }
     }
 
-    var hasDrawnBackground = false
-
     private let clearColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
 
     private var alphaLayer: CALayer?
@@ -32,29 +30,26 @@ class GradientImageView: UIImageView {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        // drawBackground()
+        drawBackground()
     }
 
     override init(image: UIImage?) {
         super.init(image: image)
-        // drawBackground()
+        drawBackground()
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        // drawBackground()
+        drawBackground()
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        drawBackground()
+        alphaLayer?.frame = self.bounds
+        gradientLayer?.frame = self.bounds
     }
 
     func drawBackground() {
-        guard hasDrawnBackground == false else {
-            return
-        }
-
         gradientLayer?.removeFromSuperlayer()
         alphaLayer?.removeFromSuperlayer()
 
@@ -72,8 +67,6 @@ class GradientImageView: UIImageView {
 
         layer.insertSublayer(gradientLayer!, at: 0)
         layer.insertSublayer(alphaLayer!, above: gradientLayer)
-
-        hasDrawnBackground = true
     }
     
 }

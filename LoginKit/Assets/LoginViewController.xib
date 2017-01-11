@@ -33,9 +33,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzw-Ub-rrB" customClass="GradientImageView" customModule="LoginKit" customModuleProvider="target">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rzw-Ub-rrB" customClass="GradientImageView" customModule="LoginKit" customModuleProvider="target">
                     <rect key="frame" x="-20" y="-20" width="415" height="707"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="GlL-4f-okN">
                     <rect key="frame" x="40" y="259" width="295" height="150"/>
@@ -195,12 +194,16 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="jh0-UX-V3y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Zt-N2-v3w"/>
+                <constraint firstAttribute="trailing" secondItem="Rzw-Ub-rrB" secondAttribute="trailing" constant="-20" id="ApF-ba-iJq"/>
+                <constraint firstAttribute="bottom" secondItem="Rzw-Ub-rrB" secondAttribute="bottom" constant="-20" id="Ewe-SS-oVS"/>
                 <constraint firstAttribute="trailing" secondItem="GlL-4f-okN" secondAttribute="trailing" constant="40" id="KNs-eq-MQg"/>
                 <constraint firstItem="GlL-4f-okN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="QFP-Mh-bq4"/>
                 <constraint firstItem="KTU-R2-WCR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="QJT-rI-UgZ"/>
+                <constraint firstItem="Rzw-Ub-rrB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="QXZ-lu-RKy"/>
                 <constraint firstAttribute="trailing" secondItem="KTU-R2-WCR" secondAttribute="trailing" constant="40" id="S6q-Ne-FM8"/>
                 <constraint firstItem="jh0-UX-V3y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="dkb-e8-f9g"/>
                 <constraint firstItem="KTU-R2-WCR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="gH5-rH-wU0"/>
+                <constraint firstItem="Rzw-Ub-rrB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="uUX-Br-mrC"/>
                 <constraint firstItem="GlL-4f-okN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ulB-UN-Iy2"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="53.5"/>

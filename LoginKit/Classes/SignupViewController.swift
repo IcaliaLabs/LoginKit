@@ -58,10 +58,10 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        initKeyboardMover()
-        customizeAppearance()
-        initBackgroundMover()
         setupValidation()
+        initKeyboardMover()
+        initBackgroundMover()
+        customizeAppearance()
     }
 
     override func loadView() {
