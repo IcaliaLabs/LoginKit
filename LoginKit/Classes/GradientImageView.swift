@@ -49,10 +49,10 @@ class GradientImageView: UIImageView {
         gradientLayer = CAGradientLayer()
         alphaLayer = CALayer()
 
-        gradientLayer!.frame = bounds
-        gradientLayer!.colors = [gradientColor.cgColor, clearColor.cgColor]
-        gradientLayer!.locations = [0.8, 1]
-        // gradientLayer!.locations = [0, 0.4]
+        //gradientLayer!.frame = bounds
+        //gradientLayer!.colors = [gradientColor.cgColor, clearColor.cgColor]
+        // gradientLayer!.locations = [0.8, 1]
+        //gradientLayer!.locations = [0, 0.4]
 
         alphaLayer!.frame = bounds
         alphaLayer!.backgroundColor = fadeColor.cgColor

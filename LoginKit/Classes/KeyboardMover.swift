@@ -103,6 +103,8 @@ extension KeyboardMovable where Self: UIViewController {
         let fieldPoint = CGPoint(x: 0, y: selectedField.frame.origin.y + selectedField.frame.size.height)
         let visibleRect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - keyboardHeight)
 
+        print("FRAME = \(selectedField.frame)") // TODO: WHY IS FRAME ORIGIN 0,0 ???
+
         if visibleRect.contains(fieldPoint) {
             print("FIELD VISIBLE: NOT MOVING")
         } else {

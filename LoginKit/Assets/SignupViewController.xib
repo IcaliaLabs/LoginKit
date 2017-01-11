@@ -34,7 +34,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-3o-Ioh">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-3o-Ioh" customClass="GradientImageView" customModule="LoginKit" customModuleProvider="target">
                     <rect key="frame" x="-20" y="-20" width="415" height="707"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="39F-P3-KSq">
@@ -85,9 +85,12 @@
                                     <exclude reference="GbS-oS-r31"/>
                                 </mask>
                             </variation>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="HMi-GO-q2x"/>
+                            </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbE-TG-9bX" customClass="SkyFloatingLabelTextField" customModule="LoginKit" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="53.5" width="295" height="40"/>
+                            <rect key="frame" x="0.0" y="53" width="295" height="40"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="GqJ-Bx-Rs2"/>
@@ -131,9 +134,12 @@
                                     <exclude reference="kyO-Ms-iMU"/>
                                 </mask>
                             </variation>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="vJf-tn-WQo"/>
+                            </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TC-HX-laI" customClass="SkyFloatingLabelTextField" customModule="LoginKit" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="106.5" width="295" height="40"/>
+                            <rect key="frame" x="0.0" y="107" width="295" height="40"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="IEP-g3-a6V"/>
@@ -177,6 +183,9 @@
                                     <exclude reference="wRt-T9-YX9"/>
                                 </mask>
                             </variation>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="vwm-xK-qXO"/>
+                            </connections>
                         </textField>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACi-kB-UIo">
                             <rect key="frame" x="0.0" y="160" width="295" height="40"/>
@@ -226,6 +235,9 @@
                                             <exclude reference="3jJ-rM-9R3"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Kby-p0-AMB"/>
+                                    </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7F-Wo-w8c">
                                     <rect key="frame" x="251" y="0.0" width="44" height="40"/>
@@ -245,10 +257,13 @@
                         <constraint firstAttribute="height" constant="200" id="zzT-ex-GPD"/>
                     </constraints>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Av-ui-X58">
-                    <rect key="frame" x="20" y="20" width="48" height="36"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                    <state key="normal" title="Back">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Av-ui-X58">
+                    <rect key="frame" x="0.0" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="372-Gb-zzp"/>
+                        <constraint firstAttribute="width" constant="50" id="6di-x2-hMd"/>
+                    </constraints>
+                    <state key="normal" image="backIcon">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -269,7 +284,7 @@
                 <constraint firstItem="39F-P3-KSq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Hhx-wp-XAF"/>
                 <constraint firstAttribute="trailing" secondItem="B4D-0V-Nui" secondAttribute="trailing" constant="40" id="Mii-nf-vuf"/>
                 <constraint firstItem="ViE-3o-Ioh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="PHp-ue-KyN"/>
-                <constraint firstItem="3Av-ui-X58" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Uxy-mT-5w2"/>
+                <constraint firstItem="3Av-ui-X58" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Uxy-mT-5w2"/>
                 <constraint firstAttribute="trailing" secondItem="39F-P3-KSq" secondAttribute="trailing" constant="40" id="XKS-BG-5wa"/>
                 <constraint firstItem="ViE-3o-Ioh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="YRY-r7-TPJ"/>
                 <constraint firstItem="39F-P3-KSq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hIq-Vl-eVu"/>
@@ -282,5 +297,6 @@
     </objects>
     <resources>
         <image name="arrowIcon" width="19" height="17"/>
+        <image name="backIcon" width="10" height="17"/>
     </resources>
 </document>

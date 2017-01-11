@@ -33,7 +33,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzw-Ub-rrB">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzw-Ub-rrB" customClass="GradientImageView" customModule="LoginKit" customModuleProvider="target">
                     <rect key="frame" x="-20" y="-20" width="415" height="707"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -85,6 +85,9 @@
                                     <exclude reference="9E9-96-mLr"/>
                                 </mask>
                             </variation>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="One-Jx-gl4"/>
+                            </connections>
                         </textField>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-j1-O6W">
                             <rect key="frame" x="0.0" y="55" width="295" height="40"/>
@@ -134,6 +137,9 @@
                                             <exclude reference="WaW-ud-LO8"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="pvT-RF-Bl0"/>
+                                    </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVL-Ig-OiV">
                                     <rect key="frame" x="251" y="0.0" width="44" height="40"/>
@@ -166,10 +172,13 @@
                         <constraint firstAttribute="height" constant="150" id="rVX-qY-kyy"/>
                     </constraints>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jh0-UX-V3y">
-                    <rect key="frame" x="20" y="20" width="48" height="36"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                    <state key="normal" title="Back">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jh0-UX-V3y">
+                    <rect key="frame" x="0.0" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TKo-Y5-4iu"/>
+                        <constraint firstAttribute="width" constant="50" id="e6k-RB-BVN"/>
+                    </constraints>
+                    <state key="normal" image="backIcon">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -185,7 +194,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="jh0-UX-V3y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4Zt-N2-v3w"/>
+                <constraint firstItem="jh0-UX-V3y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Zt-N2-v3w"/>
                 <constraint firstAttribute="trailing" secondItem="GlL-4f-okN" secondAttribute="trailing" constant="40" id="KNs-eq-MQg"/>
                 <constraint firstItem="GlL-4f-okN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="QFP-Mh-bq4"/>
                 <constraint firstItem="KTU-R2-WCR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="QJT-rI-UgZ"/>
@@ -199,5 +208,6 @@
     </objects>
     <resources>
         <image name="arrowIcon" width="19" height="17"/>
+        <image name="backIcon" width="10" height="17"/>
     </resources>
 </document>
