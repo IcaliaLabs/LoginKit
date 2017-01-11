@@ -100,10 +100,16 @@ extension KeyboardMovable where Self: UIViewController {
             return
         }
 
-        let fieldPoint = CGPoint(x: 0, y: selectedField.frame.origin.y + selectedField.frame.size.height)
-        let visibleRect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - keyboardHeight)
+        var textfieldFrame: CGRect = selectedField.frame
+        var textfieldCenter: CGPoint = selectedField.center
 
-        print("FRAME = \(selectedField.frame)") // TODO: WHY IS FRAME ORIGIN 0,0 ???
+        if let superView = selectedField.superview, superView != view {
+            textfieldFrame = superView.convert(selectedField.frame, to: view)
+            textfieldCenter = superView.convert(selectedField.center, to: view)
+        }
+
+        let fieldPoint = CGPoint(x: 0, y: textfieldFrame.origin.y + textfieldFrame.size.height)
+        let visibleRect = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - keyboardHeight)
 
         if visibleRect.contains(fieldPoint) {
             print("FIELD VISIBLE: NOT MOVING")
@@ -113,22 +119,18 @@ extension KeyboardMovable where Self: UIViewController {
             view.frame = view.frame.offsetBy(dx: 0, dy: -offset)
 
             UIView.animate(withDuration: 0.25, delay: 0, options: UIViewAnimationOptions(), animations: {
-
                 if directionUp {
-                    let fieldCenter = selectedField.center
                     let centerInVisibleRect = CGPoint(x: visibleRect.width / 2, y: visibleRect.height / 2)
-
                     let y1 = centerInVisibleRect.y
-                    let y2 = fieldCenter.y
+                    let y2 = textfieldCenter.y
                     self.offset = (y1 - y2)
-
                     self.view.frame = self.view.frame.offsetBy(dx: 0, dy: self.offset)
                 } else {
                     self.offset = 0.0
                 }
-
             }, completion: nil)
         }
+
     }
 
 }
