@@ -1,14 +1,15 @@
 Pod::Spec.new do |s|
-  s.name             = 'LoginKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of LoginKit.'
+  s.name             = 'ILLoginKit'
+  s.version          = '0.0.4'
+  s.summary          = 'LoginKit is a quick and easy way to add a Login/Signup UX to your app.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+LoginKit handles Signup & Login, via Facebook & Email. It takes care of the UI, the forms, validation, and Facebook SDK access.
+All you need to do is start LoginKit, and then make the necessary calls to your own backend API to login or signup.
                        DESC
-  s.homepage         = 'https://github.com/danlozano/LoginKit'
+  s.homepage         = 'https://github.com/icalialabs/LoginKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Daniel Lozano' => 'dan@danielozano.com' }
-  s.source           = { :git => 'https://github.com/danlozano/LoginKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/icalialabs/LoginKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/danlozanov'
 
   s.ios.deployment_target = '9.0'
