@@ -83,12 +83,12 @@ open class LoginCoordinator {
 
     // MARK: - Public/Subclassable methods
 
-    open var backgroundImage: UIImage {
-        return UIImage(named: "DefaultBG", in: bundle, compatibleWith: nil) ?? UIImage()
+    open var backgroundImage: UIImage? {
+        return UIImage(named: "DefaultBackground", in: bundle, compatibleWith: nil)
     }
 
     open var logoImage: UIImage? {
-        return nil
+        return UIImage(named: "DefaultLogo", in: bundle, compatibleWith: nil)
     }
 
     open func login(email: String, password: String) {

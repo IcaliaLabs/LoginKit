@@ -15,7 +15,7 @@ All you need to do is start LoginKit, and then make the necessary calls to your 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'LoginKit/Classes/**/*'
-  s.resources = 'LoginKit/Assets/*.{xib,storyboard,xcassets}'
+  s.resources = 'LoginKit/Assets/*.{xib,xcassets,png,jpg}'
   # s.resource_bundles = {
   #   'LoginKit' => ['LoginKit/Assets/*.{xib,storyboard,xcassets}']
   # }

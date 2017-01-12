@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'LoginKit_Example' do
 
-  pod 'LoginKit', :path => '../'
+  pod 'ILLoginKit', :path => '../'
 
   target 'LoginKit_Tests' do
     inherit! :search_paths

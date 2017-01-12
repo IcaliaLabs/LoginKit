@@ -184,7 +184,7 @@
                         <action selector="didSelectBack:" destination="-1" eventType="touchUpInside" id="VPP-PK-j2X"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTU-R2-WCR">
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTU-R2-WCR">
                     <rect key="frame" x="40" y="80" width="295" height="130"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="130" id="bFK-Zz-Mzw"/>

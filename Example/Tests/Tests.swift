@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import LoginKit
+import ILLoginKit
 
 class Tests: XCTestCase {
     

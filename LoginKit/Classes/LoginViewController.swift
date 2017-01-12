@@ -81,6 +81,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     // MARK: - Setup
 
     func customizeAppearance() {
+        logoImageView.image = logoImage
         backgroundImageView.image = backgroundImage
     }
 

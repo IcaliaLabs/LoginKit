@@ -60,6 +60,7 @@ class InitialViewController: UIViewController, BackgroundMovable, LoginConfigura
     // MARK: - Setup
 
     func customizeAppearance() {
+        logoImageView.image = logoImage
         backgroundImageView.image = backgroundImage
         
         navigationController?.isNavigationBarHidden = true

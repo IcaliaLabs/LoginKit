@@ -65,6 +65,7 @@ class PasswordViewController: UIViewController, BackgroundMovable, LoginConfigur
     // MARK: - Setup
 
     func customizeAppearance() {
+        logoImageView.image = logoImage
         backgroundImageView.image = backgroundImage
     }
 

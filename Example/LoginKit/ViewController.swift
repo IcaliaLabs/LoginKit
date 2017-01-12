@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LoginKit
+import ILLoginKit
 
 class ViewController: UIViewController {
 
