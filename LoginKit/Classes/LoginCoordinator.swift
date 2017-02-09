@@ -8,41 +8,24 @@
 
 import Foundation
 
-protocol Configurable: class {
+protocol ConfigurationSource: class {
 
-    var configuration: Configuration! { get set }
-
-}
-
-struct Configuration {
-
-    var backgroundImage: UIImage!
-
-    var logoImage: UIImage!
-
-    var tintColor: UIColor!
-
-    var signupButtonText: String!
-
-    var loginButtonText: String!
-
-    var facebookButtonText: String!
-
-    var forgotPasswordText: String!
-
-    var recoverPasswordText: String!
-
-    var emailPlaceholder: String!
-
-    var passwordPlaceholder: String!
-
-    var repeatPasswordPlaceholder: String!
-
-    var namePlaceholder: String!
+    var backgroundImage: UIImage { get }
+    var logoImage: UIImage { get }
+    var tintColor: UIColor { get }
+    var signupButtonText: String { get }
+    var loginButtonText: String { get }
+    var facebookButtonText: String { get }
+    var forgotPasswordText: String { get }
+    var recoverPasswordText: String { get }
+    var emailPlaceholder: String { get }
+    var passwordPlaceholder: String { get }
+    var repeatPasswordPlaceholder: String { get }
+    var namePlaceholder: String { get }
 
 }
 
-open class LoginCoordinator {
+open class LoginCoordinator: ConfigurationSource {
 
     // MARK: - Properties
 
@@ -89,54 +72,35 @@ open class LoginCoordinator {
 
     fileprivate lazy var initialViewController: InitialViewController! = {
         let viewController = InitialViewController()
-        self.configure(controller: viewController)
         viewController.delegate = self
+        viewController.configurationSource = self
         return viewController
     }()
 
     fileprivate lazy var loginViewController: LoginViewController! = {
         let viewController = LoginViewController()
-        self.configure(controller: viewController)
         viewController.delegate = self
+        viewController.configurationSource = self
         return viewController
     }()
 
     fileprivate lazy var signupViewController: SignupViewController! = {
         let viewController = SignupViewController()
-        self.configure(controller: viewController)
         viewController.delegate = self
+        viewController.configurationSource = self
         return viewController
     }()
 
     fileprivate lazy var passwordViewController: PasswordViewController! = {
         let viewController = PasswordViewController()
-        self.configure(controller: viewController)
         viewController.delegate = self
+        viewController.configurationSource = self
         return viewController
     }()
 
     // MARK: Services
 
     fileprivate lazy var facebookService = FacebookService()
-
-    // MARK: - Setup
-
-    func configure(controller: Configurable) {
-        var config = Configuration()
-        config.backgroundImage = backgroundImage
-        config.logoImage = logoImage
-        config.tintColor = tintColor
-        config.signupButtonText = signupButtonText
-        config.loginButtonText = loginButtonText
-        config.facebookButtonText = facebookButtonText
-        config.forgotPasswordText = forgotPasswordText
-        config.recoverPasswordText = recoverPasswordText
-        config.emailPlaceholder = emailPlaceholder
-        config.passwordPlaceholder = passwordPlaceholder
-        config.repeatPasswordPlaceholder = repeatPasswordPlaceholder
-        config.namePlaceholder = namePlaceholder
-        controller.configuration = config
-    }
 
     // MARK: - LoginCoordinator
 

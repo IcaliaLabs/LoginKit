@@ -32,8 +32,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vw0-kY-ntJ">
                     <rect key="frame" x="-20" y="-20" width="415" height="707"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Cb-f1M" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
-                    <rect key="frame" x="40" y="597" width="295" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Cb-f1M">
+                    <rect key="frame" x="40" y="567" width="295" height="50"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.45882352941176469" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Uld-u5-FHe"/>
                     </constraints>
@@ -42,11 +43,8 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
-                            <real key="value" value="3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                            <real key="value" value="1"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -54,7 +52,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-q7-7Ju" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
-                    <rect key="frame" x="40" y="532" width="142" height="50"/>
+                    <rect key="frame" x="40" y="487" width="142" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="fc3-ve-5r8"/>
                     </constraints>
@@ -75,7 +73,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-wF-hG2" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
-                    <rect key="frame" x="194" y="532" width="141" height="50"/>
+                    <rect key="frame" x="194" y="487" width="141" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="9F5-ZK-SHS"/>
                     </constraints>
@@ -105,7 +103,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="3Gm-Ia-4ad"/>
-                <constraint firstAttribute="bottom" secondItem="XPy-Cb-f1M" secondAttribute="bottom" constant="20" id="Cvk-vi-HpV"/>
+                <constraint firstAttribute="bottom" secondItem="XPy-Cb-f1M" secondAttribute="bottom" constant="50" id="Cvk-vi-HpV"/>
                 <constraint firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" constant="40" id="EVX-g1-T0C"/>
                 <constraint firstAttribute="trailing" secondItem="Vw0-kY-ntJ" secondAttribute="trailing" constant="-20" id="G08-uT-z48"/>
                 <constraint firstItem="9Xa-q7-7Ju" firstAttribute="width" secondItem="XPy-Cb-f1M" secondAttribute="width" multiplier="0.48" id="Mba-Om-itj"/>
@@ -113,9 +111,9 @@
                 <constraint firstAttribute="bottom" secondItem="Vw0-kY-ntJ" secondAttribute="bottom" constant="-20" id="PYR-Bs-drb"/>
                 <constraint firstItem="wTd-tf-f9d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Wed-s0-tHo"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="XPO-54-lKF"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="9Xa-q7-7Ju" secondAttribute="bottom" constant="15" id="ZLL-6L-oTT"/>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="9Xa-q7-7Ju" secondAttribute="bottom" constant="30" id="ZLL-6L-oTT"/>
                 <constraint firstItem="B7r-wF-hG2" firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" id="bkh-nJ-31Q"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="B7r-wF-hG2" secondAttribute="bottom" constant="15" id="dH5-Hs-8bs"/>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="B7r-wF-hG2" secondAttribute="bottom" constant="30" id="dH5-Hs-8bs"/>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="9Xa-q7-7Ju" secondAttribute="leading" id="enB-lh-Yf4"/>
                 <constraint firstItem="B7r-wF-hG2" firstAttribute="width" secondItem="XPy-Cb-f1M" secondAttribute="width" multiplier="0.48" id="pmQ-Jq-bBx"/>
                 <constraint firstItem="wTd-tf-f9d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="vHj-cu-0Uk"/>

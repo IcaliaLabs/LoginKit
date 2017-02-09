@@ -123,7 +123,13 @@ extension KeyboardMovable where Self: UIViewController {
                     let centerInVisibleRect = CGPoint(x: visibleRect.width / 2, y: visibleRect.height / 2)
                     let y1 = centerInVisibleRect.y
                     let y2 = textfieldCenter.y
-                    self.offset = (y1 - y2)
+
+                    var offset = y1 - y2
+                    if -offset > keyboardHeight {
+                        offset = -keyboardHeight
+                    }
+
+                    self.offset = offset
                     self.view.frame = self.view.frame.offsetBy(dx: 0, dy: self.offset)
                 } else {
                     self.offset = 0.0

@@ -11,22 +11,28 @@ import UIKit
 class GradientImageView: UIImageView {
 
     @IBInspectable public var gradientColor: UIColor = UIColor.black {
-        didSet { self.drawBackground() }
+        didSet {
+            self.drawBackground()
+        }
     }
 
     @IBInspectable public var fadeColor: UIColor = UIColor.black {
-        didSet { self.drawBackground() }
+        didSet {
+            self.drawBackground()
+        }
     }
 
     @IBInspectable public var fadeAlpha: Float = 0.3 {
-        didSet { self.drawBackground() }
+        didSet {
+            self.drawBackground()
+        }
     }
-
-    private let clearColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
 
     private var alphaLayer: CALayer?
 
     private var gradientLayer: CAGradientLayer?
+
+    private let clearColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -56,10 +62,9 @@ class GradientImageView: UIImageView {
         gradientLayer = CAGradientLayer()
         alphaLayer = CALayer()
 
-        //gradientLayer!.frame = bounds
-        //gradientLayer!.colors = [gradientColor.cgColor, clearColor.cgColor]
-        // gradientLayer!.locations = [0.8, 1]
-        //gradientLayer!.locations = [0, 0.4]
+        gradientLayer!.frame = bounds
+        gradientLayer!.colors = [clearColor.cgColor, gradientColor.cgColor]
+        gradientLayer!.locations = [0, 0.7]
 
         alphaLayer!.frame = bounds
         alphaLayer!.backgroundColor = fadeColor.cgColor

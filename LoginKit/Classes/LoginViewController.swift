@@ -13,18 +13,20 @@ import Validator
 protocol LoginViewControllerDelegate: class {
 
     func didSelectLogin(_ viewController: UIViewController, email: String, password: String)
+
     func didSelectForgotPassword(_ viewController: UIViewController)
+
     func loginDidSelectBack(_ viewController: UIViewController)
 
 }
 
-class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable, Configurable {
+class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable {
 
     // MARK: - Properties
 
     weak var delegate: LoginViewControllerDelegate?
 
-    var configuration: Configuration!
+    weak var configurationSource: ConfigurationSource?
 
     var loginAttempted = false
 
@@ -56,7 +58,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
 
     @IBOutlet weak var logoImageView: UIImageView!
 
-    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var backgroundImageView: GradientImageView!
 
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
@@ -90,14 +92,24 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     // MARK: - Setup
 
     func customizeAppearance() {
-        configure(with: configuration)
+        configureFromSource()
     }
 
-    func configure(with config: Configuration) {
+    func configureFromSource() {
+        guard let config = configurationSource else {
+            return
+        }
+
         backgroundImageView.image = config.backgroundImage
+        backgroundImageView.gradientColor = config.tintColor
+        backgroundImageView.fadeColor = config.tintColor
+
         logoImageView.image = config.logoImage
         emailTextField.placeholder = config.emailPlaceholder
         passwordTextField.placeholder = config.passwordPlaceholder
+
+        loginButton.setTitle(config.loginButtonText, for: .normal)
+        loginButton.setTitleColor(config.tintColor, for: .normal)
         forgotPasswordButton.setTitle(config.forgotPasswordText, for: .normal)
     }
 

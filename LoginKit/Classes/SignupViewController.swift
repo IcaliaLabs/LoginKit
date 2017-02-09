@@ -17,13 +17,13 @@ protocol SignupViewControllerDelegate: class {
 
 }
 
-class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable, Configurable {
+class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable {
 
     // MARK: - Properties
 
     weak var delegate: SignupViewControllerDelegate?
 
-    var configuration: Configuration!
+    weak var configurationSource: ConfigurationSource?
 
     var signupAttempted = false
 
@@ -59,11 +59,11 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     @IBOutlet weak var repeatPasswordTextField: SkyFloatingLabelTextField!
 
-    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var backgroundImageView: GradientImageView!
 
     @IBOutlet weak var logoImageView: UIImageView!
 
-    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var signupButton: Buttn!
 
     // MARK: - UIViewController
 
@@ -96,12 +96,22 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     // MARK: - Setup
 
     func customizeAppearance() {
-        configure(with: configuration)
+        configureFromSource()
     }
     
-    func configure(with config: Configuration) {
+    func configureFromSource() {
+        guard let config = configurationSource else {
+            return
+        }
+
+        view.backgroundColor = config.tintColor
+        signupButton.setTitle(config.signupButtonText, for: .normal)
+
         backgroundImageView.image = config.backgroundImage
+        backgroundImageView.gradientColor = config.tintColor
+        backgroundImageView.fadeColor = config.tintColor
         logoImageView.image = config.logoImage
+
         emailTextField.placeholder = config.emailPlaceholder
         nameTextField.placeholder = config.namePlaceholder
         passwordTextField.placeholder = config.passwordPlaceholder

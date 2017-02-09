@@ -12,17 +12,18 @@ import Validator
 protocol PasswordViewControllerDelegate: class {
 
     func didSelectRecover(_ viewController: UIViewController, email: String)
+
     func passwordDidSelectBack(_ viewController: UIViewController)
 
 }
 
-class PasswordViewController: UIViewController, BackgroundMovable, Configurable {
+class PasswordViewController: UIViewController, BackgroundMovable {
 
     // MARK: - Properties
 
     weak var delegate: PasswordViewControllerDelegate?
 
-    var configuration: Configuration!
+    weak var configurationSource: ConfigurationSource?
 
     var recoverAttempted = false
 
@@ -68,15 +69,18 @@ class PasswordViewController: UIViewController, BackgroundMovable, Configurable 
     // MARK: - Setup
 
     func customizeAppearance() {
-        configure(with: configuration)
+        configureFromSource()
     }
 
-    func configure(with config: Configuration) {
+    func configureFromSource() {
+        guard let config = configurationSource else {
+            return
+        }
+
         backgroundImageView.image = config.backgroundImage
         logoImageView.image = config.logoImage
         emailTextField.placeholder = config.emailPlaceholder
         recoverButton.setTitle(config.recoverPasswordText, for: .normal)
-        recoverButton.setTitleColor(config.tintColor, for: .normal)
     }
 
     // MARK: - Action's
