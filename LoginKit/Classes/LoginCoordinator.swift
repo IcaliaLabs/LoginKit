@@ -8,10 +8,37 @@
 
 import Foundation
 
-protocol LoginConfigurable: class {
+protocol Configurable: class {
 
-    var backgroundImage: UIImage? { get set }
-    var logoImage: UIImage? { get set }
+    var configuration: Configuration! { get set }
+
+}
+
+struct Configuration {
+
+    var backgroundImage: UIImage!
+
+    var logoImage: UIImage!
+
+    var tintColor: UIColor!
+
+    var signupButtonText: String!
+
+    var loginButtonText: String!
+
+    var facebookButtonText: String!
+
+    var forgotPasswordText: String!
+
+    var recoverPasswordText: String!
+
+    var emailPlaceholder: String!
+
+    var passwordPlaceholder: String!
+
+    var repeatPasswordPlaceholder: String!
+
+    var namePlaceholder: String!
 
 }
 
@@ -19,11 +46,41 @@ open class LoginCoordinator {
 
     // MARK: - Properties
 
-    fileprivate let rootViewController: UIViewController
+    // MARK: Public Configuration
 
-    fileprivate lazy var bundle: Bundle = {
-        return Bundle(for: InitialViewController.self)
-    }()
+    public var backgroundImage = UIImage()
+
+    public var logoImage = UIImage()
+
+    public var tintColor = UIColor(red: 185.0 / 255.0, green: 117.0 / 255.0, blue: 216.0 / 255.0, alpha: 1)
+
+    public var signupButtonText = "SIGN UP"
+
+    public var loginButtonText = "LOG IN"
+
+    public var facebookButtonText = "CONNECT WITH FACEBOOK"
+
+    public var forgotPasswordText = "Forgot Password"
+
+    public var recoverPasswordText = "Recover Password"
+
+    public var emailPlaceholder = "EMAIL"
+
+    public var passwordPlaceholder = "PASSWORD"
+
+    public var repeatPasswordPlaceholder = "REPEAT PASSWORD"
+
+    public var namePlaceholder = "FULL NAME"
+
+    // MARK: Private
+
+    fileprivate let rootViewController: UIViewController?
+
+    fileprivate let window: UIWindow?
+
+    fileprivate static let bundle = Bundle(for: InitialViewController.self)
+
+    // MARK: View Controller's
 
     fileprivate lazy var navigationController: UINavigationController = {
         let navController = UINavigationController(rootViewController: self.initialViewController)
@@ -58,38 +115,57 @@ open class LoginCoordinator {
         return viewController
     }()
 
+    // MARK: Services
+
     fileprivate lazy var facebookService = FacebookService()
 
     // MARK: - Setup
 
-    func configure(controller: LoginConfigurable) {
-        controller.backgroundImage = backgroundImage
-        controller.logoImage = logoImage
+    func configure(controller: Configurable) {
+        var config = Configuration()
+        config.backgroundImage = backgroundImage
+        config.logoImage = logoImage
+        config.tintColor = tintColor
+        config.signupButtonText = signupButtonText
+        config.loginButtonText = loginButtonText
+        config.facebookButtonText = facebookButtonText
+        config.forgotPasswordText = forgotPasswordText
+        config.recoverPasswordText = recoverPasswordText
+        config.emailPlaceholder = emailPlaceholder
+        config.passwordPlaceholder = passwordPlaceholder
+        config.repeatPasswordPlaceholder = repeatPasswordPlaceholder
+        config.namePlaceholder = namePlaceholder
+        controller.configuration = config
     }
 
     // MARK: - LoginCoordinator
 
     public init(rootViewController: UIViewController) {
         self.rootViewController = rootViewController
+        self.window = nil
+    }
+
+    public init(window: UIWindow) {
+        self.window = window
+        self.rootViewController = nil
     }
 
     open func start() {
-        rootViewController.present(navigationController, animated: true, completion: nil)
+        if let rootViewController = rootViewController {
+            rootViewController.present(navigationController, animated: true, completion: nil)
+        } else if let window = window {
+            window.rootViewController = navigationController
+            window.makeKeyAndVisible()
+        }
     }
 
     open func finish() {
-        rootViewController.dismiss(animated: true, completion: nil)
+        if let rootViewController = rootViewController {
+            rootViewController.dismiss(animated: true, completion: nil)
+        }
     }
 
-    // MARK: - Public/Subclassable methods
-
-    open var backgroundImage: UIImage? {
-        return UIImage(named: "DefaultBackground", in: bundle, compatibleWith: nil)
-    }
-
-    open var logoImage: UIImage? {
-        return UIImage(named: "DefaultLogo", in: bundle, compatibleWith: nil)
-    }
+    // MARK: - Callbacks, Meant to be subclassed
 
     open func login(email: String, password: String) {
         print("Implement this method in your subclass to handle login.")

@@ -16,16 +16,16 @@ protocol InitialViewControllerDelegate: class {
 
 }
 
-class InitialViewController: UIViewController, BackgroundMovable, LoginConfigurable {
+class InitialViewController: UIViewController, BackgroundMovable, Configurable {
 
     // MARK: - Properties
 
     weak var delegate: InitialViewControllerDelegate?
 
-    var backgroundImage: UIImage?
-    var logoImage: UIImage?
+    var configuration: Configuration!
 
     // MARK: Background Movable
+
     var movableBackground: UIView {
         get {
             return backgroundImageView
@@ -35,7 +35,14 @@ class InitialViewController: UIViewController, BackgroundMovable, LoginConfigura
     // MARK: Outlet's
 
     @IBOutlet weak var logoImageView: UIImageView!
+
     @IBOutlet weak var backgroundImageView: UIImageView!
+    
+    @IBOutlet weak var signupButton: Buttn!
+
+    @IBOutlet weak var loginButton: Buttn!
+
+    @IBOutlet weak var facebookButton: Buttn!
 
     // MARK: - UIViewController
 
@@ -60,11 +67,20 @@ class InitialViewController: UIViewController, BackgroundMovable, LoginConfigura
     // MARK: - Setup
 
     func customizeAppearance() {
-        logoImageView.image = logoImage
-        backgroundImageView.image = backgroundImage
-        
         navigationController?.isNavigationBarHidden = true
         navigationController?.delegate = self
+        configure(with: configuration)
+    }
+
+    func configure(with config: Configuration) {
+        backgroundImageView.image = config.backgroundImage
+        logoImageView.image = config.logoImage
+        signupButton.setTitle(config.signupButtonText, for: .normal)
+        signupButton.setTitleColor(config.tintColor, for: .normal)
+        loginButton.setTitle(config.loginButtonText, for: .normal)
+        loginButton.setTitleColor(config.tintColor, for: .normal)
+        facebookButton.setTitle(config.facebookButtonText, for: .normal)
+        facebookButton.setTitleColor(config.tintColor, for: .normal)
     }
 
     // MARK: - Action's

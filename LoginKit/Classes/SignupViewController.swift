@@ -12,20 +12,21 @@ import Validator
 protocol SignupViewControllerDelegate: class {
 
     func didSelectSignup(_ viewController: UIViewController, email: String, name: String, password: String)
+
     func signupDidSelectBack(_ viewController: UIViewController)
 
 }
 
-class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable, LoginConfigurable {
+class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable, Configurable {
 
     // MARK: - Properties
 
     weak var delegate: SignupViewControllerDelegate?
 
-    var backgroundImage: UIImage?
-    var logoImage: UIImage?
+    var configuration: Configuration!
 
     var signupAttempted = false
+
     var signupInProgress = false {
         didSet {
             signupButton.isEnabled = !signupInProgress
@@ -33,10 +34,13 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     }
 
     // MARK: Keyboard Movable
+
     var selectedField: UITextField?
+
     var offset: CGFloat = 0.0
 
     // MARK: Background Movable
+
     var movableBackground: UIView {
         get {
             return backgroundImageView
@@ -46,18 +50,26 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     // MARK: Outlet's
 
     @IBOutlet var fields: [SkyFloatingLabelTextField]!
+
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
+
     @IBOutlet weak var nameTextField: SkyFloatingLabelTextField!
+
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
+
     @IBOutlet weak var repeatPasswordTextField: SkyFloatingLabelTextField!
+
     @IBOutlet weak var backgroundImageView: UIImageView!
+
     @IBOutlet weak var logoImageView: UIImageView!
+
     @IBOutlet weak var signupButton: UIButton!
 
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         setupValidation()
         initKeyboardMover()
         initBackgroundMover()
@@ -84,8 +96,16 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     // MARK: - Setup
 
     func customizeAppearance() {
-        logoImageView.image = logoImage
-        backgroundImageView.image = backgroundImage
+        configure(with: configuration)
+    }
+    
+    func configure(with config: Configuration) {
+        backgroundImageView.image = config.backgroundImage
+        logoImageView.image = config.logoImage
+        emailTextField.placeholder = config.emailPlaceholder
+        nameTextField.placeholder = config.namePlaceholder
+        passwordTextField.placeholder = config.passwordPlaceholder
+        repeatPasswordTextField.placeholder = config.repeatPasswordPlaceholder
     }
 
     // MARK: - Action's
@@ -95,9 +115,16 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     }
 
     @IBAction func didSelectSignup(_ sender: AnyObject) {
+        guard let email = emailTextField.text,
+            let name = nameTextField.text,
+            let password = passwordTextField.text
+            else {
+            return
+        }
+
         signupAttempted = true
         validateFields {
-            delegate?.didSelectSignup(self, email: "", name: "", password: "")
+            delegate?.didSelectSignup(self, email: email, name: name, password: password)
         }
     }
 

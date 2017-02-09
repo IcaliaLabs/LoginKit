@@ -18,16 +18,16 @@ protocol LoginViewControllerDelegate: class {
 
 }
 
-class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable, LoginConfigurable {
+class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable, Configurable {
 
     // MARK: - Properties
 
     weak var delegate: LoginViewControllerDelegate?
 
-    var backgroundImage: UIImage?
-    var logoImage: UIImage?
+    var configuration: Configuration!
 
     var loginAttempted = false
+
     var loginInProgress = false {
         didSet {
             loginButton.isEnabled = !loginInProgress
@@ -35,22 +35,31 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     }
 
     // MARK: Keyboard movable
+
     var selectedField: UITextField?
+
     var offset: CGFloat = 0.0
 
     // MARK: Background Movable
+
     var movableBackground: UIView { return backgroundImageView }
 
-    // MARK: - Outlet's
+    // MARK: Outlet's
 
     @IBOutlet var fields: Array<SkyFloatingLabelTextField> = []
+
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
+
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
 
     @IBOutlet weak var loginButton: UIButton!
+
     @IBOutlet weak var logoImageView: UIImageView!
+
     @IBOutlet weak var backgroundImageView: UIImageView!
 
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    
     // MARK: - UIViewController
 
     override func viewDidLoad() {
@@ -81,8 +90,15 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     // MARK: - Setup
 
     func customizeAppearance() {
-        logoImageView.image = logoImage
-        backgroundImageView.image = backgroundImage
+        configure(with: configuration)
+    }
+
+    func configure(with config: Configuration) {
+        backgroundImageView.image = config.backgroundImage
+        logoImageView.image = config.logoImage
+        emailTextField.placeholder = config.emailPlaceholder
+        passwordTextField.placeholder = config.passwordPlaceholder
+        forgotPasswordButton.setTitle(config.forgotPasswordText, for: .normal)
     }
 
     // MARK: - Action's
@@ -92,9 +108,12 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable,
     }
 
     @IBAction func didSelectLogin(_ sender: AnyObject) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            return
+        }
         loginAttempted = true
         validateFields {
-            delegate?.didSelectLogin(self, email: "", password: "")
+            delegate?.didSelectLogin(self, email: email, password: password)
         }
     }
 

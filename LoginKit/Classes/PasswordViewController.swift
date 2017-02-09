@@ -16,18 +16,18 @@ protocol PasswordViewControllerDelegate: class {
 
 }
 
-class PasswordViewController: UIViewController, BackgroundMovable, LoginConfigurable {
+class PasswordViewController: UIViewController, BackgroundMovable, Configurable {
 
     // MARK: - Properties
 
     weak var delegate: PasswordViewControllerDelegate?
 
-    var backgroundImage: UIImage?
-    var logoImage: UIImage?
+    var configuration: Configuration!
 
     var recoverAttempted = false
 
     // MARK: Background Movable
+
     var movableBackground: UIView {
         get {
             return backgroundImageView
@@ -37,8 +37,11 @@ class PasswordViewController: UIViewController, BackgroundMovable, LoginConfigur
     // MARK: Outlet's
 
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
+
     @IBOutlet weak var recoverButton: UIButton!
+
     @IBOutlet weak var logoImageView: UIImageView!
+
     @IBOutlet weak var backgroundImageView: UIImageView!
 
     // MARK: - UIViewController
@@ -65,8 +68,15 @@ class PasswordViewController: UIViewController, BackgroundMovable, LoginConfigur
     // MARK: - Setup
 
     func customizeAppearance() {
-        logoImageView.image = logoImage
-        backgroundImageView.image = backgroundImage
+        configure(with: configuration)
+    }
+
+    func configure(with config: Configuration) {
+        backgroundImageView.image = config.backgroundImage
+        logoImageView.image = config.logoImage
+        emailTextField.placeholder = config.emailPlaceholder
+        recoverButton.setTitle(config.recoverPasswordText, for: .normal)
+        recoverButton.setTitleColor(config.tintColor, for: .normal)
     }
 
     // MARK: - Action's
