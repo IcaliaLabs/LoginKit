@@ -50,13 +50,13 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="GlL-4f-okN">
-                    <rect key="frame" x="30" y="233.5" width="315" height="200"/>
+                    <rect key="frame" x="30" y="234" width="315" height="200"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fip-1z-O0E" customClass="SkyFloatingLabelTextField" customModule="ILLoginKit" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="5Lg-yf-y8d"/>
+                                <constraint firstAttribute="height" constant="50" id="5Lg-yf-y8d"/>
                                 <constraint firstAttribute="width" constant="286" id="9E9-96-mLr"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
@@ -77,7 +77,7 @@
                                     <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                    <color key="value" red="0.2274509804" green="0.83529411760000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
                                     <color key="value" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,10 +102,10 @@
                             </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-Yc-leI" customClass="SkyFloatingLabelTextField" customModule="ILLoginKit" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="80" width="315" height="40"/>
+                            <rect key="frame" x="0.0" y="75" width="315" height="50"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="WKU-sG-7LA"/>
+                                <constraint firstAttribute="height" constant="50" id="WKU-sG-7LA"/>
                                 <constraint firstAttribute="width" constant="286" id="WaW-ud-LO8"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
@@ -126,7 +126,7 @@
                                     <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                    <color key="value" red="0.25490196079999999" green="0.85882352939999995" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
                                     <color key="value" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
@@ -151,9 +151,9 @@
                             </connections>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1p-rI-nYd">
-                            <rect key="frame" x="0.0" y="160" width="315" height="40"/>
+                            <rect key="frame" x="0.0" y="150" width="315" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="xf2-E5-Dv3"/>
+                                <constraint firstAttribute="height" constant="50" id="xf2-E5-Dv3"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
                             <state key="normal" title="Forgot Password">
@@ -182,7 +182,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjZ-Dg-w39">
-                    <rect key="frame" x="50" y="567" width="275" height="50"/>
+                    <rect key="frame" x="40" y="567" width="295" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Bo5-Lp-8Bt"/>
@@ -208,11 +208,11 @@
                 <constraint firstItem="GlL-4f-okN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="QFP-Mh-bq4"/>
                 <constraint firstItem="Rzw-Ub-rrB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="QXZ-lu-RKy"/>
                 <constraint firstItem="GlL-4f-okN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="byw-EZ-Amz"/>
-                <constraint firstItem="RjZ-Dg-w39" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="cVO-0b-d58"/>
+                <constraint firstItem="RjZ-Dg-w39" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="cVO-0b-d58"/>
                 <constraint firstItem="jh0-UX-V3y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="dkb-e8-f9g"/>
                 <constraint firstItem="KTU-R2-WCR" firstAttribute="top" secondItem="jh0-UX-V3y" secondAttribute="bottom" constant="20" id="qhd-1l-dNk"/>
                 <constraint firstItem="Rzw-Ub-rrB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="uUX-Br-mrC"/>
-                <constraint firstAttribute="trailing" secondItem="RjZ-Dg-w39" secondAttribute="trailing" constant="50" id="x9n-IG-sCn"/>
+                <constraint firstAttribute="trailing" secondItem="RjZ-Dg-w39" secondAttribute="trailing" constant="40" id="x9n-IG-sCn"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>

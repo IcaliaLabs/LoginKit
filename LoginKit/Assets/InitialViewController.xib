@@ -94,7 +94,7 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
-                    <rect key="frame" x="40" y="80" width="295" height="130"/>
+                    <rect key="frame" x="40" y="327" width="195" height="130"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="130" id="wgq-UG-1LL"/>
                     </constraints>
@@ -103,23 +103,23 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="3Gm-Ia-4ad"/>
+                <constraint firstItem="9Xa-q7-7Ju" firstAttribute="leading" secondItem="wTd-tf-f9d" secondAttribute="leading" id="61d-F0-0sb"/>
                 <constraint firstAttribute="bottom" secondItem="XPy-Cb-f1M" secondAttribute="bottom" constant="50" id="Cvk-vi-HpV"/>
                 <constraint firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" constant="40" id="EVX-g1-T0C"/>
                 <constraint firstAttribute="trailing" secondItem="Vw0-kY-ntJ" secondAttribute="trailing" constant="-20" id="G08-uT-z48"/>
                 <constraint firstItem="9Xa-q7-7Ju" firstAttribute="width" secondItem="XPy-Cb-f1M" secondAttribute="width" multiplier="0.48" id="Mba-Om-itj"/>
-                <constraint firstAttribute="trailing" secondItem="wTd-tf-f9d" secondAttribute="trailing" constant="40" id="PMC-Ge-8vU"/>
                 <constraint firstAttribute="bottom" secondItem="Vw0-kY-ntJ" secondAttribute="bottom" constant="-20" id="PYR-Bs-drb"/>
-                <constraint firstItem="wTd-tf-f9d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Wed-s0-tHo"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="XPO-54-lKF"/>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="9Xa-q7-7Ju" secondAttribute="bottom" constant="30" id="ZLL-6L-oTT"/>
                 <constraint firstItem="B7r-wF-hG2" firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" id="bkh-nJ-31Q"/>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="B7r-wF-hG2" secondAttribute="bottom" constant="30" id="dH5-Hs-8bs"/>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="9Xa-q7-7Ju" secondAttribute="leading" id="enB-lh-Yf4"/>
+                <constraint firstItem="9Xa-q7-7Ju" firstAttribute="top" secondItem="wTd-tf-f9d" secondAttribute="bottom" constant="30" id="pOQ-Ab-BMg"/>
                 <constraint firstItem="B7r-wF-hG2" firstAttribute="width" secondItem="XPy-Cb-f1M" secondAttribute="width" multiplier="0.48" id="pmQ-Jq-bBx"/>
-                <constraint firstItem="wTd-tf-f9d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="vHj-cu-0Uk"/>
+                <constraint firstItem="B7r-wF-hG2" firstAttribute="trailing" secondItem="wTd-tf-f9d" secondAttribute="trailing" constant="100" id="tvk-Yq-f4N"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="zj1-IP-NWo"/>
             </constraints>
-            <point key="canvasLocation" x="-7" y="-539"/>
+            <point key="canvasLocation" x="-7.5" y="-539.5"/>
         </view>
     </objects>
 </document>

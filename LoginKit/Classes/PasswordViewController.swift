@@ -39,11 +39,11 @@ class PasswordViewController: UIViewController, BackgroundMovable {
 
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
 
-    @IBOutlet weak var recoverButton: UIButton!
+    @IBOutlet weak var recoverButton: Buttn!
 
     @IBOutlet weak var logoImageView: UIImageView!
 
-    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var backgroundImageView: GradientImageView!
 
     // MARK: - UIViewController
 
@@ -78,7 +78,10 @@ class PasswordViewController: UIViewController, BackgroundMovable {
         }
 
         backgroundImageView.image = config.backgroundImage
-        logoImageView.image = config.logoImage
+        backgroundImageView.gradientColor = config.tintColor
+        backgroundImageView.fadeColor = config.tintColor
+
+        logoImageView.image = config.secondaryLogoImage
         emailTextField.placeholder = config.emailPlaceholder
         recoverButton.setTitle(config.recoverPasswordText, for: .normal)
     }

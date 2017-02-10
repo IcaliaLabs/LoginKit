@@ -11,7 +11,8 @@ import Foundation
 protocol ConfigurationSource: class {
 
     var backgroundImage: UIImage { get }
-    var logoImage: UIImage { get }
+    var mainLogoImage: UIImage { get }
+    var secondaryLogoImage: UIImage { get }
     var tintColor: UIColor { get }
     var signupButtonText: String { get }
     var loginButtonText: String { get }
@@ -33,7 +34,9 @@ open class LoginCoordinator: ConfigurationSource {
 
     public var backgroundImage = UIImage()
 
-    public var logoImage = UIImage()
+    public var mainLogoImage = UIImage()
+
+    public var secondaryLogoImage = UIImage()
 
     public var tintColor = UIColor(red: 185.0 / 255.0, green: 117.0 / 255.0, blue: 216.0 / 255.0, alpha: 1)
 

@@ -110,7 +110,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
         backgroundImageView.image = config.backgroundImage
         backgroundImageView.gradientColor = config.tintColor
         backgroundImageView.fadeColor = config.tintColor
-        logoImageView.image = config.logoImage
+        logoImageView.image = config.secondaryLogoImage
 
         emailTextField.placeholder = config.emailPlaceholder
         nameTextField.placeholder = config.namePlaceholder

@@ -86,7 +86,7 @@ class InitialViewController: UIViewController, BackgroundMovable {
         }
 
         backgroundImageView.image = config.backgroundImage
-        logoImageView.image = config.logoImage
+        logoImageView.image = config.mainLogoImage
         signupButton.setTitle(config.signupButtonText, for: .normal)
         signupButton.setTitleColor(config.tintColor, for: .normal)
         signupButton.borderColor = config.tintColor.withAlphaComponent(0.25)

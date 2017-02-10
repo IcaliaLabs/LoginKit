@@ -104,7 +104,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
         backgroundImageView.gradientColor = config.tintColor
         backgroundImageView.fadeColor = config.tintColor
 
-        logoImageView.image = config.logoImage
+        logoImageView.image = config.secondaryLogoImage
         emailTextField.placeholder = config.emailPlaceholder
         passwordTextField.placeholder = config.passwordPlaceholder
 

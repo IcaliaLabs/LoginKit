@@ -65,7 +65,7 @@
                                     <real key="value" value="1"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
-                                    <color key="value" red="0.92935490608215332" green="0.14524439580196569" blue="0.20815184170247658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="value" red="0.92941176470588238" green="0.14524439580196569" blue="0.20815184170247658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
                                     <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -265,7 +265,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6U-Bx-8gq" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
-                    <rect key="frame" x="50" y="567" width="275" height="50"/>
+                    <rect key="frame" x="40" y="567" width="295" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Id6-xn-n9J"/>
                     </constraints>
@@ -292,14 +292,14 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ViE-3o-Ioh" secondAttribute="trailing" constant="-20" id="3Ds-Fd-6ce"/>
                 <constraint firstItem="B4D-0V-Nui" firstAttribute="top" secondItem="3Av-ui-X58" secondAttribute="bottom" constant="20" id="D97-zr-Y1Z"/>
-                <constraint firstItem="b6U-Bx-8gq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="DoK-bC-Zmo"/>
+                <constraint firstItem="b6U-Bx-8gq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="DoK-bC-Zmo"/>
                 <constraint firstItem="39F-P3-KSq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Hhx-wp-XAF"/>
                 <constraint firstItem="ViE-3o-Ioh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="PHp-ue-KyN"/>
                 <constraint firstItem="3Av-ui-X58" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Uxy-mT-5w2"/>
                 <constraint firstAttribute="bottom" secondItem="b6U-Bx-8gq" secondAttribute="bottom" constant="50" id="W6d-QX-ekd"/>
                 <constraint firstAttribute="trailing" secondItem="39F-P3-KSq" secondAttribute="trailing" constant="30" id="XKS-BG-5wa"/>
                 <constraint firstItem="ViE-3o-Ioh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="YRY-r7-TPJ"/>
-                <constraint firstAttribute="trailing" secondItem="b6U-Bx-8gq" secondAttribute="trailing" constant="50" id="csb-If-jcX"/>
+                <constraint firstAttribute="trailing" secondItem="b6U-Bx-8gq" secondAttribute="trailing" constant="40" id="csb-If-jcX"/>
                 <constraint firstItem="b6U-Bx-8gq" firstAttribute="top" secondItem="39F-P3-KSq" secondAttribute="bottom" constant="50" id="lgU-D8-iOK"/>
                 <constraint firstItem="B4D-0V-Nui" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="qM2-9O-zK8"/>
                 <constraint firstItem="3Av-ui-X58" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="rzM-E2-9ew"/>
