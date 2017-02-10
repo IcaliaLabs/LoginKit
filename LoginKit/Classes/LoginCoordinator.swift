@@ -241,3 +241,69 @@ extension LoginCoordinator: PasswordViewControllerDelegate {
     }
 
 }
+
+// MARK: - Font Loading
+
+enum Font: String {
+
+    case montserratLight = "Montserrat-Light"
+    case montserratRegular = "Montserrat-Regular"
+
+    var type: String {
+        switch self {
+        case .montserratLight:
+            return "otf"
+        case .montserratRegular:
+            return "ttf"
+        }
+    }
+
+    func get(size: CGFloat = 15.0) -> UIFont {
+        return UIFont(name: self.rawValue, size: size)!
+    }
+    
+}
+
+let loadFonts = {
+    print("Login Coordinator: Loading Fonts")
+    let light = Font.montserratLight
+    let regular = Font.montserratRegular
+    let loadedLight = LoginCoordinator.loadFont(light.rawValue, type: light.type)
+    let loadedRegular = LoginCoordinator.loadFont(regular.rawValue, type: regular.type)
+    if loadedLight && loadedRegular {
+        print("Login Coordinator: Loaded Fonts")
+    } else {
+        print("Login Coordinator: Failed Loading Fonts")
+    }
+}()
+
+extension LoginCoordinator {
+
+    static func loadFont(_ name: String, type: String) -> Bool {
+        let bundle = Bundle(for: InitialViewController.self)
+
+        guard let fontPath = bundle.path(forResource: name, ofType: type) else {
+            return false
+        }
+
+        guard let data = try? Data(contentsOf: URL(fileURLWithPath: fontPath)) as CFData else {
+            return false
+        }
+
+        guard let provider = CGDataProvider(data: data) else {
+            return false
+        }
+
+        let font = CGFont(provider)
+        var error: Unmanaged<CFError>?
+
+        let success = CTFontManagerRegisterGraphicsFont(font, &error)
+        if !success {
+            print("Error registering font. Font is possibly already registered.")
+            return false
+        }
+        
+        return true
+    }
+
+}

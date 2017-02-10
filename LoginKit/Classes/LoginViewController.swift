@@ -93,6 +93,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
     func customizeAppearance() {
         configureFromSource()
+        setupFonts()
     }
 
     func configureFromSource() {
@@ -111,6 +112,13 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
         loginButton.setTitle(config.loginButtonText, for: .normal)
         loginButton.setTitleColor(config.tintColor, for: .normal)
         forgotPasswordButton.setTitle(config.forgotPasswordText, for: .normal)
+    }
+
+    func setupFonts() {
+        emailTextField.font = Font.montserratRegular.get(size: 13)
+        passwordTextField.font = Font.montserratRegular.get(size: 13)
+        forgotPasswordButton.titleLabel?.font = Font.montserratLight.get(size: 13)
+        loginButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
     }
 
     // MARK: - Action's

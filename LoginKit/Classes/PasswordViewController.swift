@@ -70,6 +70,7 @@ class PasswordViewController: UIViewController, BackgroundMovable {
 
     func customizeAppearance() {
         configureFromSource()
+        setupFonts()
     }
 
     func configureFromSource() {
@@ -84,6 +85,11 @@ class PasswordViewController: UIViewController, BackgroundMovable {
         logoImageView.image = config.secondaryLogoImage
         emailTextField.placeholder = config.emailPlaceholder
         recoverButton.setTitle(config.recoverPasswordText, for: .normal)
+    }
+
+    func setupFonts() {
+        emailTextField.font = Font.montserratRegular.get(size: 13)
+        recoverButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
     }
 
     // MARK: - Action's

@@ -7,11 +7,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Montserrat-Regular.ttf">
-            <string>Montserrat-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController" customModule="ILLoginKit" customModuleProvider="target">
             <connections>
@@ -53,7 +48,7 @@
                                 <constraint firstAttribute="width" constant="286" id="GbS-oS-r31"/>
                                 <constraint firstAttribute="height" constant="50" id="mqV-hi-eH6"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="EMAIL"/>
@@ -96,13 +91,13 @@
                             </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbE-TG-9bX" customClass="SkyFloatingLabelTextField" customModule="ILLoginKit" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="106" width="315" height="50"/>
+                            <rect key="frame" x="0.0" y="105.5" width="315" height="50"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="GqJ-Bx-Rs2"/>
                                 <constraint firstAttribute="width" constant="286" id="kyO-Ms-iMU"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="FULL NAME"/>
@@ -145,13 +140,13 @@
                             </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TC-HX-laI" customClass="SkyFloatingLabelTextField" customModule="ILLoginKit" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="211" width="315" height="50"/>
+                            <rect key="frame" x="0.0" y="211.5" width="315" height="50"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="IEP-g3-a6V"/>
                                 <constraint firstAttribute="width" constant="286" id="wRt-T9-YX9"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="PASSWORD"/>
@@ -200,7 +195,7 @@
                                 <constraint firstAttribute="width" constant="286" id="3jJ-rM-9R3"/>
                                 <constraint firstAttribute="height" constant="50" id="BQV-xY-eJA"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="REPEAT PASSWORD"/>
@@ -269,6 +264,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Id6-xn-n9J"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="SIGN UP">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>

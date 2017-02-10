@@ -97,6 +97,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     func customizeAppearance() {
         configureFromSource()
+        setupFonts()
     }
     
     func configureFromSource() {
@@ -116,6 +117,14 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
         nameTextField.placeholder = config.namePlaceholder
         passwordTextField.placeholder = config.passwordPlaceholder
         repeatPasswordTextField.placeholder = config.repeatPasswordPlaceholder
+    }
+
+    func setupFonts() {
+        nameTextField.font = Font.montserratRegular.get(size: 13)
+        emailTextField.font = Font.montserratRegular.get(size: 13)
+        passwordTextField.font = Font.montserratRegular.get(size: 13)
+        repeatPasswordTextField.font = Font.montserratRegular.get(size: 13)
+        signupButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
     }
 
     // MARK: - Action's

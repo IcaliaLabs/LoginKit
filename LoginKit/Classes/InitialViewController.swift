@@ -50,6 +50,8 @@ class InitialViewController: UIViewController, BackgroundMovable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        _ = loadFonts
         initBackgroundMover()
         customizeAppearance()
     }
@@ -70,14 +72,11 @@ class InitialViewController: UIViewController, BackgroundMovable {
 
     func customizeAppearance() {
         configureFromSource()
+        setupFonts()
+        addShadows()
 
         navigationController?.isNavigationBarHidden = true
         navigationController?.delegate = self
-
-        facebookButton.layer.shadowOpacity = 0.3
-        facebookButton.layer.shadowColor = UIColor(red: 89.0 / 255.0, green: 117.0 / 255.0, blue: 177.0 / 255.0, alpha: 1).cgColor
-        facebookButton.layer.shadowOffset = CGSize(width: 15, height: 15)
-        facebookButton.layer.shadowRadius = 7
     }
 
     func configureFromSource() {
@@ -94,6 +93,19 @@ class InitialViewController: UIViewController, BackgroundMovable {
         loginButton.setTitleColor(config.tintColor, for: .normal)
         loginButton.borderColor = config.tintColor.withAlphaComponent(0.25)
         facebookButton.setTitle(config.facebookButtonText, for: .normal)
+    }
+
+    func setupFonts() {
+        loginButton.titleLabel?.font = Font.montserratRegular.get(size: 13)
+        signupButton.titleLabel?.font = Font.montserratRegular.get(size: 13)
+        facebookButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
+    }
+
+    func addShadows() {
+        facebookButton.layer.shadowOpacity = 0.3
+        facebookButton.layer.shadowColor = UIColor(red: 89.0/255.0, green: 117.0/255.0, blue: 177.0/255.0, alpha: 1).cgColor
+        facebookButton.layer.shadowOffset = CGSize(width: 15, height: 15)
+        facebookButton.layer.shadowRadius = 7
     }
 
     // MARK: - Action's
