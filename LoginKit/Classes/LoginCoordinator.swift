@@ -68,7 +68,7 @@ open class LoginCoordinator: ConfigurationSource {
 
     // MARK: View Controller's
 
-    fileprivate lazy var navigationController: UINavigationController = {
+    fileprivate lazy var navigationController: UINavigationController! = {
         let navController = UINavigationController(rootViewController: self.initialViewController)
         return navController
     }()
@@ -130,6 +130,11 @@ open class LoginCoordinator: ConfigurationSource {
         if let rootViewController = rootViewController {
             rootViewController.dismiss(animated: true, completion: nil)
         }
+        navigationController = nil
+        initialViewController = nil
+        loginViewController = nil
+        signupViewController = nil
+        passwordViewController = nil
     }
 
     // MARK: - Callbacks, Meant to be subclassed

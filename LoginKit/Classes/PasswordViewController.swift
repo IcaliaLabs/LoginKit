@@ -17,7 +17,7 @@ protocol PasswordViewControllerDelegate: class {
 
 }
 
-class PasswordViewController: UIViewController, BackgroundMovable {
+class PasswordViewController: UIViewController, BackgroundMovable, KeyboardMovable {
 
     // MARK: - Properties
 
@@ -26,6 +26,12 @@ class PasswordViewController: UIViewController, BackgroundMovable {
     weak var configurationSource: ConfigurationSource?
 
     var recoverAttempted = false
+
+    // MARK: Keyboard movable
+
+    var selectedField: UITextField?
+
+    var offset: CGFloat = 0.0
 
     // MARK: Background Movable
 
@@ -158,4 +164,32 @@ extension PasswordViewController {
         }
     }
 
+}
+
+// MARK: - UITextField Delegate
+
+extension PasswordViewController: UITextFieldDelegate {
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        selectedField = textField
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        selectedField = nil
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let nextTag = textField.tag + 1
+        let nextResponder = view.viewWithTag(nextTag) as UIResponder!
+
+        if nextResponder != nil {
+            nextResponder?.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+            didSelectRecover(self)
+        }
+
+        return false
+    }
+    
 }
