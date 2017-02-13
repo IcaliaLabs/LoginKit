@@ -13,12 +13,16 @@ protocol ConfigurationSource: class {
     var backgroundImage: UIImage { get }
     var mainLogoImage: UIImage { get }
     var secondaryLogoImage: UIImage { get }
+
     var tintColor: UIColor { get }
+    var errorTintColor: UIColor { get }
+
     var signupButtonText: String { get }
     var loginButtonText: String { get }
     var facebookButtonText: String { get }
-    var forgotPasswordText: String { get }
-    var recoverPasswordText: String { get }
+    var forgotPasswordButtonText: String { get }
+    var recoverPasswordButtonText: String { get }
+
     var emailPlaceholder: String { get }
     var passwordPlaceholder: String { get }
     var repeatPasswordPlaceholder: String { get }
@@ -40,15 +44,17 @@ open class LoginCoordinator: ConfigurationSource {
 
     public var tintColor = UIColor(red: 185.0 / 255.0, green: 117.0 / 255.0, blue: 216.0 / 255.0, alpha: 1)
 
+    public var errorTintColor = UIColor(red: 241 / 255, green: 196 / 255 , blue: 15 / 255, alpha: 1)
+
     public var signupButtonText = "SIGN UP"
 
     public var loginButtonText = "LOG IN"
 
     public var facebookButtonText = "CONNECT WITH FACEBOOK"
 
-    public var forgotPasswordText = "Forgot Password"
+    public var forgotPasswordButtonText = "Forgot Password"
 
-    public var recoverPasswordText = "Recover Password"
+    public var recoverPasswordButtonText = "Recover Password"
 
     public var emailPlaceholder = "EMAIL"
 

@@ -111,7 +111,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
         loginButton.setTitle(config.loginButtonText, for: .normal)
         loginButton.setTitleColor(config.tintColor, for: .normal)
-        forgotPasswordButton.setTitle(config.forgotPasswordText, for: .normal)
+        forgotPasswordButton.setTitle(config.forgotPasswordButtonText, for: .normal)
     }
 
     func setupFonts() {

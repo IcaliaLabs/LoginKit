@@ -90,7 +90,7 @@ class PasswordViewController: UIViewController, BackgroundMovable, KeyboardMovab
 
         logoImageView.image = config.secondaryLogoImage
         emailTextField.placeholder = config.emailPlaceholder
-        recoverButton.setTitle(config.recoverPasswordText, for: .normal)
+        recoverButton.setTitle(config.recoverPasswordButtonText, for: .normal)
     }
 
     func setupFonts() {
