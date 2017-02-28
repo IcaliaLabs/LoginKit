@@ -34,6 +34,10 @@ open class LoginCoordinator: ConfigurationSource {
 
     // MARK: - Properties
 
+    public let window: UIWindow?
+
+    public let rootViewController: UIViewController?
+
     // MARK: Public Configuration
 
     public var backgroundImage = UIImage()
@@ -65,10 +69,6 @@ open class LoginCoordinator: ConfigurationSource {
     public var namePlaceholder = "FULL NAME"
 
     // MARK: Private
-
-    fileprivate let rootViewController: UIViewController?
-
-    fileprivate let window: UIWindow?
 
     fileprivate static let bundle = Bundle(for: InitialViewController.self)
 
@@ -136,11 +136,16 @@ open class LoginCoordinator: ConfigurationSource {
         if let rootViewController = rootViewController {
             rootViewController.dismiss(animated: true, completion: nil)
         }
+        
         navigationController = nil
         initialViewController = nil
         loginViewController = nil
         signupViewController = nil
         passwordViewController = nil
+    }
+
+    public func visibleViewController() -> UIViewController? {
+        return navigationController.topViewController
     }
 
     // MARK: - Callbacks, Meant to be subclassed

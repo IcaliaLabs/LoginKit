@@ -23,11 +23,20 @@ enum FacebookResult {
 
 public struct FacebookProfile {
 
-    let facebookId: String
-    let firstName: String
-    let lastName: String
-    let email: String
+    public let facebookId: String
+
+    public let facebookToken: String
+
+    public let firstName: String
+
+    public let lastName: String
     
+    public let email: String
+
+    public var fullName: String {
+        return firstName + " " + lastName
+    }
+
 }
 
 class FacebookService {
@@ -64,7 +73,7 @@ class FacebookService {
                 print("PERMISSIONS: \(result.grantedPermissions)")
                 if result.grantedPermissions.contains("email") && result.grantedPermissions.contains("public_profile") {
                     print("FACEBOOK LOGIN: PERMISSIONS GRANTED")
-                    self.getUserInfo(completion: completion)
+                    self.getUserInfo(loginResult: result, completion: completion)
                 } else {
                     print("FACEBOOK LOGIN: MISSING REQUIRED PERMISSIONS")
                     completion(.missingPermissions)
@@ -77,7 +86,7 @@ class FacebookService {
 
 private extension FacebookService {
 
-    func getUserInfo(completion: @escaping FacebookCompletion) {
+    func getUserInfo(loginResult: FBSDKLoginManagerLoginResult, completion: @escaping FacebookCompletion) {
         guard FBSDKAccessToken.current() != nil else {
             print("FACEBOOK: NOT LOGGED IN: ABORTING")
             completion(.unknownError)
@@ -113,16 +122,17 @@ private extension FacebookService {
                 return
             }
 
-            //let fbAccessToken = loginResult.token.tokenString as String
+            let facebookToken = loginResult.token.tokenString as String
 
             print("FACEBOOK: GRAPH REQUEST: SUCCESS")
             print("USER DATA = \(userData)")
             let profile = FacebookProfile(facebookId: facebookId,
+                                          facebookToken: facebookToken,
                                           firstName: firstName,
                                           lastName: lastName,
                                           email: email)
             completion(.success(profile))
         }
     }
-
+    
 }
