@@ -22,6 +22,40 @@ enum ValidationError: String, Error {
     
 }
 
+public struct FullNameRule: ValidationRule {
+
+    public typealias InputType = String
+
+    public var error: Error
+
+    public init(error: Error) {
+        self.error = error
+    }
+
+    public func validate(input: String?) -> Bool {
+        guard let input = input else {
+            return false
+        }
+
+        let components = input.components(separatedBy: " ")
+
+        guard components.count > 1 else {
+            return false
+        }
+
+        guard let first = components.first, let last = components.last else {
+            return false
+        }
+        
+        guard first.characters.count > 1, last.characters.count > 1 else {
+            return false
+        }
+
+        return true
+    }
+
+}
+
 struct ValidationService {
 
     static var emailRules: ValidationRuleSet<String> {
@@ -38,7 +72,7 @@ struct ValidationService {
 
     static var nameRules: ValidationRuleSet<String> {
         var nameRules = ValidationRuleSet<String>()
-        nameRules.add(rule: ValidationRuleLength(min: 2, error: ValidationError.invalidName))
+        nameRules.add(rule: FullNameRule(error: ValidationError.invalidName))
         return nameRules
     }
 
