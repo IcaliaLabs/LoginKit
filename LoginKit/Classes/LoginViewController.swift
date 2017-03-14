@@ -61,7 +61,9 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     @IBOutlet weak var backgroundImageView: GradientImageView!
 
     @IBOutlet weak var forgotPasswordButton: UIButton!
-    
+
+    @IBOutlet weak var stackViewHeight: NSLayoutConstraint!
+
     // MARK: - UIViewController
 
     override func viewDidLoad() {
@@ -111,6 +113,9 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
         loginButton.setTitle(config.loginButtonText, for: .normal)
         loginButton.setTitleColor(config.tintColor, for: .normal)
+
+        stackViewHeight.constant = config.shouldShowForgotPassword ? 200 : 125
+        forgotPasswordButton.isHidden = !config.shouldShowForgotPassword
         forgotPasswordButton.setTitle(config.forgotPasswordButtonText, for: .normal)
     }
 

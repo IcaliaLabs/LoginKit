@@ -24,6 +24,7 @@
                 <outlet property="loginButton" destination="RjZ-Dg-w39" id="ahb-Bl-D36"/>
                 <outlet property="logoImageView" destination="KTU-R2-WCR" id="N6C-S1-kRo"/>
                 <outlet property="passwordTextField" destination="Dug-Yc-leI" id="23Y-K4-1o6"/>
+                <outlet property="stackViewHeight" destination="Jxu-fQ-7XN" id="OSw-DJ-IzL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="fields" destination="Fip-1z-O0E" collectionClass="NSMutableArray" id="HiN-Zj-kFO"/>
                 <outletCollection property="fields" destination="Dug-Yc-leI" collectionClass="NSMutableArray" id="dbr-W3-2pe"/>
@@ -49,7 +50,7 @@
                         <constraint firstAttribute="height" constant="50" id="bFK-Zz-Mzw"/>
                     </constraints>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="GlL-4f-okN">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="GlL-4f-okN">
                     <rect key="frame" x="30" y="234" width="315" height="200"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fip-1z-O0E" customClass="SkyFloatingLabelTextField" customModule="ILLoginKit" customModuleProvider="target">
@@ -159,7 +160,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1p-rI-nYd">
                             <rect key="frame" x="0.0" y="150" width="315" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="xf2-E5-Dv3"/>
+                                <constraint firstAttribute="height" priority="999" constant="50" id="xf2-E5-Dv3"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
                             <state key="normal" title="Forgot Password">

@@ -9,9 +9,9 @@
 import Foundation
 import FBSDKLoginKit
 
-typealias FacebookCompletion = (FacebookResult) -> Void
+public typealias FacebookCompletion = (FacebookResult) -> Void
 
-enum FacebookResult {
+public enum FacebookResult {
 
     case success(FacebookProfile)
     case error(Error)
@@ -39,7 +39,7 @@ public struct FacebookProfile {
 
 }
 
-class FacebookService {
+public class FacebookService {
 
     let loginManager: FBSDKLoginManager = {
         let manager = FBSDKLoginManager()
@@ -49,7 +49,7 @@ class FacebookService {
 
     let permissions = ["email", "public_profile"]
 
-    func login(from viewController: UIViewController, completion: @escaping FacebookCompletion) {
+    public func login(from viewController: UIViewController, completion: @escaping FacebookCompletion) {
         loginManager.logIn(withReadPermissions: permissions, from: viewController) { (result, error) in
             guard let result = result else {
                 if let error = error {

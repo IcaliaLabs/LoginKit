@@ -28,6 +28,8 @@ protocol ConfigurationSource: class {
     var repeatPasswordPlaceholder: String { get }
     var namePlaceholder: String { get }
 
+    var shouldShowForgotPassword: Bool { get }
+
 }
 
 open class LoginCoordinator: ConfigurationSource {
@@ -67,6 +69,8 @@ open class LoginCoordinator: ConfigurationSource {
     public var repeatPasswordPlaceholder = "REPEAT PASSWORD"
 
     public var namePlaceholder = "FULL NAME"
+
+    public var shouldShowForgotPassword = true
 
     // MARK: Private
 
@@ -109,7 +113,7 @@ open class LoginCoordinator: ConfigurationSource {
 
     // MARK: Services
 
-    fileprivate lazy var facebookService = FacebookService()
+    public lazy var facebookService = FacebookService()
 
     // MARK: - LoginCoordinator
 
