@@ -52,23 +52,23 @@ open class LoginCoordinator: ConfigurationSource {
 
     public var errorTintColor = UIColor(red: 241 / 255, green: 196 / 255 , blue: 15 / 255, alpha: 1)
 
-    public var signupButtonText = "SIGN UP"
+    public var signupButtonText = "Sign Up"
 
-    public var loginButtonText = "LOG IN"
+    public var loginButtonText = "Log In"
 
-    public var facebookButtonText = "CONNECT WITH FACEBOOK"
+    public var facebookButtonText = "Enter with Facebook"
 
     public var forgotPasswordButtonText = "Forgot Password"
 
     public var recoverPasswordButtonText = "Recover Password"
 
-    public var emailPlaceholder = "EMAIL"
+    public var emailPlaceholder = "Email"
 
-    public var passwordPlaceholder = "PASSWORD"
+    public var passwordPlaceholder = "Password"
 
-    public var repeatPasswordPlaceholder = "REPEAT PASSWORD"
+    public var repeatPasswordPlaceholder = "Repeat Password"
 
-    public var namePlaceholder = "FULL NAME"
+    public var namePlaceholder = "Full Name"
 
     public var shouldShowForgotPassword = true
 

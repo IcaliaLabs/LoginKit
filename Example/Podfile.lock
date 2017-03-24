@@ -9,7 +9,7 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.18.0):
     - FBSDKCoreKit
-  - ILLoginKit (0.0.4):
+  - ILLoginKit (0.0.5):
     - FBSDKLoginKit (= 4.18.0)
     - Validator (~> 2.1.1)
   - Validator (2.1.1)
@@ -25,9 +25,9 @@ SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
   FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
-  ILLoginKit: c55e9a18ce07ba380436f8bb4b4026c32267f0db
+  ILLoginKit: a3e3695c71264fa0a235fbe8d077d832035c71ee
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 
 PODFILE CHECKSUM: 122b20bb1eac42606ddc06e4bca9a845d06723fd
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

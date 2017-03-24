@@ -34,7 +34,7 @@
                         <constraint firstAttribute="height" constant="50" id="Uld-u5-FHe"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="CONNECT WITH FACEBOOK">
+                    <state key="normal" title="Enter with Facebook">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
