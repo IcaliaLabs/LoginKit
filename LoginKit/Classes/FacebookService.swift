@@ -69,7 +69,6 @@ public class FacebookService {
                 completion(.cancelled)
             } else {
                 print("FACEBOOK LOGIN: SUCCESS")
-                print("TOKEN: \(result.token)")
                 print("PERMISSIONS: \(result.grantedPermissions)")
                 if result.grantedPermissions.contains("email") && result.grantedPermissions.contains("public_profile") {
                     print("FACEBOOK LOGIN: PERMISSIONS GRANTED")
@@ -125,7 +124,6 @@ private extension FacebookService {
             let facebookToken = loginResult.token.tokenString as String
 
             print("FACEBOOK: GRAPH REQUEST: SUCCESS")
-            print("USER DATA = \(userData)")
             let profile = FacebookProfile(facebookId: facebookId,
                                           facebookToken: facebookToken,
                                           firstName: firstName,

@@ -210,7 +210,6 @@ extension LoginCoordinator: InitialViewControllerDelegate {
         facebookService.login(from: viewController) { (result) in
             switch result {
             case .success(let profile):
-                print("SUCCESS: FB PROFILE = \(profile)")
                 self.enterWithFacebook(profile: profile)
             default:
                 break
