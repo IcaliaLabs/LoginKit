@@ -4,9 +4,19 @@
 [![License](https://img.shields.io/cocoapods/l/LoginKit.svg?style=flat)](http://cocoapods.org/pods/LoginKit)
 [![Platform](https://img.shields.io/cocoapods/p/LoginKit.svg?style=flat)](http://cocoapods.org/pods/LoginKit)
 
-LoginKit is a quick and easy way to add a Login/Signup UX to your app.
+## About
+
+LoginKit is a quick and easy way to add Facebook and email Login/Signup UI to your app. If you need to quickly prototype an app, create an MVP or finish an app for a hackathon, LoginKit can help you by letting you focus on what makes your app special and leave login/signup to LoginKit. But if what you really want is a really specific and customized login/singup flow you are probably better off creating it on your own.
 
 LoginKit handles Signup & Login, via Facebook & Email. It takes care of the UI, the forms, validation, and Facebook SDK access. All you need to do is start LoginKit, and then make the necessary calls to your own backend API to login or signup.
+
+**This is a simple example of how your login can look. Check out the example project to see how this was done and tinker around with it.** 
+
+<img src="http://danielozano.com/images/1small.png" width="210"><img src="http://danielozano.com/images/2small.png" width="210"><img src="http://danielozano.com/images/3small.png" width="210"><img src="http://danielozano.com/images/4small.png" width="210">
+
+**This other example is LoginKit in use in one of our client apps.** 
+
+<img src="http://danielozano.com/images/1bsmall.png" width="210"><img src="http://danielozano.com/images/2bsmall.png" width="210"><img src="http://danielozano.com/images/3bsmall.png" width="210"><img src="http://danielozano.com/images/4bsmall.png" width="210">
 
 ## Requirements
 
@@ -47,50 +57,86 @@ Afterwards call start on the coordinator. That's it!
 
 Of course you will want to customize the Login Coordinator to be able to supply your own UI personalization, and to perform the necessary actions on login or signup.
 
-That is done by subclassing creating your own login coordinator subclassing the LoginCoordinator class.
+That is done by subclassing the LoginCoordinator class.
 
 ```swift
-import LoginKit
+class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
-class MyLoginCoordinator: LoginCoordinator {
-  
-    // MARK: - Override these to customize the UI
-  
-    override var backgroundImage: UIImage {
-        return UIImage()
+    // MARK: - LoginCoordinator
+
+    override func start() {
+        super.start()
+        configureAppearance()
     }
 
-    override var logoImage: UIImage? {
-        return UIImage()
+    override func finish() {
+        super.finish()
     }
-    
-    //MARK: - Override these methods to handle login via your own API.
-    
+
+    // MARK: - Setup
+
+    func configureAppearance() {
+        // Customize LoginKit. All properties have defaults, only set the ones you want.
+
+        // Customize the look with background & logo images
+        backgroundImage = #imageLiteral(resourceName: "Background")
+        // mainLogoImage =
+        // secondaryLogoImage =
+
+        // Change colors
+        tintColor = UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 1)
+        errorTintColor = UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1)
+
+        // Change placeholder & button texts, useful for different marketing style or language.
+        loginButtonText = "Sign In"
+        signupButtonText = "Create Account"
+        facebookButtonText = "Login with Facebook"
+        forgotPasswordButtonText = "Forgot password?"
+        recoverPasswordButtonText = "Recover"
+        namePlaceholder = "Name"
+        emailPlaceholder = "E-Mail"
+        passwordPlaceholder = "Password!"
+        repeatPasswordPlaceholder = "Confirm password!"
+    }
+
+    // MARK: - Completion Callbacks
+
     override func login(email: String, password: String) {
-        print("EMAIL = \(email), PASSWORD = \(password)")
-        finish()
+        // Handle login via your API
+        print("Login with: email =\(email) password = \(password)")
     }
 
     override func signup(name: String, email: String, password: String) {
-        print("NAME = \(name), EMAIL = \(email), PASSWORD = \(password)")
-        finish()
+        // Handle signup via your API
+        print("Signup with: name = \(name) email =\(email) password = \(password)")
     }
 
     override func enterWithFacebook(profile: FacebookProfile) {
-        print("FACEBOOK PROFILE = \(profile)")
-        finish()
+        // Handle Facebook login/signup via your API
+        print("Login/Signup via Facebook with: FB profile =\(profile)")
+
     }
 
     override func recoverPassword(email: String) {
-        print("EMAIL = \(email)")
-        finish()
+        // Handle password recovery via your API
+        print("Recover password with: email =\(email)")
     }
-  
+
 }
 
 ```
 
-All these overriden methods return everything you need to handle login or signup on your end. The enterWithFacebook(profile:) method hands you a FacebookProfile struct which holds the Name, Email, and Facebook ID of the user's Facebook account, if they chose to enter with that method.
+### Start
+
+Override these methods, and make sure to call super. Everything you need to handle when starting or finishing can be done here.
+
+### Completion Callbacks
+
+Override these other 4 callback methods to handle what happens after the user tries to login, signup, recover password or enter with facebook.
+
+Here you would call your own API.
+
+### Finish
 
 After successfull login call the finish() method on LoginCoordinator.
 
