@@ -114,9 +114,13 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
         logoImageView.image = config.secondaryLogoImage
 
         emailTextField.placeholder = config.emailPlaceholder
+        emailTextField.errorColor = config.errorTintColor
         nameTextField.placeholder = config.namePlaceholder
+        nameTextField.errorColor = config.errorTintColor
         passwordTextField.placeholder = config.passwordPlaceholder
+        passwordTextField.errorColor = config.errorTintColor
         repeatPasswordTextField.placeholder = config.repeatPasswordPlaceholder
+        repeatPasswordTextField.errorColor = config.errorTintColor
     }
 
     func setupFonts() {

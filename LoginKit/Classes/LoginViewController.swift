@@ -106,17 +106,19 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
         backgroundImageView.image = config.backgroundImage
         backgroundImageView.gradientColor = config.tintColor
         backgroundImageView.fadeColor = config.tintColor
-
         logoImageView.image = config.secondaryLogoImage
+
         emailTextField.placeholder = config.emailPlaceholder
+        emailTextField.errorColor = config.errorTintColor
         passwordTextField.placeholder = config.passwordPlaceholder
+        passwordTextField.errorColor = config.errorTintColor
 
         loginButton.setTitle(config.loginButtonText, for: .normal)
         loginButton.setTitleColor(config.tintColor, for: .normal)
-
-        stackViewHeight.constant = config.shouldShowForgotPassword ? 200 : 125
         forgotPasswordButton.isHidden = !config.shouldShowForgotPassword
         forgotPasswordButton.setTitle(config.forgotPasswordButtonText, for: .normal)
+
+        stackViewHeight.constant = config.shouldShowForgotPassword ? 200 : 125
     }
 
     func setupFonts() {

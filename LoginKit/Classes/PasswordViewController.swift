@@ -87,9 +87,10 @@ class PasswordViewController: UIViewController, BackgroundMovable, KeyboardMovab
         backgroundImageView.image = config.backgroundImage
         backgroundImageView.gradientColor = config.tintColor
         backgroundImageView.fadeColor = config.tintColor
-
         logoImageView.image = config.secondaryLogoImage
+
         emailTextField.placeholder = config.emailPlaceholder
+        emailTextField.errorColor = config.errorTintColor
         recoverButton.setTitle(config.recoverPasswordButtonText, for: .normal)
     }
 
