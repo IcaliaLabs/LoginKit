@@ -60,6 +60,118 @@ Of course you will want to customize the Login Coordinator to be able to supply 
 That is done by subclassing the LoginCoordinator class.
 
 ```swift
+
+class LoginCoordinator: ILLoginKit.LoginCoordinator {
+
+}
+
+```
+
+### Start
+
+Handle anything you want to happen when LoginKit starts. Make sure to call super.
+
+```swift
+override func start() {
+    super.start()
+    configureAppearance()
+}
+```
+
+### Configuration
+
+You can set any of these properties on the superclass to change the way LoginKit looks. Besides the images, all other properties have defaults, no need to set them if you don't need them.
+
+| Property  |  Effect      |
+|----------|:-------------:|
+| backgroundImage |  The background image that will be used in all ViewController's.  | 
+| mainLogoImage |  A logo image that will be used in the initial ViewController.  | 
+| secondaryLogoImage |  A smaller logo image that will be used on all ViewController's except the initial one.  | 
+| tintColor |  The tint color for the button text and background color.  | 
+| errorTintColor |  The tint color for error texts. | 
+| loginButtonText |  The text for the login button.  | 
+| signupButtonText |  The text for the signup button.  | 
+| facebookButtonText |  The text for the facebook button.  | 
+| forgotPasswordButtonText |  The text for the forgot password button.  | 
+| recoverPasswordButtonText |  The text for the recover password button.  | 
+| namePlaceholder |  The placeholder that will be used in the name text field.  | 
+| emailPlaceholder |  The placeholder that will be used in the email text field.  | 
+| passwordPlaceholder |  The placeholder that will be used in the password text field.  | 
+| repeatPasswordPlaceholder |  The placeholder that will be used in the repeat password text field.  | 
+
+```swift
+func configureAppearance() {
+    // Customize LoginKit. All properties have defaults, only set the ones you want.
+
+    // Customize the look with background & logo images
+    backgroundImage = 
+    mainLogoImage =
+    secondaryLogoImage =
+
+    // Change colors
+    tintColor = UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 1)
+    errorTintColor = UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1)
+
+    // Change placeholder & button texts, useful for different marketing style or language.
+    loginButtonText = "Sign In"
+    signupButtonText = "Create Account"
+    facebookButtonText = "Login with Facebook"
+    forgotPasswordButtonText = "Forgot password?"
+    recoverPasswordButtonText = "Recover"
+    namePlaceholder = "Name"
+    emailPlaceholder = "E-Mail"
+    passwordPlaceholder = "Password!"
+    repeatPasswordPlaceholder = "Confirm password!"
+}
+```
+
+### Completion Callbacks
+
+Override these other 4 callback methods to handle what happens after the user tries to login, signup, recover password or enter with facebook.
+
+Here you would call your own API.
+
+```swift
+override func login(email: String, password: String) {
+    // Handle login via your API
+    print("Login with: email =\(email) password = \(password)")
+}
+
+override func signup(name: String, email: String, password: String) {
+    // Handle signup via your API
+    print("Signup with: name = \(name) email =\(email) password = \(password)")
+}
+
+override func enterWithFacebook(profile: FacebookProfile) {
+    // Handle Facebook login/signup via your API
+    print("Login/Signup via Facebook with: FB profile =\(profile)")
+
+}
+
+override func recoverPassword(email: String) {
+    // Handle password recovery via your API
+    print("Recover password with: email =\(email)")
+}
+```
+
+### Finish
+
+After successfull login call the finish() method on LoginCoordinator. Be sure to call super.
+
+```swift
+override func finish() {
+    super.finish()
+}
+```
+
+### Code
+
+The final result would look something like this.
+
+```swift
+import Foundation
+import ILLoginKit
+
 class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
     // MARK: - LoginCoordinator
@@ -123,22 +235,7 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
     }
 
 }
-
 ```
-
-### Start
-
-Override these methods, and make sure to call super. Everything you need to handle when starting or finishing can be done here.
-
-### Completion Callbacks
-
-Override these other 4 callback methods to handle what happens after the user tries to login, signup, recover password or enter with facebook.
-
-Here you would call your own API.
-
-### Finish
-
-After successfull login call the finish() method on LoginCoordinator.
 
 ## Author
 
