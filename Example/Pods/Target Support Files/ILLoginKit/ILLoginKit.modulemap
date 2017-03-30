@@ -1,6 +1,0 @@
-framework module ILLoginKit {
-  umbrella header "ILLoginKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
