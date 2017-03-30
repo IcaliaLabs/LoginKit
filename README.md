@@ -40,13 +40,17 @@ import LoginKit
 
 class ViewController: UIViewController { 
 
-  lazy var loginCoordinator: LoginCoordinator = {
-    return LoginCoordinator(rootViewController: self)
-  }()
+    lazy var loginCoordinator: LoginCoordinator = {
+        return LoginCoordinator(rootViewController: self)
+    }()
+    
+    ...
 
-  func showLogin() {
-     loginCoordinator.start()
-  }
+    func showLogin() {
+        loginCoordinator.start()
+    }
+    
+    ...
 
 }
 ```
@@ -100,9 +104,8 @@ You can set any of these properties on the superclass to change the way LoginKit
 | repeatPasswordPlaceholder |  The placeholder that will be used in the repeat password text field.  | 
 
 ```swift
+// Customize LoginKit. All properties have defaults, only set the ones you want.
 func configureAppearance() {
-    // Customize LoginKit. All properties have defaults, only set the ones you want.
-
     // Customize the look with background & logo images
     backgroundImage = 
     mainLogoImage =
@@ -132,24 +135,23 @@ Override these other 4 callback methods to handle what happens after the user tr
 Here you would call your own API.
 
 ```swift
+// Handle login via your API
 override func login(email: String, password: String) {
-    // Handle login via your API
     print("Login with: email =\(email) password = \(password)")
 }
 
+// Handle signup via your API
 override func signup(name: String, email: String, password: String) {
-    // Handle signup via your API
     print("Signup with: name = \(name) email =\(email) password = \(password)")
 }
 
+// Handle Facebook login/signup via your API
 override func enterWithFacebook(profile: FacebookProfile) {
-    // Handle Facebook login/signup via your API
     print("Login/Signup via Facebook with: FB profile =\(profile)")
-
 }
 
+// Handle password recovery via your API
 override func recoverPassword(email: String) {
-    // Handle password recovery via your API
     print("Recover password with: email =\(email)")
 }
 ```
@@ -187,9 +189,8 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
     // MARK: - Setup
 
+    // Customize LoginKit. All properties have defaults, only set the ones you want.
     func configureAppearance() {
-        // Customize LoginKit. All properties have defaults, only set the ones you want.
-
         // Customize the look with background & logo images
         backgroundImage = #imageLiteral(resourceName: "Background")
         // mainLogoImage =
@@ -213,24 +214,23 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
     // MARK: - Completion Callbacks
 
+    // Handle login via your API
     override func login(email: String, password: String) {
-        // Handle login via your API
         print("Login with: email =\(email) password = \(password)")
     }
-
+    
+    // Handle signup via your API
     override func signup(name: String, email: String, password: String) {
-        // Handle signup via your API
         print("Signup with: name = \(name) email =\(email) password = \(password)")
     }
 
+    // Handle Facebook login/signup via your API
     override func enterWithFacebook(profile: FacebookProfile) {
-        // Handle Facebook login/signup via your API
         print("Login/Signup via Facebook with: FB profile =\(profile)")
-
     }
 
+    // Handle password recovery via your API
     override func recoverPassword(email: String) {
-        // Handle password recovery via your API
         print("Recover password with: email =\(email)")
     }
 
