@@ -283,7 +283,7 @@ enum Font: String {
     
 }
 
-let loadFonts = {
+let loadFonts: () = {
     print("Login Coordinator: Loading Fonts")
     let light = Font.montserratLight
     let regular = Font.montserratRegular

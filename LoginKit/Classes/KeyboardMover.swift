@@ -77,7 +77,7 @@ extension KeyboardMovable where Self: UIViewController {
 
         let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         let keyboardHeight: CGFloat = keyboardSize.height
-        let _: CGFloat = info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber as CGFloat
+        let _: CGFloat = info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber as! CGFloat
 
         animate(directionUp: true, keyboardHeight: keyboardHeight)
     }
@@ -89,7 +89,7 @@ extension KeyboardMovable where Self: UIViewController {
 
         let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         let keyboardHeight: CGFloat = keyboardSize.height
-        let _: CGFloat = info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber as CGFloat
+        let _: CGFloat = info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber as! CGFloat
 
         animate(directionUp: false, keyboardHeight: keyboardHeight)
     }
