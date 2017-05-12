@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/LoginKit.svg?style=flat)](http://cocoapods.org/pods/LoginKit)
 [![License](https://img.shields.io/cocoapods/l/LoginKit.svg?style=flat)](http://cocoapods.org/pods/LoginKit)
 [![Platform](https://img.shields.io/cocoapods/p/LoginKit.svg?style=flat)](http://cocoapods.org/pods/LoginKit)
+![Made with Love by Icalia Labs](https://img.shields.io/badge/With%20love%20by-Icalia%20Labs-ff3434.svg)
 
 ## About
 
