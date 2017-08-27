@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ILLoginKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'LoginKit is a quick and easy way to add a Login/Signup UX to your app.'
   s.description      = <<-DESC
 LoginKit handles Signup & Login, via Facebook & Email. It takes care of the UI, the forms, validation, and Facebook SDK access.
@@ -23,6 +23,6 @@ All you need to do is start LoginKit, and then make the necessary calls to your 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Validator', '~> 2.1.1'
-  s.dependency 'FBSDKLoginKit', '4.18.0'
+  s.dependency 'FBSDKLoginKit', '4.26.0'
 
 end

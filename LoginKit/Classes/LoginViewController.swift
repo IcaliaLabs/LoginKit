@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import Validator
 
 protocol LoginViewControllerDelegate: class {
@@ -49,25 +48,19 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
     // MARK: Outlet's
 
     @IBOutlet var fields: Array<SkyFloatingLabelTextField> = []
-
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
-
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
-
     @IBOutlet weak var loginButton: UIButton!
-
     @IBOutlet weak var logoImageView: UIImageView!
-
     @IBOutlet weak var backgroundImageView: GradientImageView!
-
     @IBOutlet weak var forgotPasswordButton: UIButton!
-
     @IBOutlet weak var stackViewHeight: NSLayoutConstraint!
 
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupValidation()
         initKeyboardMover()
         initBackgroundMover()
