@@ -1,8 +1,8 @@
 # LoginKit
 
-[![Version](https://img.shields.io/cocoapods/v/ILLOGINKIT.svg?style=flat)](http://cocoapods.org/pods/LoginKit)
-[![License](https://img.shields.io/cocoapods/l/ILLOGINKIT.svg?style=flat)](http://cocoapods.org/pods/LoginKit)
-[![Platform](https://img.shields.io/cocoapods/p/ILLOGINKIT.svg?style=flat)](http://cocoapods.org/pods/LoginKit)
+[![Version](https://img.shields.io/cocoapods/v/ILLOGINKIT.svg?style=flat)](http://cocoapods.org/pods/ILLoginKit)
+[![License](https://img.shields.io/cocoapods/l/ILLOGINKIT.svg?style=flat)](http://cocoapods.org/pods/ILLoginKit)
+[![Platform](https://img.shields.io/cocoapods/p/ILLOGINKIT.svg?style=flat)](http://cocoapods.org/pods/ILLoginKit)
 ![Made with Love by Icalia Labs](https://img.shields.io/badge/With%20love%20by-Icalia%20Labs-ff3434.svg)
 
 ## About
