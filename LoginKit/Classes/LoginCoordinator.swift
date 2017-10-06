@@ -78,38 +78,57 @@ open class LoginCoordinator: ConfigurationSource {
 
     // MARK: View Controller's
 
-    fileprivate lazy var navigationController: UINavigationController! = {
-        let navController = UINavigationController(rootViewController: self.initialViewController)
-        return navController
-    }()
+    fileprivate var navigationController: UINavigationController {
+        if _navigationController == nil {
+            _navigationController = UINavigationController(rootViewController: self.initialViewController)
+        }
+        return _navigationController!
+    }
+    private var _navigationController: UINavigationController?
 
-    fileprivate lazy var initialViewController: InitialViewController! = {
-        let viewController = InitialViewController()
-        viewController.delegate = self
-        viewController.configurationSource = self
-        return viewController
-    }()
+    fileprivate var initialViewController: InitialViewController {
+        if _initialViewController == nil {
+            let viewController = InitialViewController()
+            viewController.delegate = self
+            viewController.configurationSource = self
+            _initialViewController = viewController
+        }
+        return _initialViewController!
+    }
+    fileprivate var _initialViewController: InitialViewController?
 
-    fileprivate lazy var loginViewController: LoginViewController! = {
-        let viewController = LoginViewController()
-        viewController.delegate = self
-        viewController.configurationSource = self
-        return viewController
-    }()
+    fileprivate var loginViewController: LoginViewController {
+        if _loginViewController == nil {
+            let viewController = LoginViewController()
+            viewController.delegate = self
+            viewController.configurationSource = self
+            _loginViewController = viewController
+        }
+        return _loginViewController!
+    }
+    fileprivate var _loginViewController: LoginViewController?
 
-    fileprivate lazy var signupViewController: SignupViewController! = {
-        let viewController = SignupViewController()
-        viewController.delegate = self
-        viewController.configurationSource = self
-        return viewController
-    }()
+    fileprivate var signupViewController: SignupViewController {
+        if _signupViewController == nil {
+            let viewController = SignupViewController()
+            viewController.delegate = self
+            viewController.configurationSource = self
+            _signupViewController = viewController
+        }
+        return _signupViewController!
+    }
+    fileprivate var _signupViewController: SignupViewController?
 
-    fileprivate lazy var passwordViewController: PasswordViewController! = {
-        let viewController = PasswordViewController()
-        viewController.delegate = self
-        viewController.configurationSource = self
-        return viewController
-    }()
+    fileprivate var passwordViewController: PasswordViewController {
+        if _passwordViewController == nil {
+            let viewController = PasswordViewController()
+            viewController.delegate = self
+            viewController.configurationSource = self
+            _passwordViewController = viewController
+        }
+        return _passwordViewController!
+    }
+    fileprivate var _passwordViewController: PasswordViewController?
 
     // MARK: Services
 
@@ -141,11 +160,11 @@ open class LoginCoordinator: ConfigurationSource {
             rootViewController.dismiss(animated: true, completion: nil)
         }
         
-        navigationController = nil
-        initialViewController = nil
-        loginViewController = nil
-        signupViewController = nil
-        passwordViewController = nil
+        _navigationController = nil
+        _initialViewController = nil
+        _loginViewController = nil
+        _signupViewController = nil
+        _passwordViewController = nil
     }
 
     public func visibleViewController() -> UIViewController? {
@@ -231,7 +250,7 @@ extension LoginCoordinator: LoginViewControllerDelegate {
 
     func loginDidSelectBack(_ viewController: UIViewController) {
         pop()
-        loginViewController = nil
+        _loginViewController = nil
     }
 }
 
@@ -243,7 +262,7 @@ extension LoginCoordinator: SignupViewControllerDelegate {
 
     func signupDidSelectBack(_ viewController: UIViewController) {
         pop()
-        signupViewController = nil
+        _signupViewController = nil
     }
 
 }
@@ -256,7 +275,7 @@ extension LoginCoordinator: PasswordViewControllerDelegate {
 
     func passwordDidSelectBack(_ viewController: UIViewController) {
         pop()
-        passwordViewController = nil
+        _passwordViewController = nil
     }
 
 }
