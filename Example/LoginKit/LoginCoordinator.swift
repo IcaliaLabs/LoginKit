@@ -13,13 +13,13 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
     // MARK: - LoginCoordinator
 
-    override func start() {
-        super.start()
+    override func start(animated: Bool = true) {
+        super.start(animated: animated)
         configureAppearance()
     }
 
-    override func finish() {
-        super.finish()
+    override func finish(animated: Bool = true) {
+        super.finish(animated: animated)
     }
 
     // MARK: - Setup

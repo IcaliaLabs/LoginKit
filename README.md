@@ -77,8 +77,8 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 Handle anything you want to happen when LoginKit starts. Make sure to call super.
 
 ```swift
-override func start() {
-    super.start()
+override func start(animated: Bool = true) {
+    super.start(animated: animated)
     configureAppearance()
 }
 ```
@@ -162,8 +162,8 @@ override func recoverPassword(email: String) {
 After successfull login call the finish() method on LoginCoordinator. Be sure to call super.
 
 ```swift
-override func finish() {
-    super.finish()
+override func finish(animated: Bool = true) {
+    super.finish(animated: animated)
 }
 ```
 
@@ -179,13 +179,13 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
     // MARK: - LoginCoordinator
 
-    override func start() {
-        super.start()
+    override func start(animated: Bool = true) {
+        super.start(animated: animated)
         configureAppearance()
     }
 
-    override func finish() {
-        super.finish()
+    override func finish(animated: Bool = true) {
+        super.finish(animated: animated)
     }
 
     // MARK: - Setup
