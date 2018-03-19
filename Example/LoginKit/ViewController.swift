@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        loginCoordinator.start()
+		loginCoordinator.start()
     }
 
     override func didReceiveMemoryWarning() {

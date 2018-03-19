@@ -37,27 +37,22 @@ class InitialViewController: UIViewController, BackgroundMovable {
     // MARK: Outlet's
 
     @IBOutlet weak var logoImageView: UIImageView!
-
-    @IBOutlet weak var backgroundImageView: UIImageView!
-    
+    @IBOutlet weak var backgroundImageView: GradientImageView!
     @IBOutlet weak var signupButton: Buttn!
-
     @IBOutlet weak var loginButton: Buttn!
-
     @IBOutlet weak var facebookButton: UIButton!
 
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         _ = loadFonts
         initBackgroundMover()
         customizeAppearance()
     }
 
     override func loadView() {
-        self.view = viewFromNib()
+        view = viewFromNib()
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,7 +69,6 @@ class InitialViewController: UIViewController, BackgroundMovable {
         configureFromSource()
         setupFonts()
         addShadows()
-
         navigationController?.isNavigationBarHidden = true
         navigationController?.delegate = self
     }
@@ -85,6 +79,7 @@ class InitialViewController: UIViewController, BackgroundMovable {
         }
 
         backgroundImageView.image = config.backgroundImage
+		backgroundImageView.gradientType = config.backgroundImageGradient ? .normalGradient : .none
         logoImageView.image = config.mainLogoImage
 
         signupButton.setTitle(config.signupButtonText, for: .normal)

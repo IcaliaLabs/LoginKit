@@ -50,19 +50,12 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     // MARK: Outlet's
 
     @IBOutlet var fields: [SkyFloatingLabelTextField]!
-
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
-
     @IBOutlet weak var nameTextField: SkyFloatingLabelTextField!
-
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
-
     @IBOutlet weak var repeatPasswordTextField: SkyFloatingLabelTextField!
-
     @IBOutlet weak var backgroundImageView: GradientImageView!
-
     @IBOutlet weak var logoImageView: UIImageView!
-
     @IBOutlet weak var signupButton: Buttn!
 
     // MARK: - UIViewController
@@ -109,6 +102,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
         signupButton.setTitle(config.signupButtonText, for: .normal)
 
         backgroundImageView.image = config.backgroundImage
+		backgroundImageView.gradientType = config.backgroundImageGradient ? .normalGradient : .none
         backgroundImageView.gradientColor = config.tintColor
         backgroundImageView.fadeColor = config.tintColor
         logoImageView.image = config.secondaryLogoImage

@@ -11,6 +11,7 @@ import Foundation
 protocol ConfigurationSource: class {
 
     var backgroundImage: UIImage { get }
+	var backgroundImageGradient: Bool { get }
     var mainLogoImage: UIImage { get }
     var secondaryLogoImage: UIImage { get }
 
@@ -43,6 +44,8 @@ open class LoginCoordinator: ConfigurationSource {
     // MARK: Public Configuration
 
     public var backgroundImage = UIImage()
+
+	public var backgroundImageGradient: Bool = true
 
     public var mainLogoImage = UIImage()
 

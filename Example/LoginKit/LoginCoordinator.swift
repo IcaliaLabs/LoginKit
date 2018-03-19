@@ -29,6 +29,7 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
         // Customize the look with background & logo images
         backgroundImage = #imageLiteral(resourceName: "Background")
+		backgroundImageGradient = false
         // mainLogoImage =
         // secondaryLogoImage =
 

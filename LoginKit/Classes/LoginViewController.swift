@@ -60,7 +60,6 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupValidation()
         initKeyboardMover()
         initBackgroundMover()
@@ -97,6 +96,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
         }
 
         backgroundImageView.image = config.backgroundImage
+		backgroundImageView.gradientType = config.backgroundImageGradient ? .normalGradient : .none
         backgroundImageView.gradientColor = config.tintColor
         backgroundImageView.fadeColor = config.tintColor
         logoImageView.image = config.secondaryLogoImage

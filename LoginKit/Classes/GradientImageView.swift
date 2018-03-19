@@ -10,43 +10,52 @@ import UIKit
 
 class GradientImageView: UIImageView {
 
+	var gradientType: GradientType = .normalGradient {
+		didSet {
+			updateBackground()
+		}
+	}
+
+	enum GradientType {
+		case normalGradient
+		case none
+	}
+
     @IBInspectable public var gradientColor: UIColor = UIColor.black {
         didSet {
-            self.drawBackground()
+            updateBackground()
         }
     }
 
     @IBInspectable public var fadeColor: UIColor = UIColor.black {
         didSet {
-            self.drawBackground()
+            updateBackground()
         }
     }
 
     @IBInspectable public var fadeAlpha: Float = 0.3 {
         didSet {
-            self.drawBackground()
+            updateBackground()
         }
     }
 
     private var alphaLayer: CALayer?
-
     private var gradientLayer: CAGradientLayer?
-
     private let clearColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        drawBackground()
+        updateBackground()
     }
 
     override init(image: UIImage?) {
         super.init(image: image)
-        drawBackground()
+        updateBackground()
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        drawBackground()
+        updateBackground()
     }
 
     override func layoutSubviews() {
@@ -55,9 +64,13 @@ class GradientImageView: UIImageView {
         gradientLayer?.frame = self.bounds
     }
 
-    func drawBackground() {
+    func updateBackground() {
         gradientLayer?.removeFromSuperlayer()
         alphaLayer?.removeFromSuperlayer()
+
+		guard gradientType == .normalGradient else {
+			return
+		}
 
         gradientLayer = CAGradientLayer()
         alphaLayer = CALayer()

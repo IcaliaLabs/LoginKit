@@ -44,11 +44,8 @@ class PasswordViewController: UIViewController, BackgroundMovable, KeyboardMovab
     // MARK: Outlet's
 
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
-
     @IBOutlet weak var recoverButton: Buttn!
-
     @IBOutlet weak var logoImageView: UIImageView!
-
     @IBOutlet weak var backgroundImageView: GradientImageView!
 
     // MARK: - UIViewController
@@ -85,6 +82,7 @@ class PasswordViewController: UIViewController, BackgroundMovable, KeyboardMovab
         }
 
         backgroundImageView.image = config.backgroundImage
+		backgroundImageView.gradientType = config.backgroundImageGradient ? .normalGradient : .none
         backgroundImageView.gradientColor = config.tintColor
         backgroundImageView.fadeColor = config.tintColor
         logoImageView.image = config.secondaryLogoImage
