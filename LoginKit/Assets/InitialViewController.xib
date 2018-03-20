@@ -101,7 +101,7 @@
                         </button>
                     </subviews>
                 </stackView>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
                     <rect key="frame" x="40" y="327" width="195" height="130"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="130" id="wgq-UG-1LL"/>
@@ -110,17 +110,19 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="trailing" secondItem="Pu3-CS-fkM" secondAttribute="trailing" id="0dF-yE-11g"/>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="3Gm-Ia-4ad"/>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="Pu3-CS-fkM" secondAttribute="bottom" constant="30" id="4k2-Vg-lhU"/>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="Pu3-CS-fkM" secondAttribute="leading" id="Bt4-0m-4kN"/>
                 <constraint firstAttribute="bottom" secondItem="XPy-Cb-f1M" secondAttribute="bottom" constant="50" id="Cvk-vi-HpV"/>
                 <constraint firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" constant="40" id="EVX-g1-T0C"/>
                 <constraint firstAttribute="trailing" secondItem="Vw0-kY-ntJ" secondAttribute="trailing" constant="-20" id="G08-uT-z48"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="trailing" secondItem="Pu3-CS-fkM" secondAttribute="trailing" id="Ihe-c5-sEf"/>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="trailing" secondItem="wTd-tf-f9d" secondAttribute="trailing" constant="100" id="GOj-ro-arZ"/>
                 <constraint firstAttribute="bottom" secondItem="Vw0-kY-ntJ" secondAttribute="bottom" constant="-20" id="PYR-Bs-drb"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="Pu3-CS-fkM" secondAttribute="leading" id="UMI-6G-RQo"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="XPO-54-lKF"/>
+                <constraint firstItem="Pu3-CS-fkM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fOG-F5-8S4"/>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="wTd-tf-f9d" secondAttribute="leading" id="iOk-b3-bCv"/>
                 <constraint firstItem="Pu3-CS-fkM" firstAttribute="top" secondItem="wTd-tf-f9d" secondAttribute="bottom" constant="30" id="kHv-p0-6vv"/>
-                <constraint firstItem="Pu3-CS-fkM" firstAttribute="leading" secondItem="wTd-tf-f9d" secondAttribute="leading" id="qQ3-OP-9ak"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="zj1-IP-NWo"/>
             </constraints>
             <point key="canvasLocation" x="-7.5" y="-539.5"/>

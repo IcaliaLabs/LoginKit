@@ -29,7 +29,9 @@ protocol ConfigurationSource: class {
     var repeatPasswordPlaceholder: String { get }
     var namePlaceholder: String { get }
 
-    var shouldShowForgotPassword: Bool { get }
+	var shouldShowSignupButton: Bool { get }
+	var shouldShowLoginButton: Bool { get }
+	var shouldShowForgotPassword: Bool { get }
 
 }
 
@@ -45,7 +47,7 @@ open class LoginCoordinator: ConfigurationSource {
 
     public var backgroundImage = UIImage()
 
-	public var backgroundImageGradient: Bool = true
+	public var backgroundImageGradient = true
 
     public var mainLogoImage = UIImage()
 
@@ -72,6 +74,10 @@ open class LoginCoordinator: ConfigurationSource {
     public var repeatPasswordPlaceholder = "Repeat Password"
 
     public var namePlaceholder = "Full Name"
+
+	public var shouldShowSignupButton = true
+
+	public var shouldShowLoginButton = true
 
     public var shouldShowForgotPassword = true
 

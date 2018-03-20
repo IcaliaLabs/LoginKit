@@ -27,6 +27,8 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
     func configureAppearance() {
         // Customize LoginKit. All properties have defaults, only set the ones you want.
 
+		shouldShowSignupButton = false
+
         // Customize the look with background & logo images
         backgroundImage = #imageLiteral(resourceName: "Background")
         // mainLogoImage =

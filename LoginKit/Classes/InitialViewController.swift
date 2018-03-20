@@ -82,14 +82,22 @@ class InitialViewController: UIViewController, BackgroundMovable {
 		backgroundImageView.gradientType = config.backgroundImageGradient ? .normalGradient : .none
         logoImageView.image = config.mainLogoImage
 
-        signupButton.setTitle(config.signupButtonText, for: .normal)
-        signupButton.setTitleColor(config.tintColor, for: .normal)
-        signupButton.borderColor = config.tintColor.withAlphaComponent(0.25)
+		if config.shouldShowSignupButton {
+			signupButton.setTitle(config.signupButtonText, for: .normal)
+			signupButton.setTitleColor(config.tintColor, for: .normal)
+			signupButton.borderColor = config.tintColor.withAlphaComponent(0.25)
+		} else {
+			signupButton.isHidden = true
+		}
 
-        loginButton.setTitle(config.loginButtonText, for: .normal)
-        loginButton.setTitleColor(config.tintColor, for: .normal)
-        loginButton.borderColor = config.tintColor.withAlphaComponent(0.25)
-        
+		if config.shouldShowLoginButton {
+			loginButton.setTitle(config.loginButtonText, for: .normal)
+			loginButton.setTitleColor(config.tintColor, for: .normal)
+			loginButton.borderColor = config.tintColor.withAlphaComponent(0.25)
+		} else {
+			loginButton.isHidden = true
+		}
+
         facebookButton.setTitle(config.facebookButtonText, for: .normal)
     }
 
