@@ -132,10 +132,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     }
 
     @IBAction func didSelectSignup(_ sender: AnyObject) {
-        guard let email = emailTextField.text,
-            let name = nameTextField.text,
-            let password = passwordTextField.text
-            else {
+        guard let email = emailTextField.text, let name = nameTextField.text, let password = passwordTextField.text else {
             return
         }
 
@@ -225,13 +222,14 @@ extension SignupViewController : UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		textField.resignFirstResponder()
+
         let nextTag = textField.tag + 1
         let nextResponder = view.viewWithTag(nextTag) as UIResponder!
 
         if nextResponder != nil {
             nextResponder?.becomeFirstResponder()
         } else {
-            textField.resignFirstResponder()
             didSelectSignup(self)
         }
         
