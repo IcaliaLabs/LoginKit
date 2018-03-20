@@ -9,23 +9,21 @@
 import UIKit
 import Validator
 
-protocol LoginViewControllerDelegate: class {
+public protocol LoginViewControllerDelegate: AnyObject {
 
     func didSelectLogin(_ viewController: UIViewController, email: String, password: String)
-
     func didSelectForgotPassword(_ viewController: UIViewController)
-
     func loginDidSelectBack(_ viewController: UIViewController)
 
 }
 
-class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable {
+open class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable {
 
     // MARK: - Properties
 
-    weak var delegate: LoginViewControllerDelegate?
+    public weak var delegate: LoginViewControllerDelegate?
 
-    weak var configurationSource: ConfigurationSource?
+    public var configuration: ConfigurationSource?
 
     var loginAttempted = false
 
@@ -58,7 +56,7 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
 
     // MARK: - UIViewController
 
-    override func viewDidLoad() {
+	override open func viewDidLoad() {
         super.viewDidLoad()
         setupValidation()
         initKeyboardMover()
@@ -66,32 +64,32 @@ class LoginViewController: UIViewController, BackgroundMovable, KeyboardMovable 
         customizeAppearance()
     }
 
-    override func loadView() {
+	override open func loadView() {
         self.view = viewFromNib()
     }
 
-    override func didReceiveMemoryWarning() {
+	override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
+	override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         destroyKeyboardMover()
     }
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+	override open var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 
     // MARK: - Setup
 
     func customizeAppearance() {
-        configureFromSource()
+        setupConfiguration()
         setupFonts()
     }
 
-    func configureFromSource() {
-        guard let config = configurationSource else {
+    func setupConfiguration() {
+        guard let config = configuration else {
             return
         }
 
@@ -202,15 +200,15 @@ extension LoginViewController {
 
 extension LoginViewController : UITextFieldDelegate {
 
-    func textFieldDidBeginEditing(_ textField: UITextField) {
+	public func textFieldDidBeginEditing(_ textField: UITextField) {
         selectedField = textField
     }
 
-    func textFieldDidEndEditing(_ textField: UITextField) {
+	public func textFieldDidEndEditing(_ textField: UITextField) {
         selectedField = nil
     }
 
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+	public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		textField.resignFirstResponder()
 
         let nextTag = textField.tag + 1

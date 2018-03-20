@@ -23,7 +23,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     weak var delegate: SignupViewControllerDelegate?
 
-    weak var configurationSource: ConfigurationSource?
+    var configuration: ConfigurationSource?
 
     var signupAttempted = false
 
@@ -62,7 +62,6 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupValidation()
         initKeyboardMover()
         initBackgroundMover()
@@ -89,12 +88,12 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
     // MARK: - Setup
 
     func customizeAppearance() {
-        configureFromSource()
+        setupConfiguration()
         setupFonts()
     }
     
-    func configureFromSource() {
-        guard let config = configurationSource else {
+    func setupConfiguration() {
+        guard let config = configuration else {
             return
         }
 

@@ -23,7 +23,7 @@ class PasswordViewController: UIViewController, BackgroundMovable, KeyboardMovab
 
     weak var delegate: PasswordViewControllerDelegate?
 
-    weak var configurationSource: ConfigurationSource?
+    var configuration: ConfigurationSource?
 
     var recoverAttempted = false
 
@@ -72,12 +72,12 @@ class PasswordViewController: UIViewController, BackgroundMovable, KeyboardMovab
     // MARK: - Setup
 
     func customizeAppearance() {
-        configureFromSource()
+        setupConfiguration()
         setupFonts()
     }
 
-    func configureFromSource() {
-        guard let config = configurationSource else {
+    func setupConfiguration() {
+        guard let config = configuration else {
             return
         }
 

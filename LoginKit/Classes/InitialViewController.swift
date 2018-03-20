@@ -11,9 +11,7 @@ import UIKit
 protocol InitialViewControllerDelegate: class {
 
     func didSelectSignup(_ viewController: UIViewController)
-
     func didSelectLogin(_ viewController: UIViewController)
-
     func didSelectFacebook(_ viewController: UIViewController)
 
 }
@@ -24,7 +22,7 @@ class InitialViewController: UIViewController, BackgroundMovable {
 
     weak var delegate: InitialViewControllerDelegate?
 
-    weak var configurationSource: ConfigurationSource?
+    var configuration: ConfigurationSource?
 
     // MARK: Background Movable
 
@@ -66,15 +64,15 @@ class InitialViewController: UIViewController, BackgroundMovable {
     // MARK: - Setup
 
     func customizeAppearance() {
-        configureFromSource()
+        setupConfiguration()
         setupFonts()
         addShadows()
         navigationController?.isNavigationBarHidden = true
         navigationController?.delegate = self
     }
 
-    func configureFromSource() {
-        guard let config = configurationSource else {
+    func setupConfiguration() {
+        guard let config = configuration else {
             return
         }
 
