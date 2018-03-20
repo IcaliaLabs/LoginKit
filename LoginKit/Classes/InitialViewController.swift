@@ -22,14 +22,14 @@ class InitialViewController: UIViewController, BackgroundMovable {
 
     weak var delegate: InitialViewControllerDelegate?
 
-    var configuration: ConfigurationSource?
+	lazy var configuration: ConfigurationSource = {
+		return DefaultConfiguration()
+	}()
 
     // MARK: Background Movable
 
     var movableBackground: UIView {
-        get {
-            return backgroundImageView
-        }
+		return backgroundImageView
     }
 
     // MARK: Outlet's
@@ -64,39 +64,35 @@ class InitialViewController: UIViewController, BackgroundMovable {
     // MARK: - Setup
 
     func customizeAppearance() {
-        setupConfiguration()
+        applyConfiguration()
         setupFonts()
         addShadows()
         navigationController?.isNavigationBarHidden = true
         navigationController?.delegate = self
     }
 
-    func setupConfiguration() {
-        guard let config = configuration else {
-            return
-        }
+    func applyConfiguration() {
+        backgroundImageView.image = configuration.backgroundImage
+		backgroundImageView.gradientType = configuration.backgroundImageGradient ? .normalGradient : .none
+        logoImageView.image = configuration.mainLogoImage
 
-        backgroundImageView.image = config.backgroundImage
-		backgroundImageView.gradientType = config.backgroundImageGradient ? .normalGradient : .none
-        logoImageView.image = config.mainLogoImage
-
-		if config.shouldShowSignupButton {
-			signupButton.setTitle(config.signupButtonText, for: .normal)
-			signupButton.setTitleColor(config.tintColor, for: .normal)
-			signupButton.borderColor = config.tintColor.withAlphaComponent(0.25)
+		if configuration.shouldShowSignupButton {
+			signupButton.setTitle(configuration.signupButtonText, for: .normal)
+			signupButton.setTitleColor(configuration.tintColor, for: .normal)
+			signupButton.borderColor = configuration.tintColor.withAlphaComponent(0.25)
 		} else {
 			signupButton.isHidden = true
 		}
 
-		if config.shouldShowLoginButton {
-			loginButton.setTitle(config.loginButtonText, for: .normal)
-			loginButton.setTitleColor(config.tintColor, for: .normal)
-			loginButton.borderColor = config.tintColor.withAlphaComponent(0.25)
+		if configuration.shouldShowLoginButton {
+			loginButton.setTitle(configuration.loginButtonText, for: .normal)
+			loginButton.setTitleColor(configuration.tintColor, for: .normal)
+			loginButton.borderColor = configuration.tintColor.withAlphaComponent(0.25)
 		} else {
 			loginButton.isHidden = true
 		}
 
-        facebookButton.setTitle(config.facebookButtonText, for: .normal)
+        facebookButton.setTitle(configuration.facebookButtonText, for: .normal)
     }
 
     func setupFonts() {

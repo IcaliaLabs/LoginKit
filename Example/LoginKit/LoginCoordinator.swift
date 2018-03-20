@@ -9,6 +9,7 @@
 import Foundation
 import ILLoginKit
 
+
 class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
     // MARK: - LoginCoordinator
@@ -25,29 +26,30 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
     // MARK: - Setup
 
     func configureAppearance() {
-        // Customize LoginKit. All properties have defaults, only set the ones you want.
+		// Customize LoginKit. All properties have defaults, only set the ones you want.
 
-		configuration.shouldShowSignupButton = false
+		// Customize the look with background & logo images
+		// Change colors
+		// Change placeholder & button texts, useful for different marketing style or language.
 
-        // Customize the look with background & logo images
-        configuration.backgroundImage = #imageLiteral(resourceName: "Background")
-        // mainLogoImage =
-        // secondaryLogoImage =
+		configuration = DefaultConfiguration(backgroundImage: #imageLiteral(resourceName: "Background"),
+											 tintColor: UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 1),
+											 errorTintColor: UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1),
+											 signupButtonText: "Create Account",
+											 loginButtonText: "Sign In",
+											 facebookButtonText: "Login with Facebook",
+											 forgotPasswordButtonText: "Forgot password?",
+											 recoverPasswordButtonText: "Recover",
+											 emailPlaceholder: "E-Mail",
+											 passwordPlaceholder: "Password!",
+											 repeatPasswordPlaceholder: "Confirm password!",
+											 namePlaceholder: "Name",
+											 shouldShowSignupButton: false,
+											 shouldShowLoginButton: true,
+											 shouldShowForgotPassword: true)
 
-        // Change colors
-        configuration.tintColor = UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 1)
-        configuration.errorTintColor = UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1)
-
-        // Change placeholder & button texts, useful for different marketing style or language.
-        configuration.loginButtonText = "Sign In"
-        configuration.signupButtonText = "Create Account"
-        configuration.facebookButtonText = "Login with Facebook"
-        configuration.forgotPasswordButtonText = "Forgot password?"
-        configuration.recoverPasswordButtonText = "Recover"
-        configuration.namePlaceholder = "Name"
-        configuration.emailPlaceholder = "E-Mail"
-        configuration.passwordPlaceholder = "Password!"
-        configuration.repeatPasswordPlaceholder = "Confirm password!"
+		// You could also change them directly with configuration.loginButtonText = xyz
+		// Or you could create your own type that conforms to ConfigurationSource protocol
     }
 
     // MARK: - Completion Callbacks

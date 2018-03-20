@@ -15,12 +15,19 @@ class ViewController: UIViewController {
         return LoginCoordinator(rootViewController: self)
     }()
 
+	lazy var loginViewController: OverridenLoginViewController = {
+		let controller = OverridenLoginViewController()
+		controller.delegate = self
+		return controller
+	}()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     override func viewDidAppear(_ animated: Bool) {
-		loginCoordinator.start()
+		// loginCoordinator.start()
+		present(loginViewController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,3 +37,20 @@ class ViewController: UIViewController {
 
 }
 
+// MARK: - LoginViewController Delegate
+
+extension ViewController: LoginViewControllerDelegate {
+
+	func didSelectLogin(_ viewController: UIViewController, email: String, password: String) {
+		print("DID SELECT LOGIN; EMAIL = \(email); PASSWORD = \(password)")
+	}
+
+	func didSelectForgotPassword(_ viewController: UIViewController) {
+		print("LOGIN DID SELECT FORGOT PASSWORD")
+	}
+
+	func loginDidSelectBack(_ viewController: UIViewController) {
+		print("LOGIN DID SELECT BACK")
+	}
+
+}

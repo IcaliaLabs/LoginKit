@@ -35,7 +35,7 @@ public protocol ConfigurationSource {
 
 }
 
-public class DefaultConfiguration: ConfigurationSource {
+public struct DefaultConfiguration: ConfigurationSource {
 
 	public var backgroundImage: UIImage
 	public var backgroundImageGradient: Bool
@@ -60,7 +60,7 @@ public class DefaultConfiguration: ConfigurationSource {
 	public var shouldShowLoginButton: Bool
 	public var shouldShowForgotPassword: Bool
 
-	init(backgroundImage: UIImage = UIImage(),
+	public init(backgroundImage: UIImage = UIImage(),
 		 backgroundImageGradient: Bool = true,
 		 mainLogoImage: UIImage = UIImage(),
 		 secondaryLogoImage: UIImage = UIImage(),
@@ -294,11 +294,11 @@ extension LoginCoordinator: LoginViewControllerDelegate {
 
 extension LoginCoordinator: SignupViewControllerDelegate {
 
-    func didSelectSignup(_ viewController: UIViewController, email: String, name: String, password: String) {
+    public func didSelectSignup(_ viewController: UIViewController, email: String, name: String, password: String) {
         signup(name: name, email: email, password: password)
     }
 
-    func signupDidSelectBack(_ viewController: UIViewController) {
+    public func signupDidSelectBack(_ viewController: UIViewController) {
         pop()
         _signupViewController = nil
     }
@@ -307,11 +307,11 @@ extension LoginCoordinator: SignupViewControllerDelegate {
 
 extension LoginCoordinator: PasswordViewControllerDelegate {
 
-    func didSelectRecover(_ viewController: UIViewController, email: String) {
+    public func didSelectRecover(_ viewController: UIViewController, email: String) {
         recoverPassword(email: email)
     }
 
-    func passwordDidSelectBack(_ viewController: UIViewController) {
+    public func passwordDidSelectBack(_ viewController: UIViewController) {
         pop()
         _passwordViewController = nil
     }

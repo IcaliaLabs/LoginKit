@@ -23,7 +23,9 @@ open class LoginViewController: UIViewController, BackgroundMovable, KeyboardMov
 
     public weak var delegate: LoginViewControllerDelegate?
 
-    public var configuration: ConfigurationSource?
+	public lazy var configuration: ConfigurationSource = {
+		return DefaultConfiguration()
+	}()
 
     var loginAttempted = false
 
@@ -58,6 +60,7 @@ open class LoginViewController: UIViewController, BackgroundMovable, KeyboardMov
 
 	override open func viewDidLoad() {
         super.viewDidLoad()
+		_ = loadFonts
         setupValidation()
         initKeyboardMover()
         initBackgroundMover()
@@ -65,7 +68,7 @@ open class LoginViewController: UIViewController, BackgroundMovable, KeyboardMov
     }
 
 	override open func loadView() {
-        self.view = viewFromNib()
+        self.view = viewFromNib(optionalName: "LoginViewController")
     }
 
 	override open func didReceiveMemoryWarning() {
@@ -84,32 +87,28 @@ open class LoginViewController: UIViewController, BackgroundMovable, KeyboardMov
     // MARK: - Setup
 
     func customizeAppearance() {
-        setupConfiguration()
+        applyConfiguration()
         setupFonts()
     }
 
-    func setupConfiguration() {
-        guard let config = configuration else {
-            return
-        }
+    func applyConfiguration() {
+        backgroundImageView.image = configuration.backgroundImage
+		backgroundImageView.gradientType = configuration.backgroundImageGradient ? .normalGradient : .none
+        backgroundImageView.gradientColor = configuration.tintColor
+        backgroundImageView.fadeColor = configuration.tintColor
+        logoImageView.image = configuration.secondaryLogoImage
 
-        backgroundImageView.image = config.backgroundImage
-		backgroundImageView.gradientType = config.backgroundImageGradient ? .normalGradient : .none
-        backgroundImageView.gradientColor = config.tintColor
-        backgroundImageView.fadeColor = config.tintColor
-        logoImageView.image = config.secondaryLogoImage
+        emailTextField.placeholder = configuration.emailPlaceholder
+        emailTextField.errorColor = configuration.errorTintColor
+        passwordTextField.placeholder = configuration.passwordPlaceholder
+        passwordTextField.errorColor = configuration.errorTintColor
 
-        emailTextField.placeholder = config.emailPlaceholder
-        emailTextField.errorColor = config.errorTintColor
-        passwordTextField.placeholder = config.passwordPlaceholder
-        passwordTextField.errorColor = config.errorTintColor
+        loginButton.setTitle(configuration.loginButtonText, for: .normal)
+        loginButton.setTitleColor(configuration.tintColor, for: .normal)
+        forgotPasswordButton.isHidden = !configuration.shouldShowForgotPassword
+        forgotPasswordButton.setTitle(configuration.forgotPasswordButtonText, for: .normal)
 
-        loginButton.setTitle(config.loginButtonText, for: .normal)
-        loginButton.setTitleColor(config.tintColor, for: .normal)
-        forgotPasswordButton.isHidden = !config.shouldShowForgotPassword
-        forgotPasswordButton.setTitle(config.forgotPasswordButtonText, for: .normal)
-
-        stackViewHeight.constant = config.shouldShowForgotPassword ? 200 : 125
+        stackViewHeight.constant = configuration.shouldShowForgotPassword ? 200 : 125
     }
 
     func setupFonts() {
