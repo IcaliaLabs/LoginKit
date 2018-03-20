@@ -11,6 +11,8 @@ import ILLoginKit
 
 class ViewController: UIViewController {
 
+	var hasShownLogin = false
+
     lazy var loginCoordinator: LoginCoordinator = {
         return LoginCoordinator(rootViewController: self)
     }()
@@ -26,8 +28,13 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-		// loginCoordinator.start()
-		present(loginViewController, animated: true, completion: nil)
+		guard !hasShownLogin else {
+			return
+		}
+
+		hasShownLogin = true
+		loginCoordinator.start()
+		// present(loginViewController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -15,8 +15,8 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
     // MARK: - LoginCoordinator
 
     override func start(animated: Bool = true) {
+		configureAppearance()
         super.start(animated: animated)
-        configureAppearance()
     }
 
     override func finish(animated: Bool = true) {
@@ -57,6 +57,7 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
     override func login(email: String, password: String) {
         // Handle login via your API
         print("Login with: email =\(email) password = \(password)")
+		finish()
     }
 
     override func signup(name: String, email: String, password: String) {
