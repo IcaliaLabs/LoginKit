@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -54,49 +54,54 @@
                         <action selector="didSelectFacebook:" destination="-1" eventType="touchUpInside" id="TqY-aa-Jaj"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-q7-7Ju" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
-                    <rect key="frame" x="40" y="487" width="142" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="fc3-ve-5r8"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <state key="normal" title="SIGN UP">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderType">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                            <real key="value" value="1"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="didSelectSignup:" destination="-1" eventType="touchUpInside" id="qsl-r3-2xg"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-wF-hG2" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
-                    <rect key="frame" x="194" y="487" width="141" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="9F5-ZK-SHS"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <state key="normal" title="LOG IN">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderType">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                            <real key="value" value="1"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="didSelectLogin:" destination="-1" eventType="touchUpInside" id="p85-YG-D3j"/>
-                    </connections>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Pu3-CS-fkM">
+                    <rect key="frame" x="40" y="487" width="295" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-q7-7Ju" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="132.5" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fc3-ve-5r8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="SIGN UP">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderType">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didSelectSignup:" destination="-1" eventType="touchUpInside" id="qsl-r3-2xg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-wF-hG2" customClass="Buttn" customModule="ILLoginKit" customModuleProvider="target">
+                            <rect key="frame" x="162.5" y="0.0" width="132.5" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="9F5-ZK-SHS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="LOG IN">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderType">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didSelectLogin:" destination="-1" eventType="touchUpInside" id="p85-YG-D3j"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
                     <rect key="frame" x="40" y="327" width="195" height="130"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="130" id="wgq-UG-1LL"/>
@@ -106,20 +111,16 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="3Gm-Ia-4ad"/>
-                <constraint firstItem="9Xa-q7-7Ju" firstAttribute="leading" secondItem="wTd-tf-f9d" secondAttribute="leading" id="61d-F0-0sb"/>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="Pu3-CS-fkM" secondAttribute="bottom" constant="30" id="4k2-Vg-lhU"/>
                 <constraint firstAttribute="bottom" secondItem="XPy-Cb-f1M" secondAttribute="bottom" constant="50" id="Cvk-vi-HpV"/>
                 <constraint firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" constant="40" id="EVX-g1-T0C"/>
                 <constraint firstAttribute="trailing" secondItem="Vw0-kY-ntJ" secondAttribute="trailing" constant="-20" id="G08-uT-z48"/>
-                <constraint firstItem="9Xa-q7-7Ju" firstAttribute="width" secondItem="XPy-Cb-f1M" secondAttribute="width" multiplier="0.48" id="Mba-Om-itj"/>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="trailing" secondItem="Pu3-CS-fkM" secondAttribute="trailing" id="Ihe-c5-sEf"/>
                 <constraint firstAttribute="bottom" secondItem="Vw0-kY-ntJ" secondAttribute="bottom" constant="-20" id="PYR-Bs-drb"/>
+                <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="Pu3-CS-fkM" secondAttribute="leading" id="UMI-6G-RQo"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="XPO-54-lKF"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="9Xa-q7-7Ju" secondAttribute="bottom" constant="30" id="ZLL-6L-oTT"/>
-                <constraint firstItem="B7r-wF-hG2" firstAttribute="trailing" secondItem="XPy-Cb-f1M" secondAttribute="trailing" id="bkh-nJ-31Q"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="top" secondItem="B7r-wF-hG2" secondAttribute="bottom" constant="30" id="dH5-Hs-8bs"/>
-                <constraint firstItem="XPy-Cb-f1M" firstAttribute="leading" secondItem="9Xa-q7-7Ju" secondAttribute="leading" id="enB-lh-Yf4"/>
-                <constraint firstItem="9Xa-q7-7Ju" firstAttribute="top" secondItem="wTd-tf-f9d" secondAttribute="bottom" constant="30" id="pOQ-Ab-BMg"/>
-                <constraint firstItem="B7r-wF-hG2" firstAttribute="width" secondItem="XPy-Cb-f1M" secondAttribute="width" multiplier="0.48" id="pmQ-Jq-bBx"/>
-                <constraint firstItem="B7r-wF-hG2" firstAttribute="trailing" secondItem="wTd-tf-f9d" secondAttribute="trailing" constant="100" id="tvk-Yq-f4N"/>
+                <constraint firstItem="Pu3-CS-fkM" firstAttribute="top" secondItem="wTd-tf-f9d" secondAttribute="bottom" constant="30" id="kHv-p0-6vv"/>
+                <constraint firstItem="Pu3-CS-fkM" firstAttribute="leading" secondItem="wTd-tf-f9d" secondAttribute="leading" id="qQ3-OP-9ak"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="zj1-IP-NWo"/>
             </constraints>
             <point key="canvasLocation" x="-7.5" y="-539.5"/>
