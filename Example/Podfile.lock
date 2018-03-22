@@ -1,16 +1,16 @@
 PODS:
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
-  - FBSDKCoreKit (4.26.0):
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.31.1):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.26.0):
+  - FBSDKLoginKit (4.31.0):
     - FBSDKCoreKit
   - ILLoginKit (0.1.3):
-    - FBSDKLoginKit (= 4.26.0)
+    - FBSDKLoginKit (= 4.31.0)
     - Validator (~> 2.1.1)
   - Validator (2.1.1)
 
@@ -22,10 +22,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  FBSDKCoreKit: c8b8582311ec11b145451d8b9717dc6cc2ae5a76
-  FBSDKLoginKit: f3f03b94c21eb834af243c0a881d48641f47ca60
-  ILLoginKit: d99d7041307eb067c66394fabf68969da39ce94f
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: e08ccfcefa7bc1347a07c276dac9bf6c7fe57024
+  FBSDKLoginKit: 95a252ddffd6919c0f132a02292f0824616d8709
+  ILLoginKit: f199d5dae7f475b5b7d9e2809632f84d7cfa96f1
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 
 PODFILE CHECKSUM: 122b20bb1eac42606ddc06e4bca9a845d06723fd
