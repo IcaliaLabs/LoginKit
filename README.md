@@ -19,6 +19,18 @@ LoginKit handles Signup & Login, via Facebook & Email. It takes care of the UI, 
 
 <img src="http://danielozano.com/images/1bsmall.png" width="210"><img src="http://danielozano.com/images/2bsmall.png" width="210"><img src="http://danielozano.com/images/3bsmall.png" width="210"><img src="http://danielozano.com/images/4bsmall.png" width="210">
 
+## What's New
+
+### v.1.0.0
+
+- Ability to use `LoginViewController`, `SignupViewController` and `PasswordViewController` on it's own without having to use the LoginCoordinator
+- Ability to hide Login, Signup and Facebook buttons in initial screen
+- Added ability to remove background gradient
+- Added ability to remove animation when starting the Login Coordinator
+- Fixed an issue with the keyboard mover not working in some cases
+- Fixes/Improvements to the sample project
+- Updated Facebook SDK to latest version
+
 ## Requirements
 
 ## Installation
