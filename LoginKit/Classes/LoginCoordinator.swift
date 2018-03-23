@@ -31,6 +31,7 @@ public protocol ConfigurationSource {
 
 	var shouldShowSignupButton: Bool { get }
 	var shouldShowLoginButton: Bool { get }
+	var shouldShowFacebookButton: Bool { get }
 	var shouldShowForgotPassword: Bool { get }
 
 }
@@ -58,6 +59,7 @@ public struct DefaultConfiguration: ConfigurationSource {
 
 	public var shouldShowSignupButton: Bool
 	public var shouldShowLoginButton: Bool
+	public var shouldShowFacebookButton: Bool
 	public var shouldShowForgotPassword: Bool
 
 	public init(backgroundImage: UIImage = UIImage(),
@@ -77,6 +79,7 @@ public struct DefaultConfiguration: ConfigurationSource {
 		 namePlaceholder: String = "Full Name",
 		 shouldShowSignupButton: Bool = true,
 		 shouldShowLoginButton: Bool = true,
+		 shouldShowFacebookButton: Bool = true,
 		 shouldShowForgotPassword: Bool = true) {
 		self.backgroundImage = backgroundImage
 		self.backgroundImageGradient = backgroundImageGradient
@@ -95,6 +98,7 @@ public struct DefaultConfiguration: ConfigurationSource {
 		self.namePlaceholder = namePlaceholder
 		self.shouldShowSignupButton = shouldShowSignupButton
 		self.shouldShowLoginButton = shouldShowLoginButton
+		self.shouldShowFacebookButton = shouldShowFacebookButton
 		self.shouldShowForgotPassword = shouldShowForgotPassword
 	}
 

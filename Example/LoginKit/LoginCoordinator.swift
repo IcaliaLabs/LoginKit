@@ -43,6 +43,7 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 											 namePlaceholder: "Name",
 											 shouldShowSignupButton: false,
 											 shouldShowLoginButton: true,
+											 shouldShowFacebookButton: false,
 											 shouldShowForgotPassword: true)
 
 		// or like this
@@ -83,7 +84,7 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 enum Settings {
 
 	static let defaultLoginConfig = DefaultConfiguration(backgroundImage: #imageLiteral(resourceName: "Background"),
-														 tintColor: UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 1),
+														tintColor: UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 1),
 														 errorTintColor: UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1),
 														 signupButtonText: "Create Account",
 														 loginButtonText: "Sign In",
@@ -96,6 +97,7 @@ enum Settings {
 														 namePlaceholder: "Name",
 														 shouldShowSignupButton: false,
 														 shouldShowLoginButton: true,
+														 shouldShowFacebookButton: false,
 														 shouldShowForgotPassword: true)
 
 }

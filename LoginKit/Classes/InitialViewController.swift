@@ -92,7 +92,11 @@ class InitialViewController: UIViewController, BackgroundMovable {
 			loginButton.isHidden = true
 		}
 
-        facebookButton.setTitle(configuration.facebookButtonText, for: .normal)
+		if configuration.shouldShowFacebookButton {
+			facebookButton.setTitle(configuration.facebookButtonText, for: .normal)
+		} else {
+			facebookButton.isHidden = true
+		}
     }
 
     func setupFonts() {
