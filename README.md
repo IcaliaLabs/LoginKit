@@ -192,29 +192,6 @@ override func recoverPassword(email: String) {
 }
 ```
 
-### Using the ViewController's without the LoginCoordinator
-
-If you only need to use the `LoginViewController` or `SignupViewController` or `PasswordViewController` on it's own, without using the LoginCoordinator, now you can.
-
-Just subclass any of them, and set configuration property in the `viewDidLoad()` method before calling `super.viewDidLoad()`.
-
-```swift
-class OverridenLoginViewController: LoginViewController {
-
-    override func viewDidLoad() {
-	configuration = Settings.defaultLoginConfig // configure before calling super
-	super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-}
-```
-
-Then just present the ViewController, and set the `delegate` property to receive the appropiate callbacks for that controller.
-
 ### Finish
 
 After successfull login call the finish() method on LoginCoordinator. Be sure to call super.
@@ -295,6 +272,29 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
 }
 ```
+
+### Using the ViewController's without the LoginCoordinator
+
+If you only need to use the `LoginViewController` or `SignupViewController` or `PasswordViewController` on it's own, without using the LoginCoordinator, now you can.
+
+Just subclass any of them, and set configuration property in the `viewDidLoad()` method before calling `super.viewDidLoad()`.
+
+```swift
+class OverridenLoginViewController: LoginViewController {
+
+    override func viewDidLoad() {
+	configuration = Settings.defaultLoginConfig // configure before calling super
+	super.viewDidLoad()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+}
+```
+
+Then just present the ViewController, and set the `delegate` property to receive the appropiate callbacks for that controller.
 
 ## Author
 
