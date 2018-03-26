@@ -148,20 +148,20 @@ func configureAppearance() {
 
 You can also create your own type that conforms to the `ConfigurationSource` protocol, or use the `DefaultConfiguration` struct. Then just set it on the configuration object like so.
 
-```
+```swift
 configuration = DefaultConfiguration(backgroundImage: signupButtonText: "Create Account",
-											 loginButtonText: "Sign In",
-											 facebookButtonText: "Login with Facebook",
-											 forgotPasswordButtonText: "Forgot password?",
-											 recoverPasswordButtonText: "Recover",
-											 emailPlaceholder: "E-Mail",
-											 passwordPlaceholder: "Password!",
-											 repeatPasswordPlaceholder: "Confirm password!",
-											 namePlaceholder: "Name",
-											 shouldShowSignupButton: false,
-											 shouldShowLoginButton: true,
-											 shouldShowFacebookButton: false,
-											 shouldShowForgotPassword: true)x
+					 loginButtonText: "Sign In",
+					 facebookButtonText: "Login with Facebook",
+					 forgotPasswordButtonText: "Forgot password?",
+					 recoverPasswordButtonText: "Recover",
+					 emailPlaceholder: "E-Mail",
+					 passwordPlaceholder: "Password!",
+					 repeatPasswordPlaceholder: "Confirm password!",
+					 namePlaceholder: "Name",
+					 shouldShowSignupButton: false,
+					 shouldShowLoginButton: true,
+					 shouldShowFacebookButton: false,
+					 shouldShowForgotPassword: true)x
 ```
 
 ### Completion Callbacks
@@ -196,14 +196,14 @@ override func recoverPassword(email: String) {
 
 If you only need to use the `LoginViewController` or `SignupViewController` or `PasswordViewController` on it's own, without using the LoginCoordinator, now you can.
 
-Just subclass them, and set configuration property in the `viewDidLoad()` method before calling `super.viewDidLoad()`.
+Just subclass any of them, and set configuration property in the `viewDidLoad()` method before calling `super.viewDidLoad()`.
 
-```
+```swift
 class OverridenLoginViewController: LoginViewController {
 
     override func viewDidLoad() {
-		configuration = Settings.defaultLoginConfig // configure before calling super
-		super.viewDidLoad()
+	configuration = Settings.defaultLoginConfig // configure before calling super
+	super.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {
@@ -251,24 +251,24 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
     // Customize LoginKit. All properties have defaults, only set the ones you want.
     func configureAppearance() {
         // Customize the look with background & logo images
-        backgroundImage = #imageLiteral(resourceName: "Background")
+        configuration.backgroundImage = #imageLiteral(resourceName: "Background")
         // mainLogoImage =
         // secondaryLogoImage =
 
         // Change colors
-        tintColor = UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 1)
-        errorTintColor = UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1)
+        configuration.tintColor = UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 1)
+        configuration.errorTintColor = UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1)
 
         // Change placeholder & button texts, useful for different marketing style or language.
-        loginButtonText = "Sign In"
-        signupButtonText = "Create Account"
-        facebookButtonText = "Login with Facebook"
-        forgotPasswordButtonText = "Forgot password?"
-        recoverPasswordButtonText = "Recover"
-        namePlaceholder = "Name"
-        emailPlaceholder = "E-Mail"
-        passwordPlaceholder = "Password!"
-        repeatPasswordPlaceholder = "Confirm password!"
+        configuration.loginButtonText = "Sign In"
+        configuration.signupButtonText = "Create Account"
+        configuration.facebookButtonText = "Login with Facebook"
+        configuration.forgotPasswordButtonText = "Forgot password?"
+        configuration.recoverPasswordButtonText = "Recover"
+        configuration.namePlaceholder = "Name"
+        configuration.emailPlaceholder = "E-Mail"
+        configuration.passwordPlaceholder = "Password!"
+        configuration.repeatPasswordPlaceholder = "Confirm password!"
     }
 
     // MARK: - Completion Callbacks
