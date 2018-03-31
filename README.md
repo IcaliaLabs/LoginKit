@@ -46,7 +46,7 @@ pod "ILLoginKit"
 
 ### Login Coordinator
 
-Everything is handled through the **LoginCoordinator** class. You insantiate it and pass the root view controller which is the UIViewController from which the LoginKit process will be started (presented) on. This will usually be self.
+Everything is handled through the **LoginCoordinator** class. You instantiate it and pass the root view controller which is the UIViewController from which the LoginKit process will be started (presented) on. This will usually be self.
 
 ```swift
 import LoginKit
