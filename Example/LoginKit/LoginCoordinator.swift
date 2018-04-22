@@ -95,9 +95,9 @@ enum Settings {
 														 passwordPlaceholder: "Password!",
 														 repeatPasswordPlaceholder: "Confirm password!",
 														 namePlaceholder: "Name",
-														 shouldShowSignupButton: false,
+														 shouldShowSignupButton: true,
 														 shouldShowLoginButton: true,
-														 shouldShowFacebookButton: false,
+														 shouldShowFacebookButton: true,
 														 shouldShowForgotPassword: true)
 
 }
