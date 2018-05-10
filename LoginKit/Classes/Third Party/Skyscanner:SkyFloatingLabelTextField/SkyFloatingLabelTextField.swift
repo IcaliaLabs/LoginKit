@@ -69,8 +69,9 @@ open class SkyFloatingLabelTextField: UITextField {
         if let
             placeholder = self.placeholder,
             let font = self.placeholderFont ?? self.font {
-                self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedStringKey.foregroundColor:placeholderColor,
-                    NSAttributedStringKey.font: font])
+                self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes:
+                    [NSForegroundColorAttributeName:placeholderColor,
+                    NSFontAttributeName: font])
         }
     }
 
