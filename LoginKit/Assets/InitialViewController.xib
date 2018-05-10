@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -34,12 +36,6 @@
                             <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
-                    <rect key="frame" x="40" y="327" width="195" height="130"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="130" id="wgq-UG-1LL"/>
-                    </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-OP-gWp">
                     <rect key="frame" x="40" y="487" width="295" height="130"/>
@@ -112,18 +108,24 @@
                         </button>
                     </subviews>
                 </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-tf-f9d">
+                    <rect key="frame" x="138" y="117" width="99" height="99"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wTd-tf-f9d" secondAttribute="height" multiplier="1:1" id="CaB-q0-gTR"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Nva-OP-gWp" secondAttribute="bottom" constant="50" id="72j-ca-TWE"/>
-                <constraint firstItem="Nva-OP-gWp" firstAttribute="leading" secondItem="wTd-tf-f9d" secondAttribute="leading" id="7Ti-3g-VdW"/>
                 <constraint firstAttribute="trailing" secondItem="Vw0-kY-ntJ" secondAttribute="trailing" constant="-20" id="G08-uT-z48"/>
+                <constraint firstItem="Vw0-kY-ntJ" firstAttribute="top" secondItem="wTd-tf-f9d" secondAttribute="bottom" constant="-236" id="IbI-ep-A09"/>
+                <constraint firstItem="wTd-tf-f9d" firstAttribute="centerX" secondItem="Vw0-kY-ntJ" secondAttribute="centerX" id="MLG-qw-RJw"/>
                 <constraint firstAttribute="bottom" secondItem="Vw0-kY-ntJ" secondAttribute="bottom" constant="-20" id="PYR-Bs-drb"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-20" id="XPO-54-lKF"/>
                 <constraint firstAttribute="trailing" secondItem="Nva-OP-gWp" secondAttribute="trailing" constant="40" id="Yzc-vr-YFr"/>
-                <constraint firstItem="Nva-OP-gWp" firstAttribute="trailing" secondItem="wTd-tf-f9d" secondAttribute="trailing" constant="100" id="gzG-zQ-lWf"/>
+                <constraint firstItem="wTd-tf-f9d" firstAttribute="height" secondItem="Vw0-kY-ntJ" secondAttribute="height" multiplier="0.14" id="eag-8X-Zi1"/>
                 <constraint firstItem="Nva-OP-gWp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="hZi-7j-pBd"/>
-                <constraint firstItem="Nva-OP-gWp" firstAttribute="top" secondItem="wTd-tf-f9d" secondAttribute="bottom" constant="30" id="mvi-7D-kuI"/>
                 <constraint firstItem="Vw0-kY-ntJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="zj1-IP-NWo"/>
             </constraints>
             <point key="canvasLocation" x="-7.5" y="-539.5"/>
