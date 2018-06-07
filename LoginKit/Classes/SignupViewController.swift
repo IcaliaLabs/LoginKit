@@ -11,7 +11,7 @@ import Validator
 
 public protocol SignupViewControllerDelegate: class {
 
-    func didSelectSignup(_ viewController: UIViewController, email: String, name: String, password: String)
+    func didSelectSignup(_ viewController: UIViewController, email: String, name: String, userName: String, password: String)
     func signupDidSelectBack(_ viewController: UIViewController)
 
 }
@@ -53,6 +53,7 @@ open class SignupViewController: UIViewController, KeyboardMovable, BackgroundMo
     @IBOutlet var fields: [SkyFloatingLabelTextField]!
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var nameTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var userNameTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var repeatPasswordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var backgroundImageView: GradientImageView!
@@ -95,6 +96,7 @@ open class SignupViewController: UIViewController, KeyboardMovable, BackgroundMo
     }
     
     func applyConfiguration() {
+        
         view.backgroundColor = configuration.tintColor
         signupButton.setTitle(configuration.signupButtonText, for: .normal)
 
@@ -112,6 +114,13 @@ open class SignupViewController: UIViewController, KeyboardMovable, BackgroundMo
         passwordTextField.errorColor = configuration.errorTintColor
         repeatPasswordTextField.placeholder = configuration.repeatPasswordPlaceholder
         repeatPasswordTextField.errorColor = configuration.errorTintColor
+        
+        if(configuration.shouldShowUserName) {
+            userNameTextField.placeholder = configuration.userNamePlaceholder
+            userNameTextField.errorColor = configuration.errorTintColor
+        } else {
+            userNameTextField.removeFromSuperview()
+        }
     }
 
     func setupFonts() {
@@ -129,13 +138,13 @@ open class SignupViewController: UIViewController, KeyboardMovable, BackgroundMo
     }
 
     @IBAction func didSelectSignup(_ sender: AnyObject) {
-        guard let email = emailTextField.text, let name = nameTextField.text, let password = passwordTextField.text else {
+        guard let email = emailTextField.text, let name = nameTextField.text, let userName = userNameTextField.text, let password = passwordTextField.text else {
             return
         }
 
         signupAttempted = true
         validateFields {
-            delegate?.didSelectSignup(self, email: email, name: name, password: password)
+            delegate?.didSelectSignup(self, email: email, name: name, userName: userName, password: password)
         }
     }
 
