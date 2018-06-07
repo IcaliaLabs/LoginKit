@@ -28,11 +28,13 @@ public protocol ConfigurationSource {
     var passwordPlaceholder: String { get }
     var repeatPasswordPlaceholder: String { get }
     var namePlaceholder: String { get }
-
+    var userNamePlaceholder: String { get }
+    
 	var shouldShowSignupButton: Bool { get }
 	var shouldShowLoginButton: Bool { get }
 	var shouldShowFacebookButton: Bool { get }
 	var shouldShowForgotPassword: Bool { get }
+    var shouldShowUserName: Bool { get }
 
 }
 
@@ -56,12 +58,14 @@ public struct DefaultConfiguration: ConfigurationSource {
 	public var passwordPlaceholder: String
 	public var repeatPasswordPlaceholder: String
 	public var namePlaceholder: String
-
+    public var userNamePlaceholder: String
+    
 	public var shouldShowSignupButton: Bool
 	public var shouldShowLoginButton: Bool
 	public var shouldShowFacebookButton: Bool
 	public var shouldShowForgotPassword: Bool
-
+    public var shouldShowUserName: Bool
+    
 	public init(backgroundImage: UIImage = UIImage(),
 		 backgroundImageGradient: Bool = true,
 		 mainLogoImage: UIImage = UIImage(),
@@ -77,10 +81,12 @@ public struct DefaultConfiguration: ConfigurationSource {
 		 passwordPlaceholder: String = "Password",
 		 repeatPasswordPlaceholder: String = "Repeat Password",
 		 namePlaceholder: String = "Full Name",
+         userNamePlaceholder: String = "User Name",
 		 shouldShowSignupButton: Bool = true,
 		 shouldShowLoginButton: Bool = true,
 		 shouldShowFacebookButton: Bool = true,
-		 shouldShowForgotPassword: Bool = true) {
+		 shouldShowForgotPassword: Bool = true,
+         shouldShowUserName: Bool = true) {
 		self.backgroundImage = backgroundImage
 		self.backgroundImageGradient = backgroundImageGradient
 		self.mainLogoImage = mainLogoImage
@@ -96,10 +102,12 @@ public struct DefaultConfiguration: ConfigurationSource {
 		self.passwordPlaceholder = passwordPlaceholder
 		self.repeatPasswordPlaceholder = repeatPasswordPlaceholder
 		self.namePlaceholder = namePlaceholder
+        self.userNamePlaceholder = userNamePlaceholder
 		self.shouldShowSignupButton = shouldShowSignupButton
 		self.shouldShowLoginButton = shouldShowLoginButton
 		self.shouldShowFacebookButton = shouldShowFacebookButton
 		self.shouldShowForgotPassword = shouldShowForgotPassword
+        self.shouldShowUserName = shouldShowUserName
 	}
 
 }
@@ -219,7 +227,7 @@ open class LoginCoordinator {
         print("Implement this method in your subclass to handle login.")
     }
 
-    open func signup(name: String, email: String, password: String) {
+    open func signup(name: String, userName: String, email: String, password: String) {
         print("Implement this method in your subclass to handle signup.")
     }
 
@@ -298,8 +306,8 @@ extension LoginCoordinator: LoginViewControllerDelegate {
 
 extension LoginCoordinator: SignupViewControllerDelegate {
 
-    public func didSelectSignup(_ viewController: UIViewController, email: String, name: String, password: String) {
-        signup(name: name, email: email, password: password)
+    public func didSelectSignup(_ viewController: UIViewController, email: String, name: String, userName: String, password: String) {
+        signup(name: name, userName: userName, email: email, password: password)
     }
 
     public func signupDidSelectBack(_ viewController: UIViewController) {
