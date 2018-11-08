@@ -86,12 +86,12 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 
 ### Start
 
-Handle anything you want to happen when LoginKit starts. Make sure to call super.
+Handle anything you want to happen when LoginKit starts. Make sure to apply any changes to `configuration` prior to calling `super`.
 
 ```swift
 override func start(animated: Bool = true) {
-    super.start(animated: animated)
     configureAppearance()
+    super.start(animated: animated)
 }
 ```
 
